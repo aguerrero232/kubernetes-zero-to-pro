@@ -1,5 +1,4 @@
 # first time making a pod through yaml
-
 apiVersion: v1
 
 # kind refers to the type of object that will be created

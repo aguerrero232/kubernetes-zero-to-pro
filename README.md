@@ -4,13 +4,20 @@
 
 * ***[kubernetes concepts](https://kubernetes.io/docs/concepts/)***
 
+<br>
 
+___
 ## Kubernetes Architecture
+
+<br>
 
 ***Kubernetes coordinates a highly available cluster of computers that are connected to work as a single unit.***
 
+<br>
 
 ![](img/clusterdiagram2.PNG) ![](img/clusterdiagram-legend.PNG)
+
+<br/>
 
 * The **Control Plane** is responsible for managing the cluster. 
     * Components: 
@@ -27,6 +34,7 @@
       * cloud-controller-manager - Embeds cloud-specific control logic
         * Node, Route, and Service controllers can have cloud provider dependancies.
       
+<br/>
 
 * A **Node** is a VM or a physical computer that serves as a worker machine in a Kubernetes cluster.
     * The nodes communicate with the control plane using the Kubernetes API
@@ -36,96 +44,106 @@
       * kube-proxy - Network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
       * Container runtime - Software that is responsible for running containers.
 
+<br>
 
-* Pods
-    - A pod is a single instance of an application and is the simplest object you can create in kubernetes
-
-    - pods usually have a 1:1 relationship with containers
-
-    - a pod can have multiple containers, but they are usually containers of different types that are tightly coupled 
-
-
+___
 ## ***Basic Commands***
 
-   
-* ***For these notes I will be using minikube and docker to run my enviroment on Ubuntu 22.04*** 
+<br>
 
-## **minikube commands**
+* ## **minikube commands**
 
-* Check the status of minikube
+  * Check the status of minikube
+
+    ```
+    minikube status
+    ```
+  * Start minikube
+
+    ```
+    minikube start
+    ```
+
+  * Stop minikube
+
+    ```
+    minikube stop
+    ```
+
+<br>
+
+* ## **kubectl commands**
+
+  * check version of kubernetes being used
+    
+    ```
+      kubectl version
+    ```
+
+  * get minimal info about pods on cluser
+
+    ```
+      kubectl get pods
+    ```
+
+  * get more info about pods on cluster, IP and Node where pod is running
+
+    ```
+      kubectl get pods -o wide
+    ```
+
+  * get more information about a pod on cluser
+
+    ```
+      kubectl describe pod <pod name>
+    ```
+  * run a new pod
+
+    ```
+      kubectl run <pod name> --image <image name>
+    ```
+  * run a new pod using a yaml file
+
+    ```
+      kubectl apply -f <file name>
+    ```
+
+  * delete a pod from cluster
+
+    ```
+      kubectl delete pod <pod name>
+    ```
+
+
+  * create a new deployment
+
+    ```
+      kubectl create deployment <pod name> --image=<image name>
+    ```
+<br>
+
+* ## **Docker commands**
+
+
+* ***After resetting WSL due to high memory usage, the docker daemon was shut down this is the fix for that***
 
   ```
-  minikube status
-  ```
-* Start minikube
-
-  ```
-  minikube start
-  ```
-
-* Stop minikube
-
-  ```
-  minikube stop
+    sudo addgroup --system docker
+    sudo adduser $USER docker
+    newgrp docker
+    sudo chown root:docker /var/run/docker.sock
+    sudo chmod g+w /var/run/docker.sock
   ```
 
 
+<br>
 
-## **kubectl commands**
+* ## **Other usefull commands**
 
-* check version of kubernetes being used
+  * view the flavor and version of OS
+    ```
+      cat /etc/os-release
+    ```
+
+
   
-  ```
-    kubectl version
-  ```
-
-* get minimal info about pods on cluser
-
-  ```
-    kubectl get pods
-  ```
-
-* get more info about pods on cluster, IP and Node where pod is running
-
-  ```
-    kubectl get pods -o wide
-  ```
-
-* get more information about a pod on cluser
-
-  ```
-    kubectl describe pod <pod name>
-  ```
-* run a new pod
-
-  ```
-    kubectl run <pod name> --image <image name>
-  ```
-* run a new pod using a yaml file
-
-  ```
-    kubectl apply -f <file name>
-  ```
-
-* delete a pod from cluster
-
-  ```
-    kubectl delete pod <pod name>
-  ```
-
-
-* create a new deployment
-
-  ```
-    kubectl create deployment <pod name> --image=<image name>
-  ```
-
-## **Docker commands**
-
-
-## **Other usefull commands**
-
-* view the flavor and version of OS
-  ```
-    cat /etc/os-release
-  ```
