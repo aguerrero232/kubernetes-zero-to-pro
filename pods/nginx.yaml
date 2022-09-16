@@ -1,10 +1,11 @@
 apiVersion: v1
+
 kind: Pod
+
 metadata:
-  name: nginx
-  tags:
-    - name: tag1
-      value: sample
+  name: nginx-2
+  labels:
+    env: prod
 
 spec:
   containers:
