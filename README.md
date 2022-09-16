@@ -10,8 +10,7 @@
 ***Kubernetes coordinates a highly available cluster of computers that are connected to work as a single unit.***
 
 
-<!-- ![](img/clusterdiagram2.PNG) -->
-![](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
+![](img/clusterdiagram2.PNG) ![](img/clusterdiagram-legend.PNG)
 
 * The **Control Plane** is responsible for managing the cluster. 
     * Components: 
