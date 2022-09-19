@@ -122,22 +122,6 @@ ___
     ```
 <br>
 
-* ## **Docker commands**
-
-
-* ***After resetting WSL due to high memory usage, the docker daemon was shut down this is the fix for that***
-
-  ```
-    sudo addgroup --system docker
-    sudo adduser $USER docker
-    newgrp docker
-    sudo chown root:docker /var/run/docker.sock
-    sudo chmod g+w /var/run/docker.sock
-  ```
-
-
-<br>
-
 * ## **Other usefull commands**
 
   * view the flavor and version of OS
