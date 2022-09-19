@@ -12,26 +12,30 @@ ___
 
 <br>
 
-## **Example of a simple pod defined in a yaml file:**
+## ***Basic Commands***
 
 <br>
 
-```
-    apiVersion: v1
+  * get minimal info about pods on cluser
 
-    # kind refers to the type of object that will be created
-    kind: Pod
+    ```
+    kubectl get pods
+    ```
 
-    # data about the data that will be created
-    metadata:
-    name: myapp-pod
-    labels:
-        app: myapp
-        type: testing
+  * get more info about a pod
 
-    # specification section, providing additional information to kubernetes about the object
-    spec:
-    containers:
-        - name: nginx-container
-          image: nginx
-```
+    ```
+    kubectl get pods -o wide
+    ```
+
+  * get more information about a pod
+
+    ```
+    kubectl describe pod <pod name>
+    ```
+
+  * delete a pod
+
+    ```
+    kubectl delete pod <pod name>
+    ```

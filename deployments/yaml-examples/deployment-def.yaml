@@ -3,19 +3,18 @@ kind: Deployment
 metadata:
   name: myapp-depl
   labels:
-    app: myapp-depl
     tier: front-end
 spec: 
   template:
     metadata:
-      name: myapp-pod
+      name: nginx-pod
       labels:
         app: myapp
     spec:
       containers:
         - name: nginx
           image: nginx
-  replicas: 3
+  replicas: 6
   selector: 
     matchLabels:
       app: myapp
