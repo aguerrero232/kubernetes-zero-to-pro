@@ -45,6 +45,10 @@ ___
     kubectl apply -f <yaml file>
     ```
 
+    ```
+    kubectl set image deployment/<deployment name> <new image>
+    ```
+
 * get list of deployments
 
     ```
