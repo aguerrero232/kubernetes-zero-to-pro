@@ -5,7 +5,7 @@ kind: Pod
 metadata:
   name: nginx-2
   labels:
-    env: prod
+    env: production
 
 spec:
   containers:

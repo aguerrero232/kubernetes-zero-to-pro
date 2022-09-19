@@ -23,21 +23,9 @@ ___
 
 <br>
 
-## ***Basic Commands***
+## Why use Replica Sets?
 
-* create replica set 
-    ```
-        kubectl create -f <yaml file>
-    ```
-* get replica sets
-    ```
-        kubectl get replicaset
-    ```
-* delete replica sets
-
-    ```
-        kubectl delete replicaset <replica set name>
-    ```
+* Process to monitor pods, by labeling pods it will allow replica set to know which pods to monitor and provides a method to filter out pods thats are not part of the replica set
 
 <br>
 
@@ -45,17 +33,41 @@ ___
 
 <br>
 
-## Why use Replica Sets?
+## ***Basic Commands***
 
-* Process to monitor pods, by labeling pods it will allow replica set to know which pods to monitor and provides a method to filter out pods thats are not part of the replica set
+* create a replica set 
+    ```
+        kubectl create -f <yaml file>
+    ```
 
-* Scale
-    - easily scale replica set to the desired number of replicas
-        - examples
-            ```
-                kubectl replace -f <edited yaml file>
-            ```
+* get list of replica sets
+    ```
+        kubectl get replicaset
+    ```
 
-            ```
-                kubectl scale --replicas=<new number of replicas> -f <yaml file>
-            ```
+* get descriptive information on the desired replica set
+    ```
+        kubectl describe replicaset <replica set name>
+    ```
+
+* edit the specified replica set
+    ```
+        kubectl edit replicaset <replica set name>
+    ```
+
+* scale replica set to the desired number of replicas
+
+    ```
+        kubectl replace -f <edited yaml file>
+    ```
+
+    ```
+        kubectl scale --replicas=<new number of replicas> -f <yaml file>
+    ```
+
+
+* delete specified replica set
+
+    ```
+        kubectl delete replicaset <replica set name>
+    ```

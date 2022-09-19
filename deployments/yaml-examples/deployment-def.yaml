@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: myapp-rs
+  name: myapp-dep
   labels:
     app: myapp
     type: front-end
@@ -17,7 +17,6 @@ spec:
         - name: nginx-container
           image: nginx
   replicas: 3
-  #  one of the major differences between replica controller and replica set
   selector: 
     matchLabels:
       type: front-end
