@@ -37,37 +37,37 @@ ___
 
 * create a replica set 
     ```
-        kubectl create -f <yaml file>
+    kubectl create -f <yaml file>
     ```
 
 * get list of replica sets
     ```
-        kubectl get replicaset
+    kubectl get replicaset
     ```
 
 * get descriptive information on the desired replica set
     ```
-        kubectl describe replicaset <replica set name>
+    kubectl describe replicaset <replica set name>
     ```
 
 * edit the specified replica set
     ```
-        kubectl edit replicaset <replica set name>
+    kubectl edit replicaset <replica set name>
     ```
 
 * scale replica set to the desired number of replicas
 
     ```
-        kubectl replace -f <edited yaml file>
+    kubectl replace -f <edited yaml file>
     ```
 
     ```
-        kubectl scale --replicas=<new number of replicas> -f <yaml file>
+    kubectl scale --replicas=<new number of replicas> -f <yaml file>
     ```
 
 
 * delete specified replica set
 
     ```
-        kubectl delete replicaset <replica set name>
+    kubectl delete replicaset <replica set name>
     ```

@@ -77,48 +77,55 @@ ___
   * check version of kubernetes being used
     
     ```
-      kubectl version
+    kubectl version
     ```
+
+  * get everything 
+
+    ```
+    kubectl get all
+    ```
+
 
   * get minimal info about pods on cluser
 
     ```
-      kubectl get pods
+    kubectl get pods
     ```
 
   * get more info about pods on cluster, IP and Node where pod is running
 
     ```
-      kubectl get pods -o wide
+    kubectl get pods -o wide
     ```
 
   * get more information about a pod on cluser
 
     ```
-      kubectl describe pod <pod name>
+    kubectl describe pod <pod name>
     ```
   * run a new pod
 
     ```
-      kubectl run <pod name> --image <image name>
+    kubectl run <pod name> --image <image name>
     ```
   * run a new pod using a yaml file
 
     ```
-      kubectl apply -f <file name>
+    kubectl apply -f <file name>
     ```
 
   * delete a pod from cluster
 
     ```
-      kubectl delete pod <pod name>
+    kubectl delete pod <pod name>
     ```
 
 
   * create a new deployment
 
     ```
-      kubectl create deployment <pod name> --image=<image name>
+    kubectl create deployment <pod name> --image=<image name>
     ```
 <br>
 
@@ -126,7 +133,7 @@ ___
 
   * view the flavor and version of OS
     ```
-      cat /etc/os-release
+    cat /etc/os-release
     ```
 
 
