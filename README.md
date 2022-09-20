@@ -4,6 +4,13 @@
 
 * ***[kubernetes concepts](https://kubernetes.io/docs/concepts/)***
 
+* ***[Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/)***
+  * [Candidate Handbook](https://www.cncf.io/certification/candidate-handbook)
+
+  * [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
+
+
+
 <br>
 
 ___
@@ -43,6 +50,14 @@ ___
       * kubelet - An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
       * kube-proxy - Network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
       * Container runtime - Software that is responsible for running containers.
+
+<br>
+
+___
+
+<br>
+
+
 
 <br>
 
