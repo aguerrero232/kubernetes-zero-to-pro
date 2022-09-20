@@ -70,12 +70,6 @@ ___
     minikube stop
     ```
 
-  * access service ```in browser``` running on minikube 
-
-    ```
-    minikube service <service name> --url
-    ```
-
 
 <br>
 
