@@ -34,6 +34,22 @@ ___
     kubectl describe pod <pod name>
     ```
 
+  * create a pod 
+  
+      ```
+      kubectl run <pod name> --image=<image name>
+      ```
+
+  * edit a pod
+  
+      ```
+      kubectl edit pod <pod name>
+      ```
+    * If you are not given a pod definition file, you may extract the definition to a file using the below command, then edit the file to make the necessary changes, delete and re-create the pod.
+      ```
+      kubectl get pod <pod name> -o yaml > pod-definition.yaml
+      ```
+
   * delete a pod
 
     ```
