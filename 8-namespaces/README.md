@@ -17,3 +17,21 @@ ___
   ```
   kubectl get namespace
   ```
+
+  * create a namespace
+  
+  ```
+  kubectl create namespace <namespace-name>
+  ```
+
+  * delete a namespace
+  
+  ```
+  kubectl delete namespace <namespace-name>
+  ```
+
+  * get all resources in a namespace
+  
+  ```
+  kubectl get all --namespace <namespace-name>
+  ```
