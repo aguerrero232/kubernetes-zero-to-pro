@@ -182,11 +182,72 @@ ___
 * You can either set a value or a list/dictonary/map but not both
 
 * Dictionaries are an unordered collection while lists are ordered
-___
 
+<br>
 
 ## YAML Syntax
 
 * YAML is case sensitive
 * Comments are created using the # symbol
 
+<br>
+
+___
+
+
+<br>
+
+# Docker
+
+<br>
+
+## Docker Commands and Arguments
+
+<br>
+
+*Examples*
+
+* generic DOCKERFILE template
+
+  ```
+  FROM <image>
+  RUN <command>
+  CMD <command>
+  ```
+
+* commands template with parameters
+  ```
+  CMD command param
+  CMD ["command", "param"]
+  ```
+
+* example command with arguments
+  ```
+  CMD sleep 5
+  CMD ["sleep", "5"]
+  ```
+
+* makes a custom image of ubuntu and makes it sleep 5 seconds then exits
+
+  ```
+  FROM Ubuntu
+  CMD sleep 5
+  ```
+
+* makes a custom image of ubuntu and makes it sleep from passed in param in entrypoint
+  * entrypoint is the command that is run when the container is started
+
+  ```
+  FROM Ubuntu
+  ENTRYPOINT ["sleep"]
+  ```
+
+* makes a custom image of ubuntu and makes it sleep from passed in param in entrypoint with default of 5 seconds
+
+  ```
+  FROM Ubuntu
+  ENTRYPOINT ["sleep"]
+  CMD ["5"]
+  ```
+
+  * you can override the entrypoint command with the --entrypoint flag
