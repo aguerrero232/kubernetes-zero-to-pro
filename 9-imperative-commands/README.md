@@ -47,14 +47,66 @@ ___
     ```
 
 
-
-**Example:**
+**Examples:**
 
 * **Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:**
 
     ```
-
     kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml
     ```
 
     (This will automatically use the pod's labels as selectors, but you cannot specify the node port. You have to generate a definition file and then add the node port in manually before creating the service with the pod.)
+
+
+* **Deploy a redis pod using the redis:alpine image with the labels set to tier=db.**
+
+    ```
+    kubectl run redis --image=redis:alpine --labels="tier=db" --dry-run=client -o yaml > redis-pod.yaml
+    ```
+    * **output**
+
+        ```
+        apiVersion: v1
+        kind: Pod
+        metadata:
+        creationTimestamp: null
+        labels:
+            tier: db
+        name: redis
+        spec:
+        containers:
+        - image: redis:alpine
+            name: redis
+            resources: {}
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        status: {}
+        ```
+
+* **Create a service redis-service to expose the redis application within the cluster on port 6379.**
+
+    ```
+    kubectl expose pod redis --port=6379 --name=redis-service --type=ClusterIP --dry-run=client -o yaml > redis-service.yaml 
+    ```
+
+* **Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas.**
+
+    ```
+    kubectl create deployment webapp --image=kodekloud/webapp-color --dry-run=client -o yaml > webapp-dep.yaml
+    ```
+
+    then edit the file to be 3 replicas
+
+
+*  **create a pod using nginx with container port 8080 exposed**
+
+    ```
+    kubectl run custom-nginx --image=nginx --port=8080
+    ```
+
+* **Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas.**
+
+    ```
+    kubectl -n dev-ns create deployment redis-deploy --image=redis --dry-run=client -o yaml > rd-dev.yaml
+    ```
+    then edit the file to be 2 replicas
