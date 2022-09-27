@@ -92,10 +92,8 @@ ___
 * **Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas.**
 
     ```
-    kubectl create deployment webapp --image=kodekloud/webapp-color --dry-run=client -o yaml > webapp-dep.yaml
+    kubectl create deployment webapp --image=kodekloud/webapp-color --replicas=3 --dry-run=client -o yaml > webapp-dep.yaml
     ```
-
-    then edit the file to be 3 replicas
 
 
 *  **create a pod using nginx with container port 8080 exposed**
@@ -107,6 +105,5 @@ ___
 * **Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas.**
 
     ```
-    kubectl -n dev-ns create deployment redis-deploy --image=redis --dry-run=client -o yaml > rd-dev.yaml
+    kubectl -n dev-ns create deployment redis-deploy --image=redis --replicas=2 --dry-run=client -o yaml > rd-dev.yaml
     ```
-    then edit the file to be 2 replicas
