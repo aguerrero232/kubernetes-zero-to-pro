@@ -59,7 +59,6 @@ ___
 
 <br>
 
-___
 ## ***Basic Commands***
 
 <br>
@@ -199,9 +198,9 @@ ___
 
 # Docker
 
-<br>
 
-## Docker Commands and Arguments
+
+## **Docker Commands and Arguments**
 
 <br>
 
@@ -251,3 +250,25 @@ ___
   ```
 
   * you can override the entrypoint command with the --entrypoint flag
+
+<br>
+
+## **Docker Security**
+
+<br>
+
+  * to run docker as a non-root user
+
+  ```
+  docker run --user=<user id> <image>
+  ```
+
+  * users can also be defined in the dockerfile
+
+  ```
+  FROM ubuntu
+  USER <user id>
+  ```
+
+
+

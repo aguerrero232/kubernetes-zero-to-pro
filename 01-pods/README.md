@@ -34,6 +34,12 @@ ___
     kubectl describe pod <pod name>
     ```
 
+  * get pod in yaml format
+
+    ```
+    kubectl get pod <pod name> -o yaml
+    ```
+
   * create a pod 
   
       ```
@@ -55,3 +61,22 @@ ___
     ```
     kubectl delete pod <pod name>
     ```
+
+<br>
+
+## ***Define Enviroment Variables For A Container***
+
+<br>
+
+
+  ```  
+  spec:
+    containers:
+    - name: <container name>
+      image: <image name>
+      env:
+      - name: DEMO_GREETING
+        value: "Hello from the environment"
+      - name: DEMO_FAREWELL
+        value: "Such a sweet sorrow"
+  ```

@@ -34,53 +34,68 @@ ___
 
 * to create **secrets** using the `kubectl` command, you can use the following command:
 
-```
-    kubectl create secret generic <secret name> --from-literal=<key>=<value>
-```
+    ```
+        kubectl create secret generic <secret name> --from-literal=<key>=<value>
+    ```
 
 * to create **secrets** using a `manifest file`, you can use the following command:
 
-```
-    kubectl create secret generic <secret name> --from-file=<path to file>
-```
+    ```
+        kubectl create secret generic <secret name> --from-file=<path to file>
+    ```
 
 * to get **secrets** you can use the following command:
 
-```
-    kubectl get secret <secret name>
-```
+    ```
+        kubectl get secret <secret name>
+    ```
 
 * to get all **secrets** you can use the following command:
 
-```
-    kubectl get secrets
-```
+    ```
+        kubectl get secrets
+    ```
 
 * to describe **secrets** you can use the following command:
 
-```
-    kubectl describe secret <secret name>
-```
+    ```
+        kubectl describe secret <secret name>
+    ```
     * note that this method does not show the secret value
 
 * to view **secrets** and their values you can use the following command:
 
-```
-    kubectl get secret <secret name> -o yaml
-```
+    ```
+        kubectl get secret <secret name> -o yaml
+    ```
 
 * to delete **secrets** you can use the following command:
 
-```
-    kubectl delete secret <secret name>
-```
+    ```
+        kubectl delete secret <secret name>
+    ```
 
-* command used in example:
+<br>
 
-```
-kubectl create secret generic sample-secret --from-file=secret-examples/DB_Host --from-file=secret-examples/DB_User --from-file=secret-examples/DB_Password -o yaml > secret-examples/sample-secret.yaml
+___ 
 
-```
+<br>
+
+## **Examples**
+
+<br>
+
+* command used for:&nbsp; `secret-examples/sample-secret.yaml`
+
+    ```
+    kubectl create secret generic sample-secret --from-file=secret-examples/DB_Host --from-file=secret-examples/DB_User --from-file=secret-examples/DB_Password 
+    ```
+
+* command used for:&nbsp; `secret-examples/sample-secret2.yaml`
+
+    ```
+    kubectl create secret generic sample-secret2 --from-literal=DB_Host=postgres --from-literal=DB_User=guerrero --from-literal=DB_Password=pokemon
+    ```
 
 
 <br>
