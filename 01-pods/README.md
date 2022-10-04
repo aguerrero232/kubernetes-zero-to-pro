@@ -62,6 +62,13 @@ ___
     kubectl delete pod <pod name>
     ```
 
+  * view the containers user in a pod
+
+    ```
+    kubectl exec <pod name> -- whoami
+    ```
+
+
 <br>
 
 ## ***Define Enviroment Variables For A Container***
@@ -80,3 +87,24 @@ ___
       - name: DEMO_FAREWELL
         value: "Such a sweet sorrow"
   ```
+
+<br>
+
+## **Define Security Context For A Container**
+
+  ```
+  spec:
+    containers:
+    - name: <container name>
+      image: <image name>
+      securityContext:
+        runAsUser: 1000
+        capabilities:
+          add: ["MAC_ADMIN"]
+  ```
+
+* capabilties are a set of linux kernel capabilities that can be added to or removed from a container
+
+* capabilities are only available at the container level, not at the pod level
+
+
