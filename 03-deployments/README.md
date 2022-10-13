@@ -12,13 +12,13 @@ ___
 
 <br>
 
-* Deployments allow you to **update your application without downtime**.
+* Deployments allow you to **`update` your application without downtime**.
 
-* There are two methods to update your application:
+* There are **two methods** to `update` your application:
 
-  * **Rolling Update** - The new version of the application is deployed in stages. The old version is still running while the new version is being deployed. Once the new version is deployed, the old version is terminated.
+  * **`Rolling Update`** - The new version of the application is deployed in stages. The old version is still running while the new version is being deployed. Once the new version is deployed, the old version is terminated.
 
-  * **Recreate** - The old version of the application is terminated before the new version is deployed.
+  * **`Recreate`** - The old version of the application is terminated before the new version is deployed.
 
 
 * rollbacks are also possible. You can rollback to a previous version of your application.
