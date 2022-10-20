@@ -7,7 +7,6 @@ spec:
   - image: ubuntu-sleeper
     name: ubuntu-sleeper
     # overrides the entrypoint instruction 
-    # command: ["echo"]  
+    command: ["echo"]  
     # overrieds the commad instruction  
     args: ["10"]
-

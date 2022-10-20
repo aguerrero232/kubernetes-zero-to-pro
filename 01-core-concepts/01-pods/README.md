@@ -4,7 +4,7 @@
 
 - pods usually have a 1:1 relationship with containers
 
-- a pod can have multiple containers, but they are usually containers of different types that are tightly coupled 
+- a pod can have multiple containers, but they are usually containers of different types that are tightly coupled
 
 <br>
 
@@ -16,65 +16,70 @@ ___
 
 <br>
 
-  * get minimal info about pods on cluser
+- get minimal info about pods on cluser
 
     ```
     kubectl get pods
     ```
 
-  * get more info about a pod
+- get more info about a pod
 
     ```
     kubectl get pods -o wide
     ```
 
-  * get more information about a pod
+- get even more information about a pod
 
     ```
     kubectl describe pod <pod name>
     ```
 
-  * get pod in yaml format
+- get pod in yaml format
 
     ```
     kubectl get pod <pod name> -o yaml
     ```
 
-  * create a pod 
+- enter a pod
+
+    ```
+    kubectl exec -it <pod name> -- /bin/bash
+    ``` 
+
+- create a pod
   
       ```
       kubectl run <pod name> --image=<image name>
       ```
 
-  * edit a pod
+- edit a pod
   
       ```
       kubectl edit pod <pod name>
       ```
-    * If you are not given a pod definition file, you may extract the definition to a file using the below command, then edit the file to make the necessary changes, delete and re-create the pod.
+  - If you are not given a pod definition file, you may extract the definition to a file using the below command, then edit the file to make the necessary changes, delete and re-create the pod.
+
       ```
       kubectl get pod <pod name> -o yaml > pod-definition.yaml
       ```
 
-  * delete a pod
+- delete a pod
 
     ```
     kubectl delete pod <pod name>
     ```
 
-  * view the containers user in a pod
+- view the containers user in a pod
 
     ```
     kubectl exec <pod name> -- whoami
     ```
-
 
 <br>
 
 ## ***Define Enviroment Variables For A Container***
 
 <br>
-
 
   ```  
   spec:
@@ -103,8 +108,6 @@ ___
           add: ["MAC_ADMIN"]
   ```
 
-* capabilties are a set of linux kernel capabilities that can be added to or removed from a container
+- capabilties are a set of linux kernel capabilities that can be added to or removed from a container
 
-* capabilities are only available at the container level, not at the pod level
-
-
+- capabilities are only available at the container level, not at the pod level
