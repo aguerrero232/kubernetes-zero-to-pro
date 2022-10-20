@@ -12,17 +12,23 @@ ___
 
 * generic
 
-    ```shell
-    kubectl taint nodes <node-name> <key>=<value>:<taint-effect>
-    ```
+  ```shell
+  kubectl taint nodes <node-name> <key>=<value>:<taint-effect>
+  ```
 
-    **taint-effect**: `NoSchedule`, `PreferNoSchedule`, `NoExecute`
+  **taint-effect**: `NoSchedule`, `PreferNoSchedule`, `NoExecute`
 
 * example
 
-    ```shell
-    kubectl taint nodes node1 app=blue:NoSchedule
-    ```
+  ```shell
+  kubectl taint nodes node1 app=blue:NoSchedule
+  ```
+
+* to see if taints exist on a node
+
+  ```shell
+  kubectl describe node node01 | grep taint
+  ```
 
 ### ***Tolerations - Pod***
 
@@ -34,3 +40,44 @@ spec:
       value: blue
       effect: NoSchedule
 ```
+
+
+## Bee and Mosquito Example
+
+create node01
+
+```yaml
+apiVersion: v1
+kind: Node
+metadata:
+  name: node01
+spec:
+```
+
+```yaml
+apiVersion: v1
+kind: Node
+metadata:
+  name: controlplane
+  # add a taint with key spray and value mortien and effect NoSchedule
+  taint: 
+    - key: spray
+      value: mortien
+      effect: NoSchedule
+spec:
+
+
+```
+
+
+* apply taint
+
+kubectl taint nodes node01 spray=mortein:NoSchedule
+
+
+* create the bee and mosquito pods and watch what happens
+  * bee will be scheduled on node01 and mosquito will not be scheduled on any node
+
+* remove the taint on controlplane
+  * mosquito will be scheduled on controlplane
+
