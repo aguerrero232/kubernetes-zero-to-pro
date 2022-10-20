@@ -8,6 +8,6 @@ spec:
       image: nginx
   tolerations:
     - key: spray
-      opertator: "Equal"
+      operator: "Equal"
       value: mortein
       effect: NoSchedule
