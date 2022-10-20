@@ -1,5 +1,4 @@
-# Kubernetes for Beginners 
-
+# Kubernetes for Beginners
 
 ## Valuable Links
 
@@ -12,10 +11,10 @@
 
   * Keep the code - **DEVOPS15** - handy while registering for the CKA or CKAD exams at Linux Foundation to get a 15% discount.
 
-
 <br>
 
 ___
+
 ## Kubernetes Architecture
 
 <br>
@@ -24,34 +23,34 @@ ___
 
 <br>
 
-![](img/clusterdiagram2.PNG) ![](img/clusterdiagram-legend.PNG)
+![](00-resources/img/clusterdiagram2.PNG) ![](00-resources/img/clusterdiagram-legend.PNG)
 
 <br/>
 
-* The **Control Plane** is responsible for managing the cluster. 
-    * Components: 
-      * kube-apiserver - Exposes the Kubernetes API
-      * etcd - Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.
-      * kube-scheduler - Watches for newly created Pods with no assigned node, and selects a node for them to run on.
-      * kube-controller-manager - Runs controller processes. Each controller is a separate process but to keep things simple they are compiled together and run in a single process
-        * Examples: 
-            * Node controller: Responsible for noticing and responding when nodes go down.
-            * Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
-            * Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
-            * Service Account & Token controllers: Create default accounts and API access tokens for new namespaces
+* The **Control Plane** is responsible for managing the cluster.
+  * Components:
+    * kube-apiserver - Exposes the Kubernetes API
+    * etcd - Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.
+    * kube-scheduler - Watches for newly created Pods with no assigned node, and selects a node for them to run on.
+    * kube-controller-manager - Runs controller processes. Each controller is a separate process but to keep things simple they are compiled together and run in a single process
+      * Examples:
+        * Node controller: Responsible for noticing and responding when nodes go down.
+        * Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
+        * Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
+        * Service Account & Token controllers: Create default accounts and API access tokens for new namespaces
 
-      * cloud-controller-manager - Embeds cloud-specific control logic
-        * Node, Route, and Service controllers can have cloud provider dependancies.
-      
+    * cloud-controller-manager - Embeds cloud-specific control logic
+      * Node, Route, and Service controllers can have cloud provider dependancies.
+
 <br/>
 
 * A **Node** is a VM or a physical computer that serves as a worker machine in a Kubernetes cluster.
-    * The nodes communicate with the control plane using the Kubernetes API
+  * The nodes communicate with the control plane using the Kubernetes API
 
-    * Components: 
-      * kubelet - An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
-      * kube-proxy - Network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
-      * Container runtime - Software that is responsible for running containers.
+  * Components:
+    * kubelet - An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
+    * kube-proxy - Network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
+    * Container runtime - Software that is responsible for running containers.
 
 <br>
 
@@ -70,6 +69,7 @@ ___
     ```
     minikube status
     ```
+
   * Start minikube
 
     ```
@@ -82,18 +82,17 @@ ___
     minikube stop
     ```
 
-
 <br>
 
 * ## **kubectl commands**
 
   * check version of kubernetes being used
-    
+
     ```
     kubectl version
     ```
 
-  * get everything 
+  * get everything
 
     ```
     kubectl get all
@@ -104,6 +103,7 @@ ___
 * ## **Other usefull commands**
 
   * view the flavor and version of OS
+
     ```
     cat /etc/os-release
     ```
@@ -121,7 +121,6 @@ YAML is a human-readable data serialization language. It is commonly used for co
 ___
 
 ## Examples of yaml
-
 
 * Key Value Pairs
 
@@ -147,7 +146,7 @@ ___
     ```
 
 * Dictionary/Map
-    
+
     ```
         Banana:
             Calories: 105
@@ -175,7 +174,6 @@ ___
                 Carbs: 16g
     ```
 
-
 * ***Notice the alignment, this is important in yaml.***
 
 * You can either set a value or a list/dictonary/map but not both
@@ -193,12 +191,9 @@ ___
 
 ___
 
-
 <br>
 
 # Docker
-
-
 
 ## **Docker Commands and Arguments**
 
@@ -215,12 +210,14 @@ ___
   ```
 
 * commands template with parameters
+
   ```
   CMD command param
   CMD ["command", "param"]
   ```
 
 * example command with arguments
+
   ```
   CMD sleep 5
   CMD ["sleep", "5"]
@@ -257,18 +254,15 @@ ___
 
 <br>
 
-  * to run docker as a non-root user
+* to run docker as a non-root user
 
   ```
   docker run --user=<user id> <image>
   ```
 
-  * users can also be defined in the dockerfile
+* users can also be defined in the dockerfile
 
   ```
   FROM ubuntu
   USER <user id>
   ```
-
-
-
