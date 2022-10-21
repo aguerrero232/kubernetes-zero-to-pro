@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Section 0:*** `Resources`
+# **Kubernetes** `-` ***Section 0:*** `Resources`
 
 ## **Table of Contents**
 

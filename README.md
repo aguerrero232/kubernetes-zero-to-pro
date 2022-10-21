@@ -1,4 +1,4 @@
-# Kubernetes for Beginners
+# Kubernetes Zero To Pro
 
 ## Valuable Links
 
