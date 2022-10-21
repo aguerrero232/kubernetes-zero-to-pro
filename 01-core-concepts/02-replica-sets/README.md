@@ -22,7 +22,7 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 * **create** a `replica set`
 
 ```shell
-kubectl create -f <yaml file>
+kubectl create -f <yaml-file>
 ```
 
 * **get** list of `replica sets`
@@ -46,11 +46,11 @@ kubectl edit replicaset <replica-set-name>
 * **scale** `replica set` to the *desired number* of `replicas`
 
 ```shell
-kubectl replace -f <edited yaml file>
+kubectl replace -f <edited-yaml-file>
 ```
 
 ```shell
-kubectl scale --replicas=<new-number-of-replicas> -f <yaml file>
+kubectl scale --replicas=<new-number-of-replicas> -f <yaml-file>
 ```
 
 * **delete** specified `replica set`
