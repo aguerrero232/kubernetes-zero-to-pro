@@ -10,4 +10,3 @@ Core concepts are the fundamental building blocks of Kubernetes. These concepts 
 * `services`
 * `namespaces`
 * `imperative commands`
-
