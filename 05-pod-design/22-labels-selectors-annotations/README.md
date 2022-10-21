@@ -14,7 +14,13 @@
     kubectl get pods --selector <label-name>=<label-value>
     ```
 
-* **select** all with label
+* **count** `pods` with label
+
+    ```shell
+    kubectl get pods --selector <label-name>=<label-value> --no-headers | wc -l
+    ```
+
+* **select** all with multiple labels
 
     ```shell
     kubectl get all --selector <label-name>=<label-value>,<label-name>=<label-value>
