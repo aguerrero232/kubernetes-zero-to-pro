@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Readiness And Liveness Probes***
+# **Kubernetes** - ***Readiness*** *And* ***Liveness Probes***
 
 At times you may want to **check** if a `container` is **ready** to **serve** requests. Or you may want to **check** if a `container` is **alive** and **healthy**. That's where `readinessProbes` and `livenessProbes` come in.
 
