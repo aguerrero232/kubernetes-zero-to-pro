@@ -29,36 +29,36 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-
 * **create** **`secrets`** using the `kubectl` command
 
-    ```
+    ```shell
     kubectl create secret generic <secret name> --from-literal=<key>=<value>
     ```
 
 * **create** **`secrets`** using a `manifest file`
 
-    ```
-        kubectl create secret generic <secret name> --from-file=<path to file>
+    ```shell
+    kubectl create secret generic <secret name> --from-file=<path to file>
     ```
 
 * **get** **`secrets`**
 
-    ```
-        kubectl get secret <secret name>
+    ```shell
+    kubectl get secret <secret name>
     ```
 
 * **get** all **`secrets`**
 
     ```shell
-        kubectl get secrets
+    kubectl get secrets
     ```
 
 * **describe** **`secrets`**
 
     ```shell
-        kubectl describe secret <secret name>
+    kubectl describe secret <secret name>
     ```
+
     * note that this method ***does not show the secret value***
 
 <br>
@@ -66,15 +66,14 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 * **view** **`secrets`** *and their values*
 
     ```shell
-        kubectl get secret <secret-name> -o yaml
+    kubectl get secret <secret-name> -o yaml
     ```
 
 * **delete** **`secrets`**
 
     ```shell
-        kubectl delete secret <secret-name>
+    kubectl delete secret <secret-name>
     ```
-
 
 <br>
 
@@ -84,15 +83,12 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 * command used for:&nbsp; `secret-examples/sample-secret.yaml`
 
-    ```
+    ```shell
     kubectl create secret generic sample-secret --from-file=secret-examples/DB_Host --from-file=secret-examples/DB_User --from-file=secret-examples/DB_Password 
     ```
 
 * command used for:&nbsp; `secret-examples/sample-secret2.yaml`
 
-    ```
+    ```shell
     kubectl create secret generic sample-secret2 --from-literal=DB_Host=postgres --from-literal=DB_User=guerrero --from-literal=DB_Password=pokemon
     ```
-
-
-<br>
