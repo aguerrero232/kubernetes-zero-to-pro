@@ -1,18 +1,20 @@
-# Kubernetes - ***Service Accounts***
+# **Kubernetes** `-` ***Service Accounts***
 
-* **kubernetes doc reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
 
-<br>
-
-When a pod is created it automatically links it to a service account. 
+**`kubernetes` documents reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
 
 <br>
 
-## Basic Commands
+When a `pod` is **created** it automatically links it to a `service account`. 
+
+<br>
+
+## ***Basic*** `Commands`
+
+<br>
+
 
 * create a new service account
+  ```shell
+  kubectl create serviceaccount <account-name>
   ```
-  kubectl create serviceaccount < account name >
-  ```
-
-*   

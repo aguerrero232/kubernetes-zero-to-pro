@@ -1,55 +1,47 @@
-# Kubernetes - ***ConfigMaps***
+# **Kubernetes** `-` ***ConfigMaps***
 
 <br>
 
-Just like everything else in kubernetes there are two ways to create a **ConfigMap**. You can either use the `kubectl` command or you can use a **ConfigMap** manifest file.
+Just like everything else in kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` manifest file.
 
-* example at: `yaml-examples/configmap-description.yaml`
+* example at `yaml-examples/configmap-description.yaml`
 
+To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of the **Pod** manifest file.
 
-To tie a **ConfigMap** to a **Pod** you can use the `envFrom` or `env` section of the **Pod** manifest file.
-
-* example at: `yaml-examples/configmap-pod.yaml`
-
+* example at `yaml-examples/configmap-pod.yaml`
 
 <br>
 
-___
+## ***Basic*** `Commands`
 
 <br>
 
-## **Basic Commands**
+* **create** a `ConfigMap` using the `kubectl` command,
 
-<br>
+    ```shell
+    kubectl create configmap <configmap-name> --from-literal=<key>=<value>
+    ```
 
-* to create a **ConfigMap** using the `kubectl` command, you can use the following command:
+* **create** a `ConfigMap` using a `manifest file`,
 
-```
-    kubectl create configmap <configmap name> --from-literal=<key>=<value>
-```
+    ```shell
+    kubectl create configmap <configmap-name> --from-file=<path-to-file>
+    ```
 
-* to create a **ConfigMap** using a `manifest file`, you can use the following command:
+* **get** a `ConfigMap`
 
-```
-    kubectl create configmap <configmap name> --from-file=<path to file>
-``` 
+    ```shell
+    kubectl get configmap <configmap-name>
+    ```
 
-* to get a **ConfigMap** you can use the following command:
+* **describe** a `ConfigMap`
 
-```
-    kubectl get configmap <configmap name>
-```
+    ```shell
+    kubectl describe configmap <configmap-name>
+    ```
 
-* to describe a **ConfigMap** you can use the following command:
+* **delete** a `ConfigMap`
 
-```
-    kubectl describe configmap <configmap name>
-```
-
-* to delete a **ConfigMap** you can use the following command:
-
-```
-    kubectl delete configmap <configmap name>
-```
-
-<br>
+    ```shell
+    kubectl delete configmap <configmap-name>
+    ```

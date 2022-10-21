@@ -1,36 +1,34 @@
-# Kubernetes - **Taints and Tolerations**
+# **Kubernetes** `-` ***Taints*** *and* ***Tolerations***
 
 `Taints` and `Tolerations` are features that allow you to control the placement of pods on nodes. Taints are applied to nodes, and tolerations are applied to pods.A `taint` on a `node` ***instructs*** the `node` to ***repel all*** `pods` that do not `tolerate` the `taint`.
 
-___
 
 <br >
 
-## **Basic Commands**
+## ***Basic*** `Commands`
 
-### ***Taints - Node***
+<br>
 
-* generic
+### ***Taints - `Node`***
 
+* **taint-effect**: &nbsp; `NoSchedule`, `PreferNoSchedule`, `NoExecute`
+
+* **generic**
   ```shell
   kubectl taint nodes <node-name> <key>=<value>:<taint-effect>
   ```
 
-  **taint-effect**: `NoSchedule`, `PreferNoSchedule`, `NoExecute`
-
-* example
-
+* **example**
   ```shell
   kubectl taint nodes node1 app=blue:NoSchedule
   ```
 
-* to see if taints exist on a node
-
+* to see *if `taints` exist* on a `node`
   ```shell
   kubectl describe node node01 | grep taint
   ```
 
-### ***Tolerations - Pod***
+### ***Tolerations - `Pod`***
 
 ```yaml
 spec:
@@ -41,43 +39,44 @@ spec:
       effect: NoSchedule
 ```
 
+<br />
 
-## Bee and Mosquito Example
+## ***Bee*** *and* ***Mosquito*** **Example**
 
-create node01
+<br />
 
-```yaml
-apiVersion: v1
-kind: Node
-metadata:
-  name: node01
-spec:
-```
+* create node01
 
-```yaml
-apiVersion: v1
-kind: Node
-metadata:
-  name: controlplane
-  # add a taint with key spray and value mortien and effect NoSchedule
-  taint: 
-    - key: spray
-      value: mortien
-      effect: NoSchedule
-spec:
+  ```yaml
+  apiVersion: v1
+  kind: Node
+  metadata:
+    name: node01
+  spec:
+  ```
 
-
-```
+  ```yaml
+  apiVersion: v1
+  kind: Node
+  metadata:
+    name: controlplane
+    # add a taint with key spray and value mortien and effect NoSchedule
+    taint: 
+      - key: spray
+        value: mortien
+        effect: NoSchedule
+  spec:
+  ```
 
 
 * apply taint
+  ```shell
+  kubectl taint nodes node01 spray=mortein:NoSchedule
+  ```
 
-kubectl taint nodes node01 spray=mortein:NoSchedule
+* **create** the *bee* and *mosquito* `pods` and **watch what happens**
+  * *bee* will be *scheduled* on *node01* and *mosquito* will not be *scheduled* on any `node`
 
-
-* create the bee and mosquito pods and watch what happens
-  * bee will be scheduled on node01 and mosquito will not be scheduled on any node
-
-* remove the taint on controlplane
-  * mosquito will be scheduled on controlplane
+* **remove** the taint on `controlplane`
+  * *mosquito* will be *scheduled* on `controlplane`
 

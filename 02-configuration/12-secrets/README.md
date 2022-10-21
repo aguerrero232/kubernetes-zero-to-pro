@@ -1,22 +1,22 @@
-# Kubernetes - ***Secrets***
+# **Kubernetes** `-` ***Secrets***
 
 <br>
 
-Secrets are used to store **sensitive information** such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as **base64 encoded strings**. Secrets can be create using the `kubectl` command or using a **Secret** manifest file.
+`Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` manifest file.
 
-* A secret is only sent to a node if a pod on that node requires it.
+* A `secret` is only sent to a `node` if a `pod` on that `node` requires it.
 
-* Kubelet stores the secret into a tmpfs so that the secret is not written to disk storage.
+* `Kubelet` stores the `secret` into a tmpfs so that the `secret` is *not written to disk storage*.
 
-* Once the Pod that depends on the secret is deleted, kubelet will delete its local copy of the secret data as well.
+* Once the `Pod` that depends on the `secret` is **deleted**, `kubelet` will **delete** its *local copy* of the secret data as well.
 
 <br>
 
-Secrets are not encrypted, so it is not safer in that sense. However, some best practices around using secrets make it safer. As in best practices like:
+`Secrets` are *not encrypted*, so it is ***not safer*** in that sense. However, s*ome best practices around* using `secrets` make it ***safer***. As in best practices like:
 
 * Not checking-in secret object definition files to source code repositories.
 
-* **[Enabling Encryption at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for Secrets so they are stored encrypted in ETCD. 
+* **[Enabling Encryption at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for Secrets so they are stored encrypted in `ETCD`. 
 
 <br>
 
@@ -26,58 +26,57 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-___
+
+## ***Basic*** `Commands`
 
 <br>
 
-## **Basic Commands**
 
-* to create **secrets** using the `kubectl` command, you can use the following command:
+* **create** **`secrets`** using the `kubectl` command
 
     ```
         kubectl create secret generic <secret name> --from-literal=<key>=<value>
     ```
 
-* to create **secrets** using a `manifest file`, you can use the following command:
+* **create** **`secrets`** using a `manifest file`
 
     ```
         kubectl create secret generic <secret name> --from-file=<path to file>
     ```
 
-* to get **secrets** you can use the following command:
+* **get** **`secrets`**
 
     ```
         kubectl get secret <secret name>
     ```
 
-* to get all **secrets** you can use the following command:
+* **get** all **`secrets`**
 
-    ```
+    ```shell
         kubectl get secrets
     ```
 
-* to describe **secrets** you can use the following command:
+* **describe** **`secrets`**
 
-    ```
+    ```shell
         kubectl describe secret <secret name>
     ```
-    * note that this method does not show the secret value
-
-* to view **secrets** and their values you can use the following command:
-
-    ```
-        kubectl get secret <secret name> -o yaml
-    ```
-
-* to delete **secrets** you can use the following command:
-
-    ```
-        kubectl delete secret <secret name>
-    ```
+    * note that this method ***does not show the secret value***
 
 <br>
 
-___ 
+* **view** **`secrets`** *and their values*
+
+    ```shell
+        kubectl get secret <secret-name> -o yaml
+    ```
+
+* **delete** **`secrets`**
+
+    ```shell
+        kubectl delete secret <secret-name>
+    ```
+
 
 <br>
 

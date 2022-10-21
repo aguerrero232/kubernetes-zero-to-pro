@@ -1,14 +1,10 @@
-# **Kubernetes** - ***Pods***
+# **Kubernetes** `-` ***Pods***
 
  a `pod` is a **single instance** of an application and is the **simplest object** you can create in `kubernetes`, usually have a 1:1 relationship with `containers`. `Pods` can have multiple `containers`, but they are usually `containers` of different types that are ***tightly*** coupled.
 
 <br>
 
-___
-
-<br>
-
-## ***Basic Commands***
+## ***Basic*** `Commands`
 
 <br>
 

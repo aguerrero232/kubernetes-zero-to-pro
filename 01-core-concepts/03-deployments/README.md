@@ -1,10 +1,6 @@
-# Kubernetes - ***Deployments***
+# **Kubernetes** `-` ***Deployments***
 
-Deployments are the preferred way to manage pods. They are a **higher level abstraction** than Replica Sets. They allow you to define the desired state of your application, and the controller will make sure that the current state matches the desired state. 
-
-<br>
-
-___
+`Deployments` are the preferred way to manage pods. They are a **higher level abstraction** than` Replica Sets`. They allow you to *define the desired state* of your application, and the `controller` will make sure that the current state matches the desired state. 
 
 <br>
 
@@ -12,70 +8,64 @@ ___
 
 <br>
 
-* Deployments allow you to **`update` your application without downtime**.
+* `Deployments` allow you to **`update` your application without downtime**.
 
 * There are **two methods** to `update` your application:
 
-  * **`Rolling Update`** - The new version of the application is deployed in stages. The old version is still running while the new version is being deployed. Once the new version is deployed, the old version is terminated.
+  * **`Rolling Update`** - The new version of the application is *deployed* in stages. The old version is still running while the new version is being *deployed*. Once the new version is *deployed*, the old version is *terminated*.
 
-  * **`Recreate`** - The old version of the application is terminated before the new version is deployed.
+  * **`Recreate`** - The old version of the application is terminated *before* the new version is *deployed*.
 
-
-* rollbacks are also possible. You can rollback to a previous version of your application.
-
-<br>
-
-___
+* `rollbacks` are also possible. You can `rollback` to a *previous version* of your application.
 
 <br>
 
-## ***Basic Commands***
+## ***Basic*** `Commands`
 
 <br>
 
-* create a new deployment
+* **create** a new deployment
 
-    ``` 
-    kubectl create -f <yaml file>
-    ```
+```shell
+kubectl create -f <yaml-file>
+```
 
-* update a deployment (```rolling update```)
+* **update** a `deployment` &nbsp; (`rolling update`)
 
-    ```
-    kubectl apply -f <yaml file>
-    ```
+```shell
+kubectl apply -f <yaml-file>
+```
 
-    ```
-    kubectl set image deployment/<deployment name> <new image>
-    ```
+```shell
+kubectl set image deployment/<deployment-name> <new-image>
+```
 
-* get list of deployments
+* **get** list of `deployments`
 
-    ```
-    kubectl get deployments
-    ```
+```shell
+kubectl get deployments
+```
 
-* get descriptive information on the desired deployment
+* **get** *descriptive information* on the desired `deployment`
 
-    ```
-    kubectl describe deployment <deployment name>
-    ```
+```shell
+kubectl describe deployment <deployment-name>
+```
 
-* get the rollout status of the deployment
+* **get** the *rollout status* of the `deployment`
 
-    ```
-    kubectl rollout status deployment/<deployment name>
-    ```
+```shell
+kubectl rollout status deployment/<deployment-name>
+```
 
-* get the rollout history of the deployment
+* **get** the *rollout history* of the `deployment`
 
-    ```
-    kubectl rollout history deployment/<deployment name>
-    ```
+```shell
+kubectl rollout history deployment/<deployment-name>
+```
 
+* **rollback** to a *previous version* of the `deployment`
 
-* rollback to a previous version of the deployment
-
-    ```
-    kubectl rollout undo deployment/<deployment name>
-    ```
+```shell
+kubectl rollout undo deployment/<deployment-name>
+```
