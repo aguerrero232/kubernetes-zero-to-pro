@@ -1,0 +1,138 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2022-10-21T02:40:11Z"
+  name: orange
+  namespace: default
+  resourceVersion: "1288"
+  uid: 03bea95f-2d84-49a8-9fd2-5a7f50558306
+spec:
+  containers:
+    - command:
+        - sh
+        - -c
+        - echo The app is running! && sleep 3600
+      image: busybox:1.28
+      imagePullPolicy: IfNotPresent
+      name: orange-container
+      resources: {}
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+        - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+          name: kube-api-access-2csk4
+          readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  initContainers:
+    - command:
+        - sh
+        - -c
+        - sleep 2
+      image: busybox
+      imagePullPolicy: Always
+      name: init-myservice
+      resources: {}
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+        - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+          name: kube-api-access-2csk4
+          readOnly: true
+  nodeName: controlplane
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+  volumes:
+    - name: kube-api-access-2csk4
+      projected:
+        defaultMode: 420
+        sources:
+          - serviceAccountToken:
+              expirationSeconds: 3607
+              path: token
+          - configMap:
+              items:
+                - key: ca.crt
+                  path: ca.crt
+              name: kube-root-ca.crt
+          - downwardAPI:
+              items:
+                - fieldRef:
+                    apiVersion: v1
+                    fieldPath: metadata.namespace
+                  path: namespace
+status:
+  conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2022-10-21T02:40:11Z"
+      message: "containers with incomplete status: [init-myservice]"
+      reason: ContainersNotInitialized
+      status: "False"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2022-10-21T02:40:11Z"
+      message: "containers with unready status: [orange-container]"
+      reason: ContainersNotReady
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2022-10-21T02:40:11Z"
+      message: "containers with unready status: [orange-container]"
+      reason: ContainersNotReady
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2022-10-21T02:40:11Z"
+      status: "True"
+      type: PodScheduled
+  containerStatuses:
+    - image: busybox:1.28
+      imageID: ""
+      lastState: {}
+      name: orange-container
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        waiting:
+          reason: PodInitializing
+  hostIP: 172.25.1.64
+  initContainerStatuses:
+    - containerID: containerd://1de67c1b43a39699e7651347ce0763bdc4e5436643f4e46e8c21d104615af5ad
+      image: docker.io/library/busybox:latest
+      imageID: docker.io/library/busybox@sha256:9810966b5f712084ea05bf28fc8ba2c8fb110baa2531a10e2da52c1efc504698
+      lastState:
+        terminated:
+          containerID: containerd://1de67c1b43a39699e7651347ce0763bdc4e5436643f4e46e8c21d104615af5ad
+          exitCode: 127
+          finishedAt: "2022-10-21T02:45:57Z"
+          reason: Error
+          startedAt: "2022-10-21T02:45:57Z"
+      name: init-myservice
+      ready: false
+      restartCount: 6
+      state:
+        waiting:
+          message: back-off 5m0s restarting failed container=init-myservice pod=orange_default(03bea95f-2d84-49a8-9fd2-5a7f50558306)
+          reason: CrashLoopBackOff
+  phase: Pending
+  podIP: 10.42.0.15
+  podIPs:
+    - ip: 10.42.0.15
+  qosClass: BestEffort
+  startTime: "2022-10-21T02:40:11Z"

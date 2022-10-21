@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: red
+spec:
+  containers:
+    - command:
+        - sh
+        - -c
+        - echo The app is running! && sleep 3600
+      image: busybox:1.28
+      name: red-container-bb
+  initContainers:
+    - name: red-init-bb
+      image: busybox
+      command:
+        - "sleep"
+        - "20"
+  restartPolicy: Always
