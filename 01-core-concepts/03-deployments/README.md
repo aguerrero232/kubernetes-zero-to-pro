@@ -26,46 +26,58 @@
 
 * **create** a new deployment
 
-```shell
-kubectl create -f <yaml-file>
-```
+  ```shell
+  kubectl create -f <yaml-file>
+  ```
 
 * **update** a `deployment` &nbsp; (`rolling update`)
 
-```shell
-kubectl apply -f <yaml-file>
-```
+  ```shell
+  kubectl apply -f <yaml-file>
+  ```
 
-```shell
-kubectl set image deployment/<deployment-name> <new-image>
-```
+  ```shell
+  kubectl set image deployment/<deployment-name> <new-image>
+  ```
 
 * **get** list of `deployments`
 
-```shell
-kubectl get deployments
-```
+  ```shell
+  kubectl get deployments
+  ```
 
 * **get** *descriptive information* on the desired `deployment`
 
-```shell
-kubectl describe deployment <deployment-name>
-```
+  ```shell
+  kubectl describe deployment <deployment-name>
+  ```
 
 * **get** the *rollout status* of the `deployment`
 
-```shell
-kubectl rollout status deployment/<deployment-name>
-```
+  ```shell
+  kubectl rollout status deployment/<deployment-name>
+  ```
 
 * **get** the *rollout history* of the `deployment`
 
-```shell
-kubectl rollout history deployment/<deployment-name>
-```
+  ```shell
+  kubectl rollout history deployment/<deployment-name>
+  ```
 
 * **rollback** to a *previous version* of the `deployment`
 
-```shell
-kubectl rollout undo deployment/<deployment-name>
-```
+  ```shell
+  kubectl rollout undo deployment/<deployment-name>
+  ```
+
+* ***using*** the *revision flag*, `--to-revision`, you can *specify* the `revision number` to **rollback** to.
+
+  ```shell
+  kubectl rollout undo deployment/<deployment-name> --to-revision=<revision-number>
+  ```
+
+* **view** `deployment` at a specific `revision`
+
+  ```shell
+  kubectl rollout history deployment/<deployment-name> --revision=<revision-number>
+  ```
