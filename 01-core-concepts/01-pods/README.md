@@ -45,7 +45,7 @@ ___
 - **create** a `pod`
   
   ```shell
-  kubectl run <pod-name> --image=<image name>
+  kubectl run <pod-name> --image=<image-name>
   ```
 
 - **edit** a `pod`
@@ -54,7 +54,8 @@ ___
   kubectl edit pod <pod-name>
   ```
 
-  - If you are *not* given a `pod` definition file, you may **extract** the definition to a file using the below command, then **edit** the file to make the *necessary changes*, **delete** and **re-create** the `pod`.
+- If you are *not* given a `pod` definition file, you may **extract** the definition to a file using the below command, then **edit** the file to make the *necessary changes*, **delete** and **re-create** the `pod`.
+
 
   ```shell
   kubectl get pod <pod-name> -o yaml > pod-definition.yaml
@@ -74,7 +75,7 @@ ___
 
 <br>
 
-## **Define** ***Enviroment Variables*** *For A* `Container`
+## **Define** ***Environment Variables*** *For A* `Container`
 
 <br />
 
