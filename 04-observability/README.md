@@ -1,2 +1,2 @@
-# **Kubernetes** `-` ***Section 4:*** `Observability`
+# **Kubernetes** - ***Section 4:*** `Observability`
 

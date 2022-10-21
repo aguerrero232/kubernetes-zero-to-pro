@@ -1,4 +1,4 @@
-# **Kubernetes** `-` ***Cloud***
+# **Kubernetes** - ***Cloud***
 
 <br>
 

@@ -1,4 +1,4 @@
-# **Kubernetes** `-` ***ConfigMaps***
+# **Kubernetes** - ***ConfigMaps***
 
 <br>
 

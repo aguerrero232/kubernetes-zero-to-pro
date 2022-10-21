@@ -1,4 +1,4 @@
-# **Kubernetes** `-` ***Node Selectors*** *and* ***Affinity***
+# **Kubernetes** - ***Node Selectors*** *and* ***Affinity***
 
 
 You have **different** types of `workloads` running on your `cluster`, and you want to make sure that the **right** `workloads` are running on the **right** `nodes`. For example, you might want to run a set of `pods` on a high CPU `node`, and run another set of `pods` on a low CPU `node`. You can use `node` selectors to make sure that the **right** `pods` are running on the **right** `nodes`.

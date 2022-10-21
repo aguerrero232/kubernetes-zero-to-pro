@@ -1,4 +1,4 @@
-# **Kubernetes** `-` ***Namespaces***
+# **Kubernetes** - ***Namespaces***
 
 `Namespaces` provides a mechanism for isolating groups of resources within a single cluster.
 
