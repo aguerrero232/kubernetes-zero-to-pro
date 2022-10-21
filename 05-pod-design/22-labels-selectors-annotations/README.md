@@ -1,0 +1,21 @@
+# **Kubernetes** - ***Labels***, ***Selectors***, *and* ***Annotations***
+
+**Filter** and *group* `pods` using `labels` and `selectors`. `Annotations` are used to add *metadata* to `pods`.
+
+<br />
+
+## **Basic** `Commands`
+
+<br />
+
+* **select** `pods` with label
+
+    ```shell
+    kubectl get pods --selector <label-name>=<label-value>
+    ```
+
+* **select** all with label
+
+    ```shell
+    kubectl get all --selector <label-name>=<label-value>,<label-name>=<label-value>
+    ```
