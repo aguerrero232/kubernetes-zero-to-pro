@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: readiness-probe
+spec:
+  containers:
+    - name: readiness-probe
+      image: nginx
+  readinessProbe:
+    httpGet:
+      path: /index.html
+      port: 80
+
+    # for tcp
+    # tcpSocket:
+    #   port: 80
+
+    # for exec
+    # exec:
+    #   command:
+    #     - cat
+    #     - /tmp/healthy
+
+    initialDelaySeconds: 5
+    periodSeconds: 5
