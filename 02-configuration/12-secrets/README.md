@@ -21,11 +21,9 @@
 <br>
 
 
-
 Read about the protections and risks of using secrets **[here](https://kubernetes.io/docs/concepts/configuration/secret/#protections)**.
 
 <br>
-
 
 ## ***Basic*** `Commands`
 
@@ -35,7 +33,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 * **create** **`secrets`** using the `kubectl` command
 
     ```
-        kubectl create secret generic <secret name> --from-literal=<key>=<value>
+    kubectl create secret generic <secret name> --from-literal=<key>=<value>
     ```
 
 * **create** **`secrets`** using a `manifest file`
