@@ -28,7 +28,7 @@
 <br/>
 
 * The **`Control Plane`** is responsible for *managing the cluster*.
-  * Components:
+  * **Components**
     * `kube-apiserver` - Exposes the `Kubernetes API`
     * `etcd` - *Consistent and highly-available key value store* used as Kubernetes' backing store for all cluster data.
     * `kube-scheduler` - Watches for newly created `Pods` with no assigned `node`, and selects a `node` for them to run on.
@@ -47,7 +47,7 @@
 * A `Node` is a `VM` or a *physical computer* that serves as a *worker machine* in a `Kubernetes` cluster.
   * The `nodes` communicate with the control plane using the `Kubernetes API`
 
-  * Components
+  * **Components**
     * `kubelet` - An agent that runs on each node in the cluster. It makes sure that `containers` are running in a `Pod`.
       * `kube-proxy` - Network proxy that runs on each `node` in your cluster, implementing part of the *`Kubernetes` Service concept*.
     * `Container runtime` - **Software** that is *responsible for running* `containers`.
@@ -63,13 +63,13 @@
 
   * Check the status of minikube
 
-    ```
+    ```bash
     minikube status
     ```
 
   * *start* `minikube`
 
-    ```
+    ```bash
     minikube start
     ```
 
@@ -111,7 +111,9 @@
 
 <br>
 
-# YAML
+# ***YAML***
+
+<br />
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
 
@@ -132,14 +134,14 @@
 
   ```yaml
   Fruits:
-  - Orange
-  - Apple
-  - Banana
+    - Orange
+    - Apple
+    - Banana
 
   Vegetables:
-  - Carrot 
-  - Cauliflower
-  - Tomato
+    - Carrot 
+    - Cauliflower
+    - Tomato
   ```
 
 * Dictionary/Map
@@ -160,15 +162,15 @@
 
   ```yaml
   Fruits:
-      - Banana:
-          Calories: 105
-          Fat: 0.4g
-          Carbs: 27g
+    - Banana:
+        Calories: 105
+        Fat: 0.4g
+        Carbs: 27g
 
-      - Grapes:
-          Calories: 62
-          Fat: 0.3g
-          Carbs: 16g
+    - Grapes:
+        Calories: 62
+        Fat: 0.3g
+        Carbs: 16g
   ```
 
 ***Notice the alignment, this is important in yaml.***
