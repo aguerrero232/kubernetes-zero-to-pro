@@ -28,7 +28,9 @@
 <br/>
 
 * The **`Control Plane`** is responsible for *managing the cluster*.
+
   * **Components**
+
     * `kube-apiserver` - Exposes the `Kubernetes API`
     * `etcd` - *Consistent and highly-available key value store* used as Kubernetes' backing store for all cluster data.
     * `kube-scheduler` - Watches for newly created `Pods` with no assigned `node`, and selects a `node` for them to run on.
@@ -54,30 +56,29 @@
 
 <br>
 
-
 ## ***Basic*** `Commands`
 
 <br>
 
-* ## `minikube` **commands**
+## `minikube` **commands**
 
-  * Check the status of minikube
+* Check the status of minikube
 
-    ```bash
-    minikube status
-    ```
+  ```bash
+  minikube status
+  ```
 
-  * *start* `minikube`
+* *start* `minikube`
 
-    ```bash
-    minikube start
-    ```
+  ```bash
+  minikube start
+  ```
 
-  * **stop** `minikube`
+* **stop** `minikube`
 
-    ```bash
-    minikube stop
-    ```
+  ```bash
+  minikube stop
+  ```
 
 <br>
 
@@ -85,13 +86,13 @@
 
 <br>
 
-  * **check** version of `kubernetes` being used
+* **check** version of `kubernetes` being used
 
   ```bash
   kubectl version
   ```
 
-  * **get** *everything*
+* **get** *everything*
 
   ```bash
   kubectl get all
@@ -103,7 +104,7 @@
 
 <br>
 
-  * **view** the flavor and **version** of `OS`
+* **view** the flavor and **version** of `OS`
 
   ```bash
   cat /etc/os-release
@@ -120,6 +121,8 @@
 <br>
 
 ## **Examples** *of* `Yaml`
+
+<br />
 
 * Key Value Pairs
 
@@ -186,7 +189,6 @@
 * `YAML` is case sensitive
 * Comments are created using the # symbol
 
-
 <br>
 
 # **Docker**
@@ -198,7 +200,6 @@
 **Examples**
 
 <br>
-
 
 * generic DOCKERFILE template
 
