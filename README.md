@@ -1,4 +1,4 @@
-# ⚓ Kubernetes Zero To Pro ✨
+# Kubernetes Zero To Pro ✨
 
 <br>
 
@@ -112,7 +112,8 @@
 
 <br>
 
-# ***YAML***
+# ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
+
 
 <br />
 
@@ -250,7 +251,7 @@
 
 <br>
 
-## ***Docker*** `Security`
+## ***Docker*** `Security` 🔒
 
 <br>
 
