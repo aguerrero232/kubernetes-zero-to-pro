@@ -18,30 +18,30 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
 
 * **create** a `ConfigMap` using the `kubectl` command,
 
-    ```shell
+    ```bash
     kubectl create configmap <configmap-name> --from-literal=<key>=<value>
     ```
 
 * **create** a `ConfigMap` using a `manifest file`,
 
-    ```shell
+    ```bash
     kubectl create configmap <configmap-name> --from-file=<path-to-file>
     ```
 
 * **get** a `ConfigMap`
 
-    ```shell
+    ```bash
     kubectl get configmap <configmap-name>
     ```
 
 * **describe** a `ConfigMap`
 
-    ```shell
+    ```bash
     kubectl describe configmap <configmap-name>
     ```
 
 * **delete** a `ConfigMap`
 
-    ```shell
+    ```bash
     kubectl delete configmap <configmap-name>
     ```

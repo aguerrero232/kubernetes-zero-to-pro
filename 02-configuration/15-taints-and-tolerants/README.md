@@ -14,17 +14,17 @@
 * **taint-effect**: &nbsp; `NoSchedule`, `PreferNoSchedule`, `NoExecute`
 
 * **generic**
-  ```shell
+  ```bash
   kubectl taint nodes <node-name> <key>=<value>:<taint-effect>
   ```
 
 * **example**
-  ```shell
+  ```bash
   kubectl taint nodes node1 app=blue:NoSchedule
   ```
 
 * to see *if `taints` exist* on a `node`
-  ```shell
+  ```bash
   kubectl describe node node01 | grep taint
   ```
 
@@ -70,7 +70,7 @@ spec:
 
 
 * apply taint
-  ```shell
+  ```bash
   kubectl taint nodes node01 spray=mortein:NoSchedule
   ```
 

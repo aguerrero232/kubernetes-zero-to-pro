@@ -10,62 +10,62 @@ a `pod` is a **single instance** of an application and is the **simplest object*
 
 - **get** *minimal* info about `pods` on cluster
 
-  ```shell
+  ```bash
   kubectl get pods
   ```
 
 - **get** *more* info about a `pod`
 
-  ```shell
+  ```bash
   kubectl get pods -o wide
   ```
 
 - **get** *even more* information about a `pod`
 
-  ```shell
+  ```bash
   kubectl describe pod <pod-name>
   ```
 
 - **get** `pod` in `yaml` format
 
-  ```shell
+  ```bash
   kubectl get pod <pod-name> -o yaml
   ```
 
 - **enter** a `pod`
 
-    ```shell
+    ```bash
     kubectl exec -it <pod-name> -- /bin/bash
     ```
 
 - **create** a `pod`
   
-  ```shell
+  ```bash
   kubectl run <pod-name> --image=<image-name>
   ```
 
 - **edit** a `pod`
 
-  ```shell
+  ```bash
   kubectl edit pod <pod-name>
   ```
 
 - If you are *not* given a `pod` definition file, you may **extract** the definition to a file using the below command, then **edit** the file to make the *necessary changes*, **delete** and **re-create** the `pod`.
 
 
-  ```shell
+  ```bash
   kubectl get pod <pod-name> -o yaml > pod-definition.yaml
   ```
 
 - **delete** a `pod`
 
-  ```shell
+  ```bash
   kubectl delete pod <pod-name>
   ```
 
 - **view** the *containers user* in a `pod`
 
-    ```shell
+    ```bash
     kubectl exec <pod-name> -- whoami
     ```
 

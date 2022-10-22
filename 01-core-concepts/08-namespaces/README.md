@@ -14,24 +14,24 @@
 
 * **list** *current* `namespaces`
 
-```shell
+```bash
 kubectl get namespace
 ```
 
 * **create** a `namespace`
 
-```shell
+```bash
 kubectl create namespace <namespace-name>
 ```
 
 * **delete** a `namespace`
 
-```shell
+```bash
 kubectl delete namespace <namespace-name>
 ```
 
 * **get** *all resources in* a `namespace`
 
-```shell
+```bash
 kubectl get all --namespace <namespace-name>
 ```

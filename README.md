@@ -75,7 +75,7 @@
 
   * **stop** `minikube`
 
-    ```shell
+    ```bash
     minikube stop
     ```
 
@@ -87,13 +87,13 @@
 
   * **check** version of `kubernetes` being used
 
-  ```shell
+  ```bash
   kubectl version
   ```
 
   * **get** *everything*
 
-  ```shell
+  ```bash
   kubectl get all
   ```
 
@@ -105,7 +105,7 @@
 
   * **view** the flavor and **version** of `OS`
 
-  ```shell
+  ```bash
   cat /etc/os-release
   ```
 
@@ -253,7 +253,7 @@
 
 * to run docker as a non-root user
 
-  ```shell
+  ```bash
   docker run --user=<user id> <image>
   ```
 

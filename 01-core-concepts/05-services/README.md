@@ -31,24 +31,24 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
 
 * **create** a `service`
 
-```shell
+```bash
 kubectl create -f  <yaml-file>
 ```
 
 * **get** list of `services`
 
-```shell
+```bash
 kubectl get services
 ```
 
 * **get** *descriptive information* on the desired `service`
 
-```shell
+```bash
 kubectl describe service <service-name>
 ```
 
 * **access** `service` *in browser running* on `minikube`
 
-```shell
+```bash
 minikube service <service-name> --url
 ```

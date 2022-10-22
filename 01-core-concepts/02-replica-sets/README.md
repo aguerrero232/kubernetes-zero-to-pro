@@ -23,40 +23,40 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 * **create** a `replica set`
 
-```shell
+```bash
 kubectl create -f <yaml-file>
 ```
 
 * **get** list of `replica sets`
 
-```shell
+```bash
 kubectl get replicaset
 ```
 
 * **get** *descriptive information* on the desired `replica set`
 
-```shell
+```bash
 kubectl describe replicaset <replica-set-name>
 ```
 
 * **edit** the specified `replica set`
 
-```shell
+```bash
 kubectl edit replicaset <replica-set-name>
 ```
 
 * **scale** `replica set` to the *desired number* of `replicas`
 
-```shell
+```bash
 kubectl replace -f <edited-yaml-file>
 ```
 
-```shell
+```bash
 kubectl scale --replicas=<new-number-of-replicas> -f <yaml-file>
 ```
 
 * **delete** specified `replica set`
 
-```shell
+```bash
 kubectl delete replicaset <replica-set-name>
 ```

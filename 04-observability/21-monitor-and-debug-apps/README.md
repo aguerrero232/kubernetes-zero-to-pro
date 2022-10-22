@@ -8,17 +8,17 @@ The `metrics server` is a *cluster-wide aggregator* of resource usage **data**. 
 
 * `minikube` **install**
 
-    ```shell
+    ```bash
     minikube addons enable metrics-server
     ```
 
 * **other**
 
-    ```shell
+    ```bash
     git clone https://github.com/kubernetes-incubator/metrics-serve
     ```
 
-    ```shell
+    ```bash
     kubectl create -f deploy/1.8+/
     ```
 
@@ -29,73 +29,73 @@ The `metrics server` is a *cluster-wide aggregator* of resource usage **data**. 
 
 * **view** the *metrics* for the *top performing* `nodes`
 
-    ```shell
+    ```bash
     kubectl top nodes
     ```
 
 * **view** the *metrics* for the *top performing* `nodes` in a `namespace`
 
-    ```shell
+    ```bash
     kubectl top nodes -n <namespace>
     ```
 
 * **view** the `node` that *consumes the most* memory
 
-    ```shell
+    ```bash
     kubectl top node --sort-by='memory' --no-headers | head -1 
     ```
 
 * **view** the `node` that *consumes the least* ***memory***
 
-    ```shell
+    ```bash
     kubectl top node --sort-by='memory' --no-headers | tail -1
     ```
 
 * **view** the `node` that *consumes the most* ***cpu***
 
-    ```shell
+    ```bash
     kubectl top node --sort-by='cpu' --no-headers | head -1 
     ```
 
 * **view** the `node` that *consumes the most* ***cpu***
 
-    ```shell
+    ```bash
     kubectl top node --sort-by='cpu' --no-headers | tail -1 
     ```
 
 
 * **view** the *metrics* for the *top performing* `pods`
 
-    ```shell
+    ```bash
     kubectl top pods
     ```
 
 * **view** the *metrics* for the *top performing* `pods` in a `namespace`
 
-    ```shell
+    ```bash
     kubectl top pods -n <namespace>
     ```
 
 * **view** the `pod` that *consumes the most* ***memory***
 
-    ```shell
+    ```bash
     kubectl top pod --sort-by='memory' --no-headers | head -1 
     ```
 
 * **view** the `pod` that *consumes the least* ***memory***
 
-    ```shell
+    ```bash
     kubectl top pod --sort-by='memory' --no-headers | tail -1
     ```
 
 * **view** the `pod` that *consumes the most* ***cpu***
 
-    ```shell
+    ```bash
     kubectl top pod --sort-by='cpu' --no-headers | head -1 
     ```
 
 * **view** the `pod` that *consumes the most* ***cpu***
 
-    ```shell
+    ```bash
     kubectl top pod --sort-by='cpu' --no-headers | tail -1 
     ```

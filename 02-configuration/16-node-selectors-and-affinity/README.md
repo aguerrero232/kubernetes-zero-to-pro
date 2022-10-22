@@ -25,6 +25,6 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 * to label a `node`
 
-```shell
+```bash
 kubectl label nodes <node-name> <label-key>=<label-value>
 ```

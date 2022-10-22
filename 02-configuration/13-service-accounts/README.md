@@ -15,6 +15,6 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 
 * create a new service account
-  ```shell
+  ```bash
   kubectl create serviceaccount <account-name>
   ```

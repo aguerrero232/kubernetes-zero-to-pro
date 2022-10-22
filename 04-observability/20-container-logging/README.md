@@ -9,12 +9,12 @@
 * **view** `logs` for a `pod`
   * `-f`: follow the `logs` as they are written, *simmilar to docker*
 
-    ```shell
+    ```bash
     kubectl logs -f <pod-name>
     ```
 
 * if there are multiple `containers` in the `pod`, you must specify the `container` name
 
-  ```shell
+  ```bash
   kubectl logs -f <pod-name> -c <container-name>
   ```
