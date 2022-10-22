@@ -13,6 +13,18 @@
 
   * Keep the code - **DEVOPS15** - handy while registering for the **CKA** or **CKAD** exams at *Linux Foundation* to get a **15% discount**.
 
+
+<br />
+
+## ***Table*** *of* ***`Contents`*** 📚
+
+* [***resources***](00-resources/README.md) 🗃️
+* [***core concepts***](01-core-concepts/README.md) 🧠
+* [***configuration***](02-configuration/README.md) ⚙️
+* [***multi-container pods***](03-multi-container-pods/README.md) 🐳<sup>🐳<sup>🐳</sup></sup>
+* [***observability***](04-observability/README.md) 🔬
+* [***pod design***](05-pod-design/README.md) 💠
+
 <br>
 
 ## ***Kubernetes*** `Architecture` 🏗️
