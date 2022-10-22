@@ -29,13 +29,13 @@
             # spec for the pod that will be created
             spec:
                 containers:
-                - name: math-add
+                  - name: math-add
                     image: ubuntu
                     command: ["expr", "77", "+", "5"]
                 restartPolicy: Never
     ```
 
-* `CronJob` for the example used in the [`Jobs`](/05-pod-design/23-jobs/README.md) section to run every 21 hours 30 minutes everyday
+* `CronJob` for the **example** used in the [`Jobs`](/05-pod-design/23-jobs/README.md) section to run at **21 hours 30 minutes everyday**
 
     ```yaml
     apiVersion: batch/v1beta1
@@ -46,14 +46,14 @@
     schedule: "30 21 * * *"
     jobTemplate:
         spec:
-        completions: 3
-        parallelism: 3
-        template:
-            metadata:
-            name: throw-dice-pod
-            spec:
-            containers:
-            -  image: kodekloud/throw-dice
-                name: throw-dice
-            restartPolicy: Never
+            completions: 3
+            parallelism: 3
+            template:
+                metadata:
+                    name: throw-dice-pod
+                spec:
+                    containers:
+                      - image: kodekloud/throw-dice
+                        name: throw-dice
+                    restartPolicy: Never
     ```
