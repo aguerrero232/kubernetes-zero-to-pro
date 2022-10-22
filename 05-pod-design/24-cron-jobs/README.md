@@ -14,7 +14,7 @@
 * basic `CronJob` definition:
 
     ```yaml
-    apiVersion: batch/v1beta1
+    apiVersion: batch/v1
     kind: CronJob
     metadata:
         name: math-add-cronjob
@@ -38,7 +38,7 @@
 * `CronJob` for the **example** used in the [`Jobs`](/05-pod-design/23-jobs/README.md) section to run at **21 hours 30 minutes everyday**
 
     ```yaml
-    apiVersion: batch/v1beta1
+    apiVersion: batch/v1
     kind: CronJob
     metadata:
         name: throw-dice-cron-job
