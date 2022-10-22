@@ -12,6 +12,6 @@
 
 **Tools** for `Observability`:
 
-* `readines` and `liveness` probes
+* `readiness` and `liveness` probes
 * container `logging`
 * `metrics-server`  
