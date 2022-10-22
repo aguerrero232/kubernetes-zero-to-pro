@@ -1,4 +1,4 @@
-# **Kubernetes** - **Replication Controllers** *and* ***Replica Sets***
+# **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
 
 `Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage `pods`!
 
@@ -17,7 +17,7 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 <br />
 
-## ***Basic*** `Commands`
+## ***Basic*** `Commands` 📝
 
 <br />
 

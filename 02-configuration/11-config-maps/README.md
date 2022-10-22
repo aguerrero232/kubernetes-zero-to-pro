@@ -12,7 +12,7 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
 
 <br>
 
-## ***Basic*** `Commands`
+## ***Basic*** `Commands` 📝
 
 <br>
 

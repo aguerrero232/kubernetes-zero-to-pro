@@ -9,7 +9,7 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 <br>
 
-## ***Basic*** `Commands`
+## ***Basic*** `Commands` 📝
 
 <br>
 

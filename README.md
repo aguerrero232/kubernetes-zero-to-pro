@@ -1,8 +1,8 @@
-# Kubernetes Zero To Pro
+# Kubernetes Zero To Pro ✨
 
 <br>
 
-## **Valuable** `Links`
+## **Valuable** `Links` 🔗
 
 * ***[kubernetes concepts](https://kubernetes.io/docs/concepts/)***
 
@@ -15,7 +15,7 @@
 
 <br>
 
-## ***Kubernetes*** `Architecture`
+## ***Kubernetes*** `Architecture` 🏗️
 
 <br>
 
@@ -56,7 +56,7 @@
 
 <br>
 
-## ***Basic*** `Commands`
+## ***Basic*** `Commands` 📝
 
 <br>
 
@@ -191,7 +191,7 @@
 
 <br>
 
-# **Docker**
+# **Docker** 🐳
 
 ## ***Docker*** `Commands` *and* `Arguments`
 
