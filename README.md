@@ -72,7 +72,7 @@
 
 <br>
 
-## `minikube` **commands**
+## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
 
 * Check the status of minikube
 
@@ -94,7 +94,7 @@
 
 <br>
 
-## `kubectl` **commands**
+## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
 
 <br>
 
@@ -112,7 +112,7 @@
 
 <br>
 
-## `usefull` **commands**
+## `usefull` **commands** ⚡
 
 <br>
 
