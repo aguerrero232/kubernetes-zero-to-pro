@@ -1,8 +1,8 @@
-# **Kubernetes** - ***Cloud***
+# **Kubernetes** - ***Cloud*** ☁️
 
 <br>
 
-## **Types** *of* ***Cloud Solutions*** *for* `Kubernetes`
+## **Types** *of* ***Cloud Solutions*** *for* `Kubernetes` 🌩️
 
 <br>
 

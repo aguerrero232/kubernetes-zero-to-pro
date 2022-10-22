@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Imperative Commands***
+# **Kubernetes** - ***Imperative Commands*** 🧙
 
 `Imperative commands` can help in getting one time tasks done quickly, as well as ***generate a definition template easily***.
 
@@ -45,7 +45,7 @@ use *in combination* to ***generate a resource definition file quickly***, that 
     kubectl expose <object-type> <object-name> --port=<port> --name <service-name> --dry-run=client -o yaml
     ```
 
-# **Examples**
+## **Examples** 📚
 
 <br />
 
@@ -71,18 +71,18 @@ use *in combination* to ***generate a resource definition file quickly***, that 
     apiVersion: v1
     kind: Pod
     metadata:
-    creationTimestamp: null
-    labels:
-        tier: db
-    name: redis
-    spec:
-    containers:
-    - image: redis:alpine
+        creationTimestamp: null
+        labels:
+            tier: db
         name: redis
-        resources: {}
-    dnsPolicy: ClusterFirst
-    restartPolicy: Always
-    status: {}
+    spec:
+        containers:
+          - image: redis:alpine
+            name: redis
+            resources: {}
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        status: {}
     ```
 
 * **create** a `service` *redis-service* to expose the *redis* application within the cluster on *port 6379*

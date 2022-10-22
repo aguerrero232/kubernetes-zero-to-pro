@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Networking***
+# **Kubernetes** - ***Networking*** 🖧
 
 A `node` has an **IP address** that is used to communicate with other `nodes` in the cluster. If you are using `minikube` you can get the **IP address** of the `node` by running ```minikube ip```. When `kubernetes` is configured **IP addresses** are assigned to `pods`. `Pods` can *communicate with each other* using their **IP addresses**.
   
