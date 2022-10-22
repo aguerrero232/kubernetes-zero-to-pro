@@ -72,7 +72,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     apiVersion: batch/v1
     kind: Job
     metadata:
-    name: math-add-job
+        name: math-add-job
     spec:
         completions: 3
         # to run jobs in parallel set parallelism to a number greater than 1
@@ -96,7 +96,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     apiVersion: batch/v1
     kind: Job
     metadata:
-    name: throw-dice-job
+        name: throw-dice-job
     spec:
         completions: 1
         template:
@@ -115,7 +115,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     apiVersion: batch/v1
     kind: Job
     metadata:
-    name: throw-dice-job
+        name: throw-dice-job
     spec:
         completions: 1
         template:
@@ -135,7 +135,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     apiVersion: batch/v1
     kind: Job
     metadata:
-    name: throw-dice-job
+        name: throw-dice-job
     spec:
         completions: 3
         template:
@@ -171,7 +171,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     apiVersion: batch/v1
     kind: Job
     metadata:
-    name: throw-dice-job
+        name: throw-dice-job
     spec:
         completions: 3
         parallelism: 3
@@ -196,4 +196,3 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     throw-dice-job-vjcjw   0/1     Error       0          59s
     throw-dice-job-zfhq6   0/1     Error       0          55s
     ```
-

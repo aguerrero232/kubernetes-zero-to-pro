@@ -23,16 +23,16 @@
         # schedule is a cron expression, in this case it will run every minute
         schedule: "*/1 * * * *"
         jobTemplate:
-        # spec for the job that will be created
-        spec:
-            template:
-            # spec for the pod that will be created
+            # spec for the job that will be created
             spec:
-                containers:
-                  - name: math-add
-                    image: ubuntu
-                    command: ["expr", "77", "+", "5"]
-                restartPolicy: Never
+                template:
+                # spec for the pod that will be created
+                spec:
+                    containers:
+                    - name: math-add
+                        image: ubuntu
+                        command: ["expr", "77", "+", "5"]
+                    restartPolicy: Never
     ```
 
 * `CronJob` for the **example** used in the [`Jobs`](/05-pod-design/23-jobs/README.md) section to run at **21 hours 30 minutes everyday**
@@ -41,19 +41,19 @@
     apiVersion: batch/v1beta1
     kind: CronJob
     metadata:
-    name: throw-dice-cron-job
+        name: throw-dice-cron-job
     spec:
-    schedule: "30 21 * * *"
-    jobTemplate:
-        spec:
-            completions: 3
-            parallelism: 3
-            template:
-                metadata:
-                    name: throw-dice-pod
-                spec:
-                    containers:
-                      - image: kodekloud/throw-dice
-                        name: throw-dice
-                    restartPolicy: Never
+        schedule: "30 21 * * *"
+        jobTemplate:
+            spec:
+                completions: 3
+                parallelism: 3
+                template:
+                    metadata:
+                        name: throw-dice-pod
+                    spec:
+                        containers:
+                        - image: kodekloud/throw-dice
+                            name: throw-dice
+                        restartPolicy: Never
     ```
