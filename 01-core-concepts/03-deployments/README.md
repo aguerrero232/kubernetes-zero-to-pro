@@ -4,7 +4,7 @@
 
 <br>
 
-## ***Updates and Rollbacks***
+## ***Updates*** *and* ***Rollbacks***
 
 <br>
 
@@ -70,7 +70,7 @@
   kubectl rollout undo deployment/<deployment-name>
   ```
 
-* ***using*** the *revision flag*, `--to-revision`, you can *specify* the `revision number` to **rollback** to.
+* ***use*** the `--to-revision` flag to *specify* the `revision number` to **rollback** to.
 
   ```shell
   kubectl rollout undo deployment/<deployment-name> --to-revision=<revision-number>
@@ -79,5 +79,13 @@
 * **view** `deployment` at a specific `revision`
 
   ```shell
-  kubectl rollout history deployment/<deployment-name> --revision=<revision-number>
+  kubectl rollout history deployment <deployment-name> --revision=<revision-number>
   ```
+
+* **use** the `--record` flag to *save the command used* to **create/update** a `deployment`
+
+  ```shell
+  kubectl apply -f <yaml-file> --record=true
+  ```
+
+
