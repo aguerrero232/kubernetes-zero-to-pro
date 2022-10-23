@@ -52,7 +52,6 @@ a `pod` is a **single instance** of an application and is the **simplest object*
 
 - If you are *not* given a `pod` definition file, you may **extract** the definition to a file using the below command, then **edit** the file to make the *necessary changes*, **delete** and **re-create** the `pod`.
 
-
   ```bash
   kubectl get pod <pod-name> -o yaml > pod-definition.yaml
   ```
@@ -71,41 +70,58 @@ a `pod` is a **single instance** of an application and is the **simplest object*
 
 <br>
 
-## **Define** ***Environment Variables*** *For A* `Container` 🍃
+## **Examples** 📚
 
-<br />
+<br>
 
-```yaml
+* simple `pod` definition
+
+  ```yaml
+  apiVersion: v1
+  # kind refers to the type of object that will be created
+  kind: Pod
+  # data about the data that will be created
+  metadata:
+    name: myapp-pod
+    labels:
+      app: myapp
+      type: testing
+  # specification section, providing additional information to kubernetes about the object
   spec:
     containers:
-    - name: <container name>
-      image: <image name>
-      env:
-      - name: DEMO_GREETING
-        value: "Hello from the environment"
-      - name: DEMO_FAREWELL
-        value: "Such a sweet sorrow"
-```
+      - name: nginx-container
+        image: nginx
+  ```
 
-<br />
 
-## **Define** ***Security Context*** *For A* `Container` 🔒
 
-<br />
 
-```yaml
-  spec:
-    containers:
-    - name: <container name>
-      image: <image name>
-      securityContext:
-        runAsUser: 1000
-        capabilities:
-          add: ["MAC_ADMIN"]
-```
+- **define** ***environment variables*** *for a* `container`
 
-<br />
+  ```yaml
+    spec:
+      containers:
+      - name: <container name>
+        image: <image name>
+        env:
+        - name: DEMO_GREETING
+          value: "Hello from the environment"
+        - name: DEMO_FAREWELL
+          value: "Such a sweet sorrow"
+  ```
 
-- `capabilties` are a *set of linux kernel capabilities* that can be **added** to or **removed** from a `container`
+- **define** ***security context*** *for a* `container`
 
-- `capabilities` are only available at the `container` level, **not at** the `pod` level
+  ```yaml
+    spec:
+      containers:
+      - name: <container name>
+        image: <image name>
+        securityContext:
+          runAsUser: 1000
+          capabilities:
+            add: ["MAC_ADMIN"]
+  ```
+
+  - `capabilties` are a *set of linux kernel capabilities* that can be **added** to or **removed** from a `container`
+  - `capabilities` are only available at the `container` level, **not at** the `pod` level

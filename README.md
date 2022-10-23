@@ -47,7 +47,7 @@
     * `etcd` - *Consistent and highly-available key value store* used as Kubernetes' backing store for all cluster data.
     * `kube-scheduler` - Watches for newly created `Pods` with no assigned `node`, and selects a `node` for them to run on.
     * `kube-controller-manager` - Runs `controller` processes. Each `controller` is a separate process but to keep things simple they are compiled together and run in a single process
-      * Examples
+      * Examples 📚
         * `Node controller`: Responsible for noticing and responding when `nodes` go down.
         * `Job controller`: Watches for Job objects that represent one-off tasks, then creates `Pods` to run those tasks to **completion**.
         * `Endpoints controller`: Populates the Endpoints object (that is, joins Services & Pods).
@@ -208,13 +208,10 @@
 
 ## ***Docker*** `Commands` *and* `Arguments`
 
-<br>
-
-**Examples**
 
 <br>
 
-* generic DOCKERFILE template
+* generic `DOCKERFILE` template
 
   ```Dockerfile
   FROM <image>

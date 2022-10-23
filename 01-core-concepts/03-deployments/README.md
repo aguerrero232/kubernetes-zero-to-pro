@@ -88,4 +88,34 @@
   kubectl apply -f <yaml-file> --record=true
   ```
 
+<br />
 
+## **Examples** 📚
+
+<br />
+
+* sample `deployment` definition
+
+  ```yaml
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: myapp-depl
+    labels:
+      tier: front-end
+  spec: 
+    template:
+      metadata:
+        name: nginx-pod
+        labels:
+          app: myapp
+          type: front-end
+      spec:
+        containers:
+          - name: nginx
+            image: nginx
+    replicas: 6
+    selector: 
+      matchLabels:
+        app: myapp
+  ```

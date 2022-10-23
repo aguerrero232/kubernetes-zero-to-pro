@@ -85,3 +85,43 @@ minikube service <service-name> --url
   what do you do when you have multiple `pods`?
 
   when the `service` is created, it will *select* all `pods` that match the `selector` and *route traffic* to them. No additional configuration is needed. 🌟 ***It's magic.*** 🌟
+
+<br />
+
+## **Examples** 📚
+
+<br />
+
+* sample `NodePort service` definition
+  ```yaml
+  apiVersion: v1 
+  kind: Service
+  metadata:
+    name: myapp-service
+  spec:
+    type: NodePort
+    ports:
+      - targetPort: 80
+        port: 80
+        nodePort: 30008
+    selector:
+      app: myapp
+      type: front-end
+  ```
+
+* sample `ClusterIP service` definition
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: back-end
+  spec:
+    type: ClusterIP
+    ports:
+      - targetPort: 80
+        port: 80
+    selector:
+      app: myapp
+      type: back-end
+  ```
+
