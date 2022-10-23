@@ -15,17 +15,12 @@
 * `-o yaml`
   * will **output the resource definition** in `yaml` format.
 
-
 <br>
 
 ## ***Basic*** `Commands` 📝
 
-<br>
+Use *in combination* to ***generate a resource definition file quickly***, that you can *then modify and create resources as required*, **instead of creating the files from scratch**.
 
-use *in combination* to ***generate a resource definition file quickly***, that you can *then modify and create resources as required*, **instead of creating the files from scratch**.
-
-
-<br>
 
 * **create** a `pod` manifest file
 
@@ -46,8 +41,6 @@ use *in combination* to ***generate a resource definition file quickly***, that 
     ```
 
 ## **Examples** 📚
-
-<br />
 
 * **create** a `service` named nginx of type `NodePort` to expose `pod` nginx's *port 80* on *port 30080* on the `nodes`
 

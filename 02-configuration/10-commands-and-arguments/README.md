@@ -1,7 +1,5 @@
 # **Kubernetes** - ***Commands and Arguments*** 🔣
 
-<br>
-
 To pass arguments to a `container`, you can use the `args` field of the `container spec`. Arguments to the entrypoint can be passed using the `command` field of the `container spec`.
 
 * *example* `container` *cmd-and-args-example/Dockerfile*
@@ -12,21 +10,15 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
 
 ## ***Basic*** `Commands` 📝
 
-<br>
-
-
 * build docker container
 
     ```bash
         docker build  -t <container-name>  .
     ```
 
-
 <br />
 
 ## **Examples** 📚
-
-<br>
 
 * sample `Dockerfile`
 

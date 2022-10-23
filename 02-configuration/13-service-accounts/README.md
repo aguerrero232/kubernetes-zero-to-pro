@@ -10,8 +10,6 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 ## ***Basic*** `Commands` 📝
 
-<br>
-
 * create a new service account
 
   ```bash
@@ -19,8 +17,6 @@ When a `pod` is **created** it automatically links it to a `service account`.
   ```
 
 ## **Examples** 📚
-
-<br>
 
 * sample `service account` manifest file
 

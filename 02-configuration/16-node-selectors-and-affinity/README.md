@@ -21,7 +21,6 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 ## ***Basic*** `Commands` 📝
 
-<br />
 
 * to label a `node`
 
@@ -32,8 +31,6 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 <br />
 
 ## **Examples** 📚
-
-<br />
 
 * sample `pod` manifest file with `node` `selector`
 

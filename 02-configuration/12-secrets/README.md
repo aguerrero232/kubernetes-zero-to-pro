@@ -1,7 +1,5 @@
 # **Kubernetes** - ***Secrets***
 
-<br>
-
 `Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` manifest file.
 
 * A `secret` is only sent to a `node` if a `pod` on that `node` requires it.
@@ -25,8 +23,6 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 <br>
 
 ## ***Basic*** `Commands` 📝
-
-<br>
 
 * **create** **`secrets`** using the `kubectl` command
 
@@ -78,8 +74,6 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 ## **Examples** 📚
 
-<br>
-
 * command used for:&nbsp; `secret-examples/sample-secret.yaml`
 
     ```bash
@@ -101,6 +95,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
     ```
 
     **`DB_User`**
+
     ```bash
     guerrero
     ```

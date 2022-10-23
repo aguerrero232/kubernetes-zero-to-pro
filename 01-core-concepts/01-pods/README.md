@@ -6,8 +6,6 @@ a `pod` is a **single instance** of an application and is the **simplest object*
 
 ## ***Basic*** `Commands` 📝
 
-<br>
-
 - **get** *minimal* info about `pods` on cluster
 
   ```bash
@@ -72,7 +70,6 @@ a `pod` is a **single instance** of an application and is the **simplest object*
 
 ## **Examples** 📚
 
-<br>
 
 * simple `pod` definition
 

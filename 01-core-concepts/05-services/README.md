@@ -22,7 +22,6 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
   * *provisions* a `load balancer`
     * only works on cloud providers that support native `load balancers`
 
-
 ## **More** on `ClusterIP` ✨
 
 `CusterIP` is used to *expose* a `service` to other `pods` in the `cluster`. It provides a *single*  interface that other `pods` can use to *access* the `service`. This *enables the ability* to easily and efficiently *scale* the `service` by adding or removing `pods` as needed.
@@ -30,8 +29,6 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
 <br>
 
 ## ***Basic*** `Commands` 📝
-
-<br>
 
 * **create** a `service`
 
@@ -61,8 +58,6 @@ minikube service <service-name> --url
 
 ## ***Creating*** *a* `Service` 🛠️
 
-<br>
-
 * basic `service` definition
 
   ```yaml
@@ -90,9 +85,8 @@ minikube service <service-name> --url
 
 ## **Examples** 📚
 
-<br />
-
 * sample `NodePort service` definition
+
   ```yaml
   apiVersion: v1 
   kind: Service
@@ -110,6 +104,7 @@ minikube service <service-name> --url
   ```
 
 * sample `ClusterIP service` definition
+
   ```yaml
   apiVersion: v1
   kind: Service
@@ -124,4 +119,3 @@ minikube service <service-name> --url
       app: myapp
       type: back-end
   ```
-

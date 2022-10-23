@@ -2,28 +2,28 @@
 
 `Taints` and `Tolerations` are features that allow you to control the placement of pods on nodes. Taints are applied to nodes, and tolerations are applied to pods.A `taint` on a `node` ***instructs*** the `node` to ***repel all*** `pods` that do not `tolerate` the `taint`.
 
-
 <br >
 
 ## ***Basic*** `Commands` 📝
-
-<br>
 
 ### ***Taints - `Node`***
 
 * **taint-effect**: &nbsp; `NoSchedule`, `PreferNoSchedule`, `NoExecute`
 
 * **generic**
+
   ```bash
   kubectl taint nodes <node-name> <key>=<value>:<taint-effect>
   ```
 
 * **example**
+
   ```bash
   kubectl taint nodes node1 app=blue:NoSchedule
   ```
 
 * to see *if `taints` exist* on a `node`
+
   ```bash
   kubectl describe node node01 | grep taint
   ```
@@ -42,8 +42,6 @@ spec:
 <br />
 
 ## **Examples** 📚
-
-<br>
 
 * sample `pod` with `tolerations` manifest file
 
@@ -67,9 +65,7 @@ spec:
 
 ## ***Bee*** *and* ***Mosquito*** **`Example`** 🐝🦟
 
-<br />
-
-* create node01
+* create `node01`
 
   ```yaml
   apiVersion: v1
@@ -92,8 +88,7 @@ spec:
   spec:
   ```
 
-
-* apply taint
+* apply `taint`
 
   ```bash
   kubectl taint nodes node01 spray=mortein:NoSchedule
@@ -104,4 +99,3 @@ spec:
 
 * **remove** the taint on `controlplane`
   * *mosquito* will be *scheduled* on `controlplane`
-

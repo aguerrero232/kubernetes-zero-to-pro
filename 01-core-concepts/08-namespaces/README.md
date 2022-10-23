@@ -10,8 +10,6 @@
 
 ## ***Basic*** `Commands` 📝
 
-<br />
-
 * **list** *current* `namespaces`
 
 ```bash
@@ -39,8 +37,6 @@ kubectl get all --namespace <namespace-name>
 <br />
 
 ## **Examples** 📚
-
-<br />
 
 * sample `namespace` definition
 

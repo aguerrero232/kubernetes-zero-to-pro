@@ -1,10 +1,6 @@
 # **Kubernetes** - ***Cloud*** ☁️
 
-<br>
-
 ## **Types** *of* ***Cloud Solutions*** *for* `Kubernetes` 🌩️
-
-<br>
 
 * **Self Hosted/ Turn key**
   * **You provision** the `VMs`

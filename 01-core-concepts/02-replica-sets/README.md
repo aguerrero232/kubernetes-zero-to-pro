@@ -20,8 +20,6 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 ## ***Basic*** `Commands` 📝
 
-<br />
-
 * **create** a `replica set`
 
 ```bash
@@ -65,8 +63,6 @@ kubectl delete replicaset <replica-set-name>
 <br />
 
 ## **Examples** 📚
-
-<br />
 
 * sample `replication controller` definition
 
