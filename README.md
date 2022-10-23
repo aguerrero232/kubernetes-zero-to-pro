@@ -1,5 +1,9 @@
 # Kubernetes Zero To Pro ✨
 
+<img src="00-resources/img/k8-header.png" width="100%" height="330px">
+
+<br/>
+
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🗃️ [***resources***](00-resources/)
