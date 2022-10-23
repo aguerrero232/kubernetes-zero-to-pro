@@ -6,7 +6,7 @@
 
 <br />
 
-[**Home Page**](/)  
+[**Home Page**](../)    
 ## ***Table of Contents*** 📜
 
 * [**pods**](01-pods/)

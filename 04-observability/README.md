@@ -18,6 +18,6 @@
 
 <br />
 
-[**Home Page**](/)  
+[**Home Page**](../)    
 
 ## ***Table of Contents*** 📜
