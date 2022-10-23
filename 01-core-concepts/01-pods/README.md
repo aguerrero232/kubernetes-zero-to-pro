@@ -4,7 +4,7 @@ A `pod` is a **single instance** of an application and is the **simplest object*
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 - **get** *minimal* info about `pods` on cluster
 

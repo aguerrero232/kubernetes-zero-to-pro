@@ -26,7 +26,7 @@ The `metrics server` is a *cluster-wide aggregator* of resource usage **data**. 
 
 <br />
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 
 * **view** the *metrics* for the *top performing* `nodes`

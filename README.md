@@ -55,7 +55,7 @@
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
 

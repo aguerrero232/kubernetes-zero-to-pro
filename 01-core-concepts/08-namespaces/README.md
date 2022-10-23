@@ -8,7 +8,7 @@
 
 <br />
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **list** *current* `namespaces`
 

@@ -4,7 +4,7 @@
 
 <br>
 
-**Examples** of `jobs` 🧑‍💼
+## **Examples** of `jobs` 🧑‍💼
 
 * performing a *one-time* task such as *running a script* or *setting up a work directory* for a `deployment`
 * *computations for a finite amount of data*, such as **analyzing** a *large data set* or **rendering** a frames of a movie
@@ -12,8 +12,7 @@
 
 <br>
 
-## ***Basic*** `Commands` 📝
-
+## **Basic** `Commands` 📝
 
 * **get** `jobs`
 
@@ -30,8 +29,6 @@
 <br />
 
 ## **Creating** *a* `Job` 🛠️
-
-<br>
 
 By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not** a desirable action for a `job`.
 

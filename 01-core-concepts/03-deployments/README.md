@@ -20,7 +20,7 @@
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **create** a new deployment
 

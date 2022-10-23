@@ -4,7 +4,7 @@
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **view** `logs` for a `pod`
   * `-f`: follow the `logs` as they are written, *simmilar to docker*

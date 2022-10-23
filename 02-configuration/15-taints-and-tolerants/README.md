@@ -4,7 +4,7 @@
 
 <br >
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 ### ***Taints - `Node`***
 

@@ -22,7 +22,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **create** **`secrets`** using the `kubectl` command
 

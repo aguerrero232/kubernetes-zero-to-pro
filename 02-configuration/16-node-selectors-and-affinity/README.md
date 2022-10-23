@@ -19,7 +19,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 <br />
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 
 * to label a `node`

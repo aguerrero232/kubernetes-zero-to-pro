@@ -76,7 +76,7 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * build docker container
 

@@ -28,7 +28,7 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
 
 <br>
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **create** a `service`
 

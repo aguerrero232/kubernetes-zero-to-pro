@@ -18,7 +18,7 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 <br />
 
-## ***Basic*** `Commands` 📝
+## **Basic** `Commands` 📝
 
 * **create** a `replica set`
 
