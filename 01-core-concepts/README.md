@@ -7,7 +7,7 @@
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro) 
-* 🐋[**pods**](01-pods/)
+* 🐋 [**pods**](01-pods/)
 * 👯 [**replica sets** *and* **replication controllers**](02-replica-sets/)
 * 🚀 [**deployments**](03-deployments/)
 * 🖧 [**networking**](04-networking/)
