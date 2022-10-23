@@ -127,7 +127,7 @@
 
 * ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
 
-  * Check the status of minikube
+  * Check the status of `minikube`
 
     ```bash
     minikube status
