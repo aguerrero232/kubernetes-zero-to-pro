@@ -1,5 +1,14 @@
 # Kubernetes Zero To Pro ✨
 
+## ***Table*** *of* ***`Contents`*** 📜
+
+* [***resources***](00-resources/README.md) 🗃️
+* [***core concepts***](01-core-concepts/README.md) 🧠
+* [***configuration***](02-configuration/README.md) ⚙️
+* [***multi-container pods***](03-multi-container-pods/README.md) 🐳<sup>🐳<sup>🐳</sup></sup>
+* [***observability***](04-observability/README.md) 🔬
+* [***pod design***](05-pod-design/README.md) 💠
+
 <br>
 
 ## **Valuable** `Links` 🔗
@@ -13,19 +22,7 @@
 
   * Keep the code - **DEVOPS15** - handy while registering for the **CKA** or **CKAD** exams at *Linux Foundation* to get a **15% discount**.
 
-
 <br />
-
-## ***Table*** *of* ***`Contents`*** 📚
-
-* [***resources***](00-resources/README.md) 🗃️
-* [***core concepts***](01-core-concepts/README.md) 🧠
-* [***configuration***](02-configuration/README.md) ⚙️
-* [***multi-container pods***](03-multi-container-pods/README.md) 🐳<sup>🐳<sup>🐳</sup></sup>
-* [***observability***](04-observability/README.md) 🔬
-* [***pod design***](05-pod-design/README.md) 💠
-
-<br>
 
 ## ***Kubernetes*** `Architecture` 🏗️
 
@@ -126,7 +123,6 @@
 
 # ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
 
-
 <br />
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
@@ -207,7 +203,6 @@
 # **Docker** 🐳
 
 ## ***Docker*** `Commands` *and* `Arguments`
-
 
 <br>
 

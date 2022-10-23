@@ -1,6 +1,6 @@
 # **Kubernetes** - ***Section 0:*** `Resources` 🗃️
 
-## ***Table of Contents*** 📜
+## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)
 
