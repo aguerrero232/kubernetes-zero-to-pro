@@ -1,6 +1,6 @@
 # **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
 
-`Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage **Pods**. 💢
+`Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage **Pods** 😤
 
 <br />
 
