@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Jobs*** 👔
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Jobs*** 👔
 
 `Jobs` are a way to run a `pod` to **completion**.  A ``job`` creates one or more `pods` and ensures that a specified number of them successfully terminate.  As `pods` successfully complete, the `job` tracks the successful completions.  When a specified number of successful completions is reached, the `job` itself is complete.  Deleting a `job` will clean up the `pods` it created.
 

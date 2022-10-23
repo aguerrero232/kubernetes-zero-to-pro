@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Section 5:*** `Pod Design` 💠
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 5:*** `Pod Design` 💠
 
 ## ***Table*** *of* ***`Contents`*** 📜
 

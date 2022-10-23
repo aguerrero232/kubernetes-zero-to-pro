@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)

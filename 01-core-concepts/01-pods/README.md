@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Pods*** 🐋🐳🐋🐳
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Pods*** 🐋🐳🐋🐳
 
 A `pod` is a **single instance** of an application and is the **simplest object** you can create in `kubernetes`, usually have a 1:1 relationship with `containers`. `Pods` can have multiple `containers`, but they are usually `containers` of different types that are ***tightly*** coupled.
 

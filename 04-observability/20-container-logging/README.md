@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Container Logging*** 📄
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Container Logging*** 📄
 
 `Logging` is a **critical** part of **monitoring** and **debugging** `containerized` applications. `Kubernetes` provides a **native** solution to **collect** and **store** `container` logs.
 

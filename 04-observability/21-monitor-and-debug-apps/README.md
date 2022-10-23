@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Montior*** *and* ***Debug Applications*** 🕸️
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Montior*** *and* ***Debug Applications*** 🕸️
 
 `Kubernetes` runs an agent on each `node` known as a `kubelet`. The `kubelet` is responsible for ensuring that the containers are running in a pod. The `kubelet` also exposes a `/metrics/cadvisor` endpoint that provides metrics about the `node` and its containers. The `kubelet` uses cAdvisor to collect these metrics. *cAdvisor* is an open source project that collects resource usage and performance metrics about running containers. *cAdvisor* is built into the `kubelet` binary and is available at the `/metrics/cadvisor` endpoint on the `kubelet`.
 

@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Namespaces*** 📛
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Namespaces*** 📛
 
 `Namespaces` provides a mechanism for isolating groups of resources within a single cluster.
 

@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Cloud*** ☁️
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Cloud*** ☁️
 
 ## **Types** *of* ***Cloud Solutions*** *for* `Kubernetes` 🌩️
 

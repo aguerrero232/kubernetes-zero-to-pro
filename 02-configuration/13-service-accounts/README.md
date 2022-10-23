@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Service Accounts*** 💁
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Service Accounts*** 💁
 
 **`Kubernetes` documents reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
 

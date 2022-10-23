@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Imperative Commands*** 🧙
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Imperative Commands*** 🧙
 
 `Imperative commands` can help in getting one time tasks done quickly, as well as ***generate a definition template easily***.
 

@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Section 2:*** `Configuration` ⚙️
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 2:*** `Configuration` ⚙️
 
 ## ***Table*** *of* ***`Contents`*** 📜
 

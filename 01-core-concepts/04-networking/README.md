@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Networking*** 🖧
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Networking*** 🖧
 
 A `node` has an **IP address** that is used to communicate with other `nodes` in the cluster. If you are using `minikube` you can get the **IP address** of the `node` by running ```minikube ip```. When `kubernetes` is configured **IP addresses** are assigned to `pods`. `Pods` can *communicate with each other* using their **IP addresses**.
   
@@ -10,7 +10,9 @@ these principles are:
   
 <br>
 
-## **`Ingress` Networking**
+## **`Ingress` Networking** ⚖️
+
+* 🗎 [**k8 ingress documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 `Ingress` is a collection of rules that allow external traffic to reach services running in a `Kubernetes` cluster. `Ingress` can provide load balancing, SSL termination and name-based virtual hosting. Think of `Ingress` as a layer seven (*application layer*) `load balancer`. It sits in front of your `services` and routes traffic to the `service` that matches the `Ingress` rule. `Ingress` can be configured to give services externally-reachable URLs, load balance traffic, terminate SSL, offer name based virtual hosting, and more.The solution you deploy is called the `Ingress controller`. The set of rules you use to configure `Ingress` are called `Ingress resources`.
 
@@ -18,11 +20,28 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
 
 <br />
 
+## **Basic** `Commands` 📝
+
+* **view** details of `ingress` objects
+
+  ```bash
+  kubectl describe ingress <ingress-object-name>
+  ```
+
+* imperatively **create** an `ingress` object
+
+  ```bash
+  kubectl create ingress <ingress-object-name> --rule=<host/path=service:port> --backend=<backend>
+  ```
+
+
+<br>
+
 ## **Examples** 🧩
 
 * ## **`Ingress`** **Controllers** 🎮
 
-  * sample `ingress` ***controller***
+  * sample `ingress` ***controller*** definition
 
     ```yaml
     apiVersion: apps/v1
@@ -111,7 +130,72 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
 
 * ## **`Ingress`** ***Resources*** 🧱
 
+  An `Ingress` resource is a *set of rules* used to configure the `Ingress controller` to route traffic to the `services` that match the `Ingress rules`. `Ingress` resources are *namespaced* and can be created in any `namespace` that you want to expose your `services` from. 
 
+  * sample `ingress` **resource**  definition
 
+    ```yaml
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      name: ingress-wear
+    spec:
+      backend:
+        serviceName: wear-service
+        servicePort: 80
+    ```
+
+  * how to configure `ingress` resources
+
+    ```yaml
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      name: ingress-wear-watch
+    spec:
+      rules:
+        - http:
+            # array of each url path
+            paths:
+              - path: /wear
+                backend:
+                  serviceName: wear-service
+                  servicePort: 80
+              - path: /watch
+                backend:
+                  serviceName: watch-service
+                  servicePort: 80  
+    ```
+
+  * to route **domain names** users must define a `host` in the `ingress` resource `spec.rules` section
+
+    ```yaml
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      name: ingress-wear-watch
+    spec:
+      rules:
+        - host: wear.my-online-store.com
+          http:
+            paths:
+              - backend:
+                  serviceName: wear-service
+                  servicePort: 80
+        - host: watch.my-online-store.com
+          http:
+            paths:
+              - backend:
+                  serviceName: watch-service
+                  servicePort: 80
+    ```
+
+  * **create** `ingress` resource imperatively
+
+    ``` bash
+    kubectl create ingress ingress-test --rule="wear.my-online-store.com/wear*=wear-service:80"
+    ```
+
+<br>
 
 [↩️](../)

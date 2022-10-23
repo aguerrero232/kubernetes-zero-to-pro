@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Multi Container Pods*** 🐳<sup>🐳</sup>
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Multi Container Pods*** 🐳<sup>🐳</sup>
 
 There are different types of **multi container** `pods`. They include:
 

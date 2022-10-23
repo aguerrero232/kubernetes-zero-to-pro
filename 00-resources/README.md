@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Section 0:*** `Resources` 🗃️
+# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 0:*** `Resources` 🗃️
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
