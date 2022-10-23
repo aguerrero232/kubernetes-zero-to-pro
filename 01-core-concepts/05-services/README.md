@@ -30,6 +30,33 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
 
 <br>
 
+## **Creating** *a* `Service` 🛠️
+
+* basic `service` definition
+
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: webapp-service
+  spec:
+    type: NodePort
+    ports:
+      # only port is needed, other fields are optional 
+      - targetPort: 8080
+        port: 8080 # port on the service object
+        nodePort: 30080 
+    # selector is used to find the pods to route traffic to
+    selector:
+      name: simple-webapp
+  ```
+
+  what do you do when you have multiple `pods`?
+
+  when the `service` is created, it will *select* all `pods` that match the `selector` and *route traffic* to them. No additional configuration is needed. 🌟 ***It's magic.*** 🌟
+
+<br>
+
 ## **Basic** `Commands` 📝
 
 * **create** a `service`
@@ -55,33 +82,6 @@ kubectl describe service <service-name>
 ```bash
 minikube service <service-name> --url
 ```
-
-<br>
-
-## **Creating** *a* `Service` 🛠️
-
-* basic `service` definition
-
-  ```yaml
-  apiVersion: v1
-  kind: Service
-  metadata:
-    name: webapp-service
-  spec:
-    type: NodePort
-    ports:
-      # only port is needed, other fields are optional 
-      - targetPort: 8080
-        port: 8080 # port on the service object
-        nodePort: 30080 
-    # selector is used to find the pods to route traffic to
-    selector:
-      name: simple-webapp
-  ```
-
-  what do you do when you have multiple `pods`?
-
-  when the `service` is created, it will *select* all `pods` that match the `selector` and *route traffic* to them. No additional configuration is needed. 🌟 ***It's magic.*** 🌟
 
 <br />
 
