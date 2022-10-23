@@ -30,7 +30,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `pod` manifest file with `node` `selector`
 

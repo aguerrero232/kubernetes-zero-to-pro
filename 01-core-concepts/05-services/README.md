@@ -83,7 +83,7 @@ minikube service <service-name> --url
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `NodePort service` definition
 

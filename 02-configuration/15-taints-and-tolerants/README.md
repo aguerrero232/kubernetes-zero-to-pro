@@ -41,7 +41,7 @@ spec:
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `pod` with `tolerations` manifest file
 

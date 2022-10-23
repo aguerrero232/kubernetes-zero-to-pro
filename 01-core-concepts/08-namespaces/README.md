@@ -36,7 +36,7 @@ kubectl get all --namespace <namespace-name>
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `namespace` definition
 

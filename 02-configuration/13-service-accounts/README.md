@@ -16,7 +16,7 @@ When a `pod` is **created** it automatically links it to a `service account`.
   kubectl create serviceaccount <account-name>
   ```
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `service account` manifest file
 

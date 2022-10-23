@@ -88,7 +88,7 @@
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `deployment` definition
 

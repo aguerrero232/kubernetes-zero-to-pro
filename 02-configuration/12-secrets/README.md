@@ -72,7 +72,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * command used for:&nbsp; `secret-examples/sample-secret.yaml`
 

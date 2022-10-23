@@ -62,7 +62,7 @@ kubectl delete replicaset <replica-set-name>
 
 <br />
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * sample `replication controller` definition
 

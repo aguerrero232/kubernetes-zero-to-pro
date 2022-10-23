@@ -40,7 +40,7 @@ Use *in combination* to ***generate a resource definition file quickly***, that 
     kubectl expose <object-type> <object-name> --port=<port> --name <service-name> --dry-run=client -o yaml
     ```
 
-## **Examples** 📚
+## **Examples** 🧩
 
 * **create** a `service` named nginx of type `NodePort` to expose `pod` nginx's *port 80* on *port 30080* on the `nodes`
 
