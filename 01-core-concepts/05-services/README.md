@@ -22,6 +22,8 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
   * *provisions* a `load balancer`
     * only works on cloud providers that support native `load balancers`
 
+<br />
+
 ## **More** on `ClusterIP` ✨
 
 `CusterIP` is used to *expose* a `service` to other `pods` in the `cluster`. It provides a *single*  interface that other `pods` can use to *access* the `service`. This *enables the ability* to easily and efficiently *scale* the `service` by adding or removing `pods` as needed.
@@ -56,7 +58,7 @@ minikube service <service-name> --url
 
 <br>
 
-## ***Creating*** *a* `Service` 🛠️
+## **Creating** *a* `Service` 🛠️
 
 * basic `service` definition
 

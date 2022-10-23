@@ -69,6 +69,8 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
                               - Large
     ```
 
+<br>
+
 ## ***Red*** *and* ***Blue*** **`Example`** 🔴🟦
 
 * red `deployment` definition 🔴

@@ -82,6 +82,8 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
                     restartPolicy: Never
     ```  
 
+<br>
+
 ## **Examples** 🧩
 
 * sample `job` definition

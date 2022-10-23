@@ -2,16 +2,11 @@
 
 `Imperative commands` can help in getting one time tasks done quickly, as well as ***generate a definition template easily***.
 
-<br />
-
 **Familiarize yourself with the following commands**
-
 * `--dry-run`
   * will execute, and the resource **will be created**.
-
 * `--dry-run=client`
   * will execute, but the resource **will not be created**.
-
 * `-o yaml`
   * will **output the resource definition** in `yaml` format.
 
@@ -39,6 +34,8 @@ Use *in combination* to ***generate a resource definition file quickly***, that 
     ```bash
     kubectl expose <object-type> <object-name> --port=<port> --name <service-name> --dry-run=client -o yaml
     ```
+
+<br>
 
 ## **Examples** 🧩
 
