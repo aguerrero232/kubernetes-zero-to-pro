@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Resource Requirements***
+# **Kubernetes** - ***Resource Requirements*** 💾
 
 `Resources` are the compute, storage, and network `resources` that are required by containers. Kubernetes allows you to specify the amount of `resources` that a container requires. This allows Kubernetes to schedule containers on nodes that have enough `resources` to run the containers. Kubernetes also allows you to specify the limits of the `resources` that a container can use. This allows Kubernetes to prevent containers from using more `resources` than they are allowed to use.
 

@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Commands and Arguments*** 🔣
+# **Kubernetes** - ***Commands*** *and* ***Arguments*** 🔣
 
 To pass arguments to a `container`, you can use the `args` field of the `container spec`. Arguments to the entrypoint can be passed using the `command` field of the `container spec`.
 
@@ -20,7 +20,7 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
 
 ## **Examples** 📚
 
-* sample `Dockerfile`
+* sample `Dockerfile` 🐳
 
     ```Dockerfile
     FROM ubuntu
