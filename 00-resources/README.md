@@ -4,7 +4,6 @@
 
 ## ***Table of Contents*** 📜
 
-<br />
 
 * 🖼️ **img**: *static images used in documentation*
 
