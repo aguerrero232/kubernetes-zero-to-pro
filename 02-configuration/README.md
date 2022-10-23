@@ -11,5 +11,5 @@
 * [**secrets**](12-secrets/README.md)
 * [**service accounts**](13-service-accounts/README.md)
 * [**resource requirements**](14-resource-requirements/README.md)
-* [**taints and tolerations**](15-taints-and-tolerations/README.md)
+* [**taints and tolerations**](15-taints-and-tolerants/README.md)
 * [**node selectors and affinity**](16-node-selectors-and-affinity/README.md)

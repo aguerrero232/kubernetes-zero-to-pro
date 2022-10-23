@@ -1,11 +1,10 @@
 # **Kubernetes** - ***Service Accounts***
 
-
-**`kubernetes` documents reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
+**`Kubernetes` documents reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
 
 <br>
 
-When a `pod` is **created** it automatically links it to a `service account`. 
+When a `pod` is **created** it automatically links it to a `service account`.
 
 <br>
 
@@ -13,8 +12,8 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 <br>
 
-
 * create a new service account
+
   ```bash
   kubectl create serviceaccount <account-name>
   ```
@@ -24,6 +23,7 @@ When a `pod` is **created** it automatically links it to a `service account`.
 <br>
 
 * sample `service account` manifest file
+
   ```yaml
   apiVersion: rbac.authorization.k8s.io/v1
   kind: RoleBinding
