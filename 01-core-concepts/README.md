@@ -13,7 +13,7 @@
 * [**deployments**](03-deployments/)
 * [**networking**](04-networking/)
 * [**services**](05-services/)
-* [**microservices architecture**](06-microservices-architecture/)
+* [**microservice architecture**](06-microservices-architecture/)
 * [**cloud**](07-kubernetes-on-cloud/)
 * [**namespaces**](08-namespaces/)
 * [**imperative commands**](09-imperative-commands/)

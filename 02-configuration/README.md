@@ -11,5 +11,5 @@
 * [**secrets**](12-secrets/)
 * [**service accounts**](13-service-accounts/)
 * [**resource requirements**](14-resource-requirements/)
-* [**taints and tolerations**](15-taints-and-tolerants/)
-* [**node selectors and affinity**](16-node-selectors-and-affinity/)
+* [**taints** *and* **tolerations**](15-taints-and-tolerants/)
+* [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/)
