@@ -117,16 +117,19 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
         app: nginx-ingress
     ```
 
+    * the `ingress` controller will need the *right set of permissions* to take advantage of the additional intelligence, a `service account` is **required**
+
+      ```yaml
+      apiVersion: v1
+      kind: ServiceAccount
+      metadata:
+        name: nginx-ingress-serviceaccount
+      ```
+
   `Nginx Ingress Controllers` have *additional intelligence* built into them to monitor the `Kubernetes` cluster for `ingress` **resources**.
+  * 🗎 [**nginx ingress controller documentation**](https://kubernetes.github.io/ingress-nginx/examples/)
 
-  * the `ingress` controller will need the *right set of permissions* to take advantage of the additional intelligence, a `service account` is **required**
-
-    ```yaml
-    apiVersion: v1
-    kind: ServiceAccount
-    metadata:
-      name: nginx-ingress-serviceaccount
-    ```
+<br>
 
 * ## **`Ingress`** ***Resources*** 🧱
 
@@ -255,6 +258,8 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
       metadata:
         name: ingress-pay
         namespace: critical-space 
+        annotations:
+          nginx.ingress.kubernetes.io/rewrite-target: /
       spec:
         rules:
         - http:
@@ -267,6 +272,15 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
               path: /pay
               pathType: Prefix
       ```
+
+      * ***ReWrite*** the `URL` when a *request is passed* to applications. Instead of using the same path that user typed in specify the `rewrite-target` option. This **rewrites** the `URL` by replacing whatever is under **rules ➜ http ➜ paths ➜ path**.
+
+        ```yaml
+          annotations:
+            nginx.ingress.kubernetes.io/rewrite-target: /
+        ```
+
+        * 🗎 [**example from the k8 nginx ingress documentation**](https://kubernetes.github.io/ingress-nginx/examples/rewrite/)
 
 <br>
 
