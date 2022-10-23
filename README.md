@@ -100,11 +100,7 @@
 
 # ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
 
-<br />
-
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
-
-<br>
 
 ## `YAML` **Syntax**
 
