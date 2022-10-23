@@ -50,44 +50,6 @@
 
 <br>
 
-## **Basic** `Commands` 📝
-
-* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
-
-  * Check the status of minikube
-
-    ```bash
-    minikube status
-    ```
-
-  * *start* `minikube`
-
-    ```bash
-    minikube start
-    ```
-
-  * **stop** `minikube`
-
-    ```bash
-    minikube stop
-    ```
-
-* ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
-
-  * **check** version of `kubernetes` being used
-
-    ```bash
-    kubectl version
-    ```
-
-  * **get** *everything*
-
-    ```bash
-    kubectl get all
-    ```
-
-<br>
-
 # ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
@@ -158,3 +120,41 @@
 * You can *either* set a value or a list/dictonary/map but *not both*
 
 * `Dictionaries` are an *unordered collection* while `lists` are *ordered*
+
+<br>
+
+## **Basic** `Commands` 📝
+
+* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
+
+  * Check the status of minikube
+
+    ```bash
+    minikube status
+    ```
+
+  * *start* `minikube`
+
+    ```bash
+    minikube start
+    ```
+
+  * **stop** `minikube`
+
+    ```bash
+    minikube stop
+    ```
+
+* ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
+
+  * **check** version of `kubernetes` being used
+
+    ```bash
+    kubectl version
+    ```
+
+  * **get** *everything*
+
+    ```bash
+    kubectl get all
+    ```
