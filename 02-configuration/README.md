@@ -4,7 +4,7 @@
 
 <br />
 
-[**Home Page**](../)    
+[**Home Page**](https://github.com/aguerrero232/kubernetes-zero-to-pro)    
 
 ## ***Table of Contents*** 📜
 

@@ -1,12 +1,12 @@
 
 # **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
 
-
 `Core concepts` are the ***fundamental building blocks*** of `Kubernetes`. These concepts are used to *create and manage* `Kubernetes` clusters.
 
 <br />
 
-[**Home Page**](../)    
+[**Home Page**](https://github.com/aguerrero232/kubernetes-zero-to-pro)
+
 ## ***Table of Contents*** 📜
 
 * [**pods**](01-pods/)
@@ -20,6 +20,3 @@
 * [**imperative commands**](09-imperative-commands/)
 
 <br>
-
-
-
