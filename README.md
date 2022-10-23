@@ -9,18 +9,6 @@
 * 🔬 [***observability***](04-observability/)
 * 💠 [***pod design***](05-pod-design/)
 
-<br>
-
-## **Valuable** `Links` 🔗
-
-* ***[kubernetes concepts](https://kubernetes.io/docs/concepts/)***
-
-* ***[Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/)***
-  * [Candidate Handbook](https://www.cncf.io/certification/candidate-handbook)
-
-  * [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
-
-  * Keep the code - **DEVOPS15** - handy while registering for the **CKA** or **CKAD** exams at *Linux Foundation* to get a **15% discount**.
 
 <br />
 
@@ -124,11 +112,16 @@
 
 <br>
 
-## **Examples** *of* `Yaml`
+## `YAML` **Syntax**
 
-<br />
+* `YAML` is case sensitive
+* Comments are created using the # symbol
 
-* Key Value Pairs
+<br>
+
+## **Examples** 📚
+
+* key value pairs
 
   ```yaml
   Fruit: Apple
@@ -137,7 +130,7 @@
   Meat: Chicken
   ```
 
-* Array/Lists
+* arrays / lists
 
   ```yaml
   Fruits:
@@ -151,7 +144,7 @@
     - Tomato
   ```
 
-* Dictionary/Map
+* dictionary / map
 
   ```yaml
   Banana:
@@ -165,7 +158,7 @@
       Carbs: 16g
   ```
 
-* Key Value/Dictonary/Lists
+* key value / dictonary / lists
 
   ```yaml
   Fruits:
@@ -185,84 +178,3 @@
 * You can *either* set a value or a list/dictonary/map but *not both*
 
 * `Dictionaries` are an *unordered collection* while `lists` are *ordered*
-
-<br>
-
-## `YAML` **Syntax**
-
-* `YAML` is case sensitive
-* Comments are created using the # symbol
-
-<br>
-
-# **Docker** 🐳
-
-## ***Docker*** `Commands` *and* `Arguments`
-
-<br>
-
-* generic `DOCKERFILE` template
-
-  ```Dockerfile
-  FROM <image>
-  RUN <command>
-  CMD <command>
-  ```
-
-* commands template with parameters
-
-  ```Dockerfile
-  CMD command param
-  CMD ["command", "param"]
-  ```
-
-* example command with arguments
-
-  ```Dockerfile
-  CMD sleep 5
-  CMD ["sleep", "5"]
-  ```
-
-* makes a custom image of ubuntu and makes it sleep 5 seconds then exits
-
-  ```Dockerfile
-  FROM Ubuntu
-  CMD sleep 5
-  ```
-
-* makes a custom image of ubuntu and makes it sleep from passed in param in entrypoint
-  * entrypoint is the command that is run when the container is started
-
-  ```Dockerfile
-  FROM Ubuntu
-  ENTRYPOINT ["sleep"]
-  ```
-
-* makes a custom image of ubuntu and makes it sleep from passed in param in entrypoint with default of 5 seconds
-
-  ```Dockerfile
-  FROM Ubuntu
-  ENTRYPOINT ["sleep"]
-  CMD ["5"]
-  ```
-
-  * you can override the entrypoint command with the --entrypoint flag
-
-<br>
-
-## ***Docker*** `Security` 🔒
-
-<br>
-
-* to run docker as a non-root user
-
-  ```bash
-  docker run --user=<user id> <image>
-  ```
-
-* users can also be defined in the dockerfile
-
-  ```Dockerfile
-  FROM ubuntu
-  USER <user id>
-  ```
