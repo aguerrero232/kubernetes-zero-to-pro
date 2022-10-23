@@ -5,10 +5,9 @@
 * 🗃️ [***resources***](00-resources/)
 * 🧠 [***core concepts***](01-core-concepts/)
 * ⚙️ [***configuration***](02-configuration/)
-* 🐳<sup>🐳</sup> [***multi-container pods***](03-multi-container-pods/) 
+* 🐳<sup>🐳</sup> [***multi-container pods***](03-multi-container-pods/)
 * 🔬 [***observability***](04-observability/)
 * 💠 [***pod design***](05-pod-design/)
-
 
 <br />
 
@@ -20,7 +19,7 @@
 
 <br>
 
-![](00-resources/img/clusterdiagram2.PNG) ![](00-resources/img/clusterdiagram-legend.PNG)
+<img src="00-resources/img/clusterdiagram2.PNG" width="615px"> <img src="00-resources/img/clusterdiagram-legend.PNG" width="150px">
 
 <br/>
 
@@ -54,7 +53,6 @@
 <br>
 
 ## ***Basic*** `Commands` 📝
-
 
 * ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
 
