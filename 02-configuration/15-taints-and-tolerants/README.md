@@ -46,6 +46,7 @@ spec:
 <br>
 
 * sample `pod` with `tolerations` manifest file
+
   ```yaml
   apiVersion: v1
   kind: Pod
@@ -62,6 +63,7 @@ spec:
             effect: NoSchedule
   ```
 
+<br />
 
 ## ***Bee*** *and* ***Mosquito*** **`Example`** 🐝🦟
 
