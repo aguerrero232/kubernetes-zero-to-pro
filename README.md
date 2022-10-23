@@ -74,8 +74,6 @@
     minikube stop
     ```
 
-<br>
-
 * ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
 
   * **check** version of `kubernetes` being used
@@ -89,8 +87,6 @@
     ```bash
     kubectl get all
     ```
-
-<br>
 
 * ## `usefull` **commands** ⚡
 
