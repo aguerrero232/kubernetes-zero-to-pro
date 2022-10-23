@@ -2,7 +2,7 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/README.md)
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/blob/main/README.md)
 * 🗃️ **resources**
   * 🖼️ [**images**](img/)
   * 📁 [**pdfs**](pdfs/)

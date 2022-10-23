@@ -2,7 +2,7 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/README.md)
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/blob/main/README.md)
 * 🐳<sup>🐳</sup> **multi-container-pods**
   * 🐳<sup>🐳</sup> [**multi-container-pods**](17-multi-container-pods/README.md)
   * 💥 [**init containers**](18-init-containers/README.md)
