@@ -2,19 +2,15 @@
 
 `Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` definition.
 
-* A `secret` is only sent to a `node` if a `pod` on that `node` requires it.
-
-* `Kubelet` stores the `secret` into a tmpfs so that the `secret` is *not written to disk storage*.
-
-* Once the `Pod` that depends on the `secret` is **deleted**, `kubelet` will **delete** its *local copy* of the secret data as well.
+* a `secret` is only sent to a `node` if a `pod` on that `node` requires it.
+* `kubelet` stores the `secret` into a tmpfs so that the `secret` is *not written to disk storage*.
+* once the `pod` that depends on the `secret` is **deleted**, `kubelet` will **delete** its *local copy* of the secret data as well.
 
 <br>
 
 `Secrets` are *not encrypted*, so it is ***not safer*** in that sense. However, s*ome best practices around* using `secrets` make it ***safer***. As in best practices like:
-
-* Not checking-in secret object definition files to source code repositories.
-
-* **[Enabling Encryption at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for Secrets so they are stored encrypted in `ETCD`.
+* not checking-in secret object definition files to source code repositories.
+* **[enabling encryption at rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for secrets so they are stored encrypted in `etcd`.
 
 <br>
 
@@ -56,7 +52,6 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
   * note that this method ***does not show the secret value***
 
-<br>
 
 * **view** **`secrets`** *and their values*
 

@@ -1,10 +1,6 @@
 # **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
 
-`Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage `pods`!
-
-<br />
-
-**Examples of simple Replication Controller and Replica set are defined in the yaml files included in this directory**
+`Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage **Pods**. 💢
 
 <br />
 
@@ -22,43 +18,43 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 * **create** a `replica set`
 
-```bash
-kubectl create -f <yaml-file>
-```
+    ```bash
+    kubectl create -f <yaml-file>
+    ```
 
 * **get** list of `replica sets`
 
-```bash
-kubectl get replicaset
-```
+    ```bash
+    kubectl get replicaset
+    ```
 
 * **get** *descriptive information* on the desired `replica set`
 
-```bash
-kubectl describe replicaset <replica-set-name>
-```
+    ```bash
+    kubectl describe replicaset <replica-set-name>
+    ```
 
 * **edit** the specified `replica set`
 
-```bash
-kubectl edit replicaset <replica-set-name>
-```
+    ```bash
+    kubectl edit replicaset <replica-set-name>
+    ```
 
 * **scale** `replica set` to the *desired number* of `replicas`
 
-```bash
-kubectl replace -f <edited-yaml-file>
-```
+    ```bash
+    kubectl replace -f <edited-yaml-file>
+    ```
 
-```bash
-kubectl scale --replicas=<new-number-of-replicas> -f <yaml-file>
-```
+    ```bash
+    kubectl scale --replicas=<new-number-of-replicas> -f <yaml-file>
+    ```
 
 * **delete** specified `replica set`
 
-```bash
-kubectl delete replicaset <replica-set-name>
-```
+    ```bash
+    kubectl delete replicaset <replica-set-name>
+    ```
 
 <br />
 

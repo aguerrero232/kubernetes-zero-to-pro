@@ -96,45 +96,45 @@ spec:
   kubectl taint nodes node01 spray=mortein:NoSchedule
   ```
 
+* ***bee***  `pod` definition 🐝
+
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: bee
+  spec:
+    containers:
+      - name: nginx-bee
+        image: nginx
+    tolerations:
+      - key: spray
+        operator: "Equal"
+        value: mortein
+        effect: NoSchedule
+  ```
+
+* ***mosquito*** `pod` definition 🦟
+
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: bee
+  spec:
+    containers:
+      - name: nginx-bee
+        image: nginx
+    tolerations:
+      - key: spray
+        operator: "Equal"
+        value: mortein
+        effect: NoSchedule
+  ```
+
 * **create** the *bee* and *mosquito* `pods` and **watch what happens**
-  
-  * ***bee***  `pod` definition 🐝
-
-    ```yaml
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: bee
-    spec:
-      containers:
-        - name: nginx-bee
-          image: nginx
-      tolerations:
-        - key: spray
-          operator: "Equal"
-          value: mortein
-          effect: NoSchedule
-    ```
-
-  * ***mosquito*** `pod` definition 🦟
-
-    ```yaml
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: bee
-    spec:
-      containers:
-        - name: nginx-bee
-          image: nginx
-      tolerations:
-        - key: spray
-          operator: "Equal"
-          value: mortein
-          effect: NoSchedule
-    ```
-  
   * *bee* will be *scheduled* on *node01* and *mosquito* will not be *scheduled* on any `node`
+
 
 * **remove** the taint on `controlplane`
   * *mosquito* will be *scheduled* on `controlplane`

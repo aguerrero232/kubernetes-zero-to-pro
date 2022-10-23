@@ -6,8 +6,6 @@
 
 ## **Basic** `Commands` 📝
 
-<br />
-
 * **select** `pods` with label
 
     ```bash

@@ -48,9 +48,7 @@ Use *in combination* to ***generate a resource definition file quickly***, that 
     kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml
     ```
 
-    (This will **automatically** use the *pod's labels as selectors*, but you **cannot** specify the `node port`. You have to *generate a definition file* and then add the `node port` in manually before creating the service with the `pod`.)
-    
-    <br />
+    This will **automatically** use the *pod's labels as selectors*, but you **cannot** specify the `node port`. You have to *generate a definition file* and then add the `node port` in manually before creating the service with the `pod`.
 
 * **deploy** a *redis* `pod` using the *redis:alpine image* with the *labels* set to **tier=db**.
 

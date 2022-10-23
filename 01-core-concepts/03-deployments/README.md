@@ -6,7 +6,6 @@
 
 ## ***Updates*** *and* ***Rollbacks*** 🔄
 
-<br>
 
 * `Deployments` allow you to **`update` your application without downtime**.
 

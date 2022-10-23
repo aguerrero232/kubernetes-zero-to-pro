@@ -5,7 +5,6 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
 * *example* `container` *cmd-and-args-example/Dockerfile*
 * *example* `pod definition` *cmd-and-args-example/pod-definition.yaml*
 
-
 <br />
 
 ## ***Docker*** `Commands` *and* `Arguments` 🐳
@@ -56,8 +55,6 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
   ```
 
   * you can override the entrypoint command with the --entrypoint flag
-
-<br>
 
 * ***Docker*** `Security` 🔒
 
