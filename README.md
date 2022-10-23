@@ -16,15 +16,12 @@
 
 ## ***Kubernetes*** `Architecture` 🏗️
 
-<br>
-
 ***Kubernetes coordinates a highly available cluster of computers that are connected to work as a single unit.***
 
 <br>
 
 <img src="00-resources/img/clusterdiagram2.PNG" width="615px"> <img src="00-resources/img/clusterdiagram-legend.PNG" width="150px">
 
-<br/>
 
 * The **`Control Plane`** is responsible for *managing the cluster*.
 
