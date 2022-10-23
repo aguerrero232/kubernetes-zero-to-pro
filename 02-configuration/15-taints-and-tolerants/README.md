@@ -65,7 +65,7 @@ spec:
 
 ## ***Bee*** *and* ***Mosquito*** **`Example`** 🐝🦟
 
-* create `node01`
+* create `node01` **node**
 
   ```yaml
   apiVersion: v1
@@ -74,6 +74,8 @@ spec:
     name: node01
   spec:
   ```
+
+* create `controlplane` **node**
 
   ```yaml
   apiVersion: v1
@@ -95,6 +97,43 @@ spec:
   ```
 
 * **create** the *bee* and *mosquito* `pods` and **watch what happens**
+  
+  * ***bee***  `pod` manifest file 🐝
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: bee
+    spec:
+      containers:
+        - name: nginx-bee
+          image: nginx
+      tolerations:
+        - key: spray
+          operator: "Equal"
+          value: mortein
+          effect: NoSchedule
+    ```
+
+  * ***mosquito*** `pod` manifest file 🦟
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: bee
+    spec:
+      containers:
+        - name: nginx-bee
+          image: nginx
+      tolerations:
+        - key: spray
+          operator: "Equal"
+          value: mortein
+          effect: NoSchedule
+    ```
+  
   * *bee* will be *scheduled* on *node01* and *mosquito* will not be *scheduled* on any `node`
 
 * **remove** the taint on `controlplane`

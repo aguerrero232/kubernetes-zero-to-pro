@@ -71,7 +71,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 ## ***Red*** *and* ***Blue*** **`Example`** 🔴🟦
 
-* red `deployment` manifest file
+* red `deployment` manifest file 🔴
 
     ```yaml
     apiVersion: apps/v1
@@ -103,7 +103,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
                                       - red
     ```
 
-* blue `deployment` manifest file
+* blue `deployment` manifest file 🟦
 
     ```yaml
     apiVersion: apps/v1
