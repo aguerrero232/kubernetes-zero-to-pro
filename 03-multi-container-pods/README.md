@@ -1,14 +1,12 @@
-# **Kubernetes** - ***Section 3:*** `Multi Container Pods`
-
-At times you may need two `services` to *work together*. For example, you may need a web server and a logging service to *work together*. In this case, you can use a `multi container pod`. To add another `container` to your `pod` all you have to do is define it in the `pods` yaml spec section under `containers`.
-
-<br />
-
-    
+# **Kubernetes** - ***Section 3:*** `Multi Container Pods` 🐳<sup>🐳</sup>
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)
+* 🐳<sup>🐳</sup> **multi-container-pods**
+  * 🐳<sup>🐳</sup> [**multi-container-pods**](17-multi-container-pods/)
+  * 💥 [**init containers**](18-init-containers/)
 
-<br>
+<br />
 
-↩️ [**back**](../)
+At times you may need two `services` to *work together*. For example, you may need a web server and a logging service to *work together*. In this case, you can use a `multi container pod`. To add another `container` to your `pod` all you have to do is define it in the `pods` yaml spec section under `containers`.
