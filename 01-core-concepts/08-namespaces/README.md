@@ -57,5 +57,5 @@ kubectl get all --namespace <namespace-name>
 
 <br>
 
-↩️ [**back**](../)
+[↩️ **back**](../)
 

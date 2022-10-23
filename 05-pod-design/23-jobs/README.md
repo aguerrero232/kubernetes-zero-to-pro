@@ -199,4 +199,4 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
 
 <br>
 
-↩️ [**back**](../)
+[↩️ **back**](../)

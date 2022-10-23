@@ -120,4 +120,4 @@ kubectl delete replicaset <replica-set-name>
 
 <br>
 
-↩️ [**back**](../)
+[↩️ **back**](../)

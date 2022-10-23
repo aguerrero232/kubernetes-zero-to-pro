@@ -125,4 +125,4 @@ A `pod` is a **single instance** of an application and is the **simplest object*
 
 <br>
 
-↩️ [**back**](../)
+[↩️ **back**](../)
