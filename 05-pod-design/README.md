@@ -2,11 +2,11 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/README.md)
 * 💠 **pod-design**
-  * 🏷️ [**labels selectors** *and* **annotations**](22-labels-selectors-annotations/)
-  * 👔 [**jobs**](23-jobs/)
-  * ⏳ [**cron jobs**](24-cron-jobs/)
+  * 🏷️ [**labels selectors** *and* **annotations**](22-labels-selectors-annotations/README.md)
+  * 👔 [**jobs**](23-jobs/README.md)
+  * ⏳ [**cron jobs**](24-cron-jobs/README.md)
 
 <br />
 

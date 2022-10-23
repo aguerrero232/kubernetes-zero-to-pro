@@ -2,11 +2,11 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/README.md)
 * 🔬 **observability**
-  * 🛸 [**readiness** *and* **liveness probes**](19-readiness-and-liveness-probes/)
-  * 📄 [**container logging**](20-container-logging/)
-  * 🕸️ [**monitor** *and* **debug apps**](21-monitor-and-debug-apps/)
+  * 🛸 [**readiness** *and* **liveness probes**](19-readiness-and-liveness-probes/README.md)
+  * 📄 [**container logging**](20-container-logging/README.md)
+  * 🕸️ [**monitor** *and* **debug apps**](21-monitor-and-debug-apps/README.md)
 
 <br />
 
