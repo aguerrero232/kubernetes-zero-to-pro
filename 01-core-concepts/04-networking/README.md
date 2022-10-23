@@ -5,8 +5,9 @@ A `node` has an **IP address** that is used to communicate with other `nodes` in
 `Kubernetes` *expects you to follow* fundamental networking principles when you create your applications.  
 
 these principles are:
-  * **all** `containers`/`pods` *can communicate to one another* without **NAT**
-  * **all** `nodes` *can communicate with all* `containers` without **NAT** and vice versa
+
+* **all** `containers`/`pods` *can communicate to one another* without **NAT**
+* **all** `nodes` *can communicate with all* `containers` without **NAT** and vice versa
   
 <br>
 
@@ -33,7 +34,6 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
   ```bash
   kubectl create ingress <ingress-object-name> --rule=<host/path=service:port> --backend=<backend>
   ```
-
 
 <br>
 
@@ -130,7 +130,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
 
 * ## **`Ingress`** ***Resources*** 🧱
 
-  An `Ingress` resource is a *set of rules* used to configure the `Ingress controller` to route traffic to the `services` that match the `Ingress rules`. `Ingress` resources are *namespaced* and can be created in any `namespace` that you want to expose your `services` from. 
+  An `Ingress` resource is a *set of rules* used to configure the `Ingress controller` to route traffic to the `services` that match the `Ingress rules`. `Ingress` resources are *namespaced* and can be created in any `namespace` that you want to expose your `services` from.
 
   * sample `ingress` **resource**  definition
 
@@ -174,48 +174,25 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
     kind: Ingress
     metadata:
       name: ingress-wear-watch
-    spec:
-      rules:
-        - host: wear.my-online-store.com
-          http:
-            paths:
-              - backend:
-                  serviceName: wear-service
-                  servicePort: 80
-        - host: watch.my-online-store.com
-          http:
-            paths:
-              - backend:
-                  serviceName: watch-service
-                  servicePort: 80
-    ```
-
-  * sample `ingress` 
-
-    ```yaml
-    apiVersion: networking.k8s.io/v1
-    kind: Ingress
-    metadata:
-      name: ingress-wear-watch
       namespace: app-space
     spec:
       rules:
-      - http:
-          paths:
-          - backend:
-              service:
-                name: wear-service
-                port:
-                  number: 8080
-            path: /wear
-            pathType: Prefix
-          - backend:
-              service:
-                name: video-service
-                port:
-                  number: 8080
-            path: /watch
-            pathType: Prefix
+        - http:
+            paths:
+            - backend:
+                service:
+                  name: wear-service
+                  port:
+                    number: 8080
+              path: /wear
+              pathType: Prefix
+            - backend:
+                service:
+                  name: video-service
+                  port:
+                    number: 8080
+              path: /watch
+              pathType: Prefix
     ```
 
   * **create** `ingress` resource imperatively
@@ -245,8 +222,52 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
         app: default-backend
     ```
 
+  * more ➜ `service` and `ingress` resources
+
+    * **`service`**
+
+      ```yaml
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: pay-service
+        namespace: critical-space
+      spec:
+        clusterIP: 10.102.93.253
+        clusterIPs:
+        - 10.102.93.253
+        ipFamilies:
+        - IPv4
+        ports:
+        - port: 8282
+          protocol: TCP
+          targetPort: 8080
+        selector:
+          app: webapp-pay
+        type: ClusterIP
+      ```
+
+    * **`ingress`**
+
+      ```yaml
+      apiVersion: networking.k8s.io/v1
+      kind: Ingress
+      metadata:
+        name: ingress-pay
+        namespace: critical-space 
+      spec:
+        rules:
+        - http:
+            paths:
+            - backend:
+                service:
+                  name: pay-service
+                  port:
+                    number: 8282
+              path: /pay
+              pathType: Prefix
+      ```
 
 <br>
-
 
 [↩️](../README.md)
