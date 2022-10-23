@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2022-10-23T05:36:19Z"
+  generation: 1
+  name: simple-webapp-deployment
+  namespace: default
+  resourceVersion: "811"
+  uid: b6e2bd27-1feb-43b2-ac70-4c086f96fa72
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 4
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      name: simple-webapp
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        name: simple-webapp
+    spec:
+      containers:
+      - image: kodekloud/simple-webapp:red
+        imagePullPolicy: IfNotPresent
+        name: simple-webapp
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 4
+  conditions:
+  - lastTransitionTime: "2022-10-23T05:36:28Z"
+    lastUpdateTime: "2022-10-23T05:36:28Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2022-10-23T05:36:19Z"
+    lastUpdateTime: "2022-10-23T05:36:28Z"
+    message: ReplicaSet "simple-webapp-deployment-8c46cb57c" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 4
+  replicas: 4
+  updatedReplicas: 4
