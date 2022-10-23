@@ -10,7 +10,7 @@ Limits and Requests for `resources` are specified in the `resources` section of 
 
 ## **Examples** 🧩
 
-* sample `pod` with `resource requirements` manifest file
+* sample `pod` with `resource requirements` definition
 
     ```yaml
     apiVersion: v1

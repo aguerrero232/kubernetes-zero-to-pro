@@ -1,10 +1,10 @@
-# **Kubernetes** - ***Labels***, ***Selectors***, *and* ***Annotations***
+# **Kubernetes** - ***Labels***, ***Selectors***, *and* ***Annotations*** 🏷️
 
 **Filter** and *group* `pods` using `labels` and `selectors`. `Annotations` are used to add *metadata* to `pods`.
 
 <br />
 
-## **Basic** `Commands`
+## ***Basic*** `Commands` 📝
 
 <br />
 
@@ -27,5 +27,27 @@
     ```
 
 <br>
+
+## **Examples** 🧩
+
+* sample `pod` with `label`
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: app-1
+        labels:
+            app: app-1
+            function: front-end
+    spec:
+        containers:
+          - name: nginx-app-1
+            image: nginx:1.7.9
+            ports:
+              - containerPort: 8080
+    ```
+
+<br />
 
 [↩️ **back**](../)

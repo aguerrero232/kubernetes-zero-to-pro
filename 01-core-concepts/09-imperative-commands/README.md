@@ -22,19 +22,19 @@
 Use *in combination* to ***generate a resource definition file quickly***, that you can *then modify and create resources as required*, **instead of creating the files from scratch**.
 
 
-* **create** a `pod` manifest file
+* **create** a `pod` definition
 
     ```bash
     kubectl run <pod-name> --image=<image-name> --dry-run=client -o yaml
     ```
 
-* **create** a `deployment` manifest file
+* **create** a `deployment` definition
 
     ```bash
     kubectl create deployment --image=<image-name> --dry-run=client -o yaml
     ```
 
-* **create** a `service` manifest file
+* **create** a `service` definition
 
     ```bash
     kubectl expose <object-type> <object-name> --port=<port> --name <service-name> --dry-run=client -o yaml

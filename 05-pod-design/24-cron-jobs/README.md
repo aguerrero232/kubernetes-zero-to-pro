@@ -1,4 +1,4 @@
-# **Kubernetes** - ***CronJobs***
+# **Kubernetes** - ***CronJobs*** ⏳
 
 `CronJobs` are a way to *schedule a job to run at a **specific time** or **interval***.  `CronJobs` are a *great way to automate tasks* that need to be **run on a regular basis**.
 
@@ -6,12 +6,9 @@
 
 <br />
 
-## **Sample** `CronJob`
+## **Examples** 🧩
 
-<br/>
-
-
-* basic `CronJob` definition:
+* sample `CronJob` definition
 
     ```yaml
     apiVersion: batch/v1

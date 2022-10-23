@@ -43,7 +43,7 @@ spec:
 
 ## **Examples** 🧩
 
-* sample `pod` with `tolerations` manifest file
+* sample `pod` with `tolerations` definition
 
   ```yaml
   apiVersion: v1
@@ -98,7 +98,7 @@ spec:
 
 * **create** the *bee* and *mosquito* `pods` and **watch what happens**
   
-  * ***bee***  `pod` manifest file 🐝
+  * ***bee***  `pod` definition 🐝
 
     ```yaml
     apiVersion: v1
@@ -116,7 +116,7 @@ spec:
           effect: NoSchedule
     ```
 
-  * ***mosquito*** `pod` manifest file 🦟
+  * ***mosquito*** `pod` definition 🦟
 
     ```yaml
     apiVersion: v1

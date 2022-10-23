@@ -6,20 +6,20 @@ spec:
   containers:
     - name: readiness-probe
       image: nginx
-  readinessProbe:
-    httpGet:
-      path: /index.html
-      port: 80
+      readinessProbe:
+        httpGet:
+          path: /index.html
+          port: 80
 
-    # for tcp
-    # tcpSocket:
-    #   port: 80
+        # for tcp
+        # tcpSocket:
+        #   port: 80
 
-    # for exec
-    # exec:
-    #   command:
-    #     - cat
-    #     - /tmp/healthy
+        # for exec
+        # exec:
+        #   command:
+        #     - cat
+        #     - /tmp/healthy
 
-    initialDelaySeconds: 5
-    periodSeconds: 5
+        initialDelaySeconds: 5
+        periodSeconds: 5

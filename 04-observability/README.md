@@ -6,7 +6,7 @@
 * 🔬 **observability**
   * 🛸 [**readiness** *and* **liveness probes**](19-readiness-and-liveness-probes/)
   * 📄 [**container logging**](20-container-logging/)
-  * 📊 [**monitor** *and* **debug apps**](21-monitor-and-debug-apps/)
+  * 🕸️ [**monitor** *and* **debug apps**](21-monitor-and-debug-apps/)
 
 <br />
 

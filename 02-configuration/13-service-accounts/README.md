@@ -18,7 +18,7 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 ## **Examples** 🧩
 
-* sample `service account` manifest file
+* sample `service account` definition
 
   ```yaml
   apiVersion: rbac.authorization.k8s.io/v1

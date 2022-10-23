@@ -32,7 +32,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 ## **Examples** 🧩
 
-* sample `pod` manifest file with `node` `selector`
+* sample `pod` definition with `node` `selector`
 
     ```yaml
     apiVersion: v1
@@ -47,7 +47,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
             size: Large
     ```
 
-* sample `pod` manifest file with `node` `affinity`
+* sample `pod` definition with `node` `affinity`
 
     ```yaml
     apiVersion: v1
@@ -71,7 +71,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 ## ***Red*** *and* ***Blue*** **`Example`** 🔴🟦
 
-* red `deployment` manifest file 🔴
+* red `deployment` definition 🔴
 
     ```yaml
     apiVersion: apps/v1
@@ -103,7 +103,7 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
                                       - red
     ```
 
-* blue `deployment` manifest file 🟦
+* blue `deployment` definition 🟦
 
     ```yaml
     apiVersion: apps/v1

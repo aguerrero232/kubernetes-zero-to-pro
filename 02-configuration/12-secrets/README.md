@@ -1,6 +1,6 @@
 # **Kubernetes** - ***Secrets*** 🕵️
 
-`Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` manifest file.
+`Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` definition.
 
 * A `secret` is only sent to a `node` if a `pod` on that `node` requires it.
 
@@ -30,7 +30,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
     kubectl create secret generic <secret name> --from-literal=<key>=<value>
     ```
 
-* **create** **`secrets`** using a `manifest file`
+* **create** **`secrets`** using a `definition`
 
     ```bash
     kubectl create secret generic <secret name> --from-file=<path to file>
@@ -106,7 +106,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
     pokemon
     ```
 
-* sample `secret` manifest file
+* sample `secret` definition
 
     ```yaml
     apiVersion: v1
@@ -120,7 +120,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
         DB_User: Z3VlcnJlcm8=
     ```
 
-* sample `pod` with `secret` manifest file
+* sample `pod` with `secret` definition
 
     ```yaml
     apiVersion: v1

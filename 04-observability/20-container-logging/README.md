@@ -1,10 +1,10 @@
-# **Kubernetes** - ***Container Logging***
+# **Kubernetes** - ***Container Logging*** 📄
 
 `Logging` is a **critical** part of **monitoring** and **debugging** `containerized` applications. `Kubernetes` provides a **native** solution to **collect** and **store** `container` logs.
 
 <br>
 
-## **Basic** `Commands`
+## ***Basic*** `Commands` 📝
 
 * **view** `logs` for a `pod`
   * `-f`: follow the `logs` as they are written, *simmilar to docker*

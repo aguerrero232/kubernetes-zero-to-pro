@@ -1,10 +1,10 @@
 # **Kubernetes** - ***ConfigMaps*** 🗺️
 
-Just like everything else in kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` manifest file.
+Just like everything else in kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
 
 * example at `yaml-examples/configmap-description.yaml`
 
-To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of the **Pod** manifest file.
+To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of the **Pod** definition.
 
 * example at `yaml-examples/configmap-pod.yaml`
 
@@ -18,7 +18,7 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
     kubectl create configmap <configmap-name> --from-literal=<key>=<value>
     ```
 
-* **create** a `ConfigMap` using a `manifest file`,
+* **create** a `ConfigMap` using a `definition`,
 
     ```bash
     kubectl create configmap <configmap-name> --from-file=<path-to-file>
@@ -53,7 +53,7 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
     APP_MODE: production
     ```
 
-* sample `ConfigMap` manifest file
+* sample `ConfigMap` definition
 
     ```yaml
     apiVersion: v1
@@ -65,7 +65,7 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
         APP_MODE: production
     ```
 
-* sample `Pod` manifest file
+* sample `Pod` definition
 
     ```yaml
     apiVersion: v1
