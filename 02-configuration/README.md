@@ -6,10 +6,10 @@
 
 ## ***Table of Contents*** 📜
 
-* [**container arguments**](10-commands-and-arguments/README.md)
-* [**configmaps**](11-config-maps/README.md)
-* [**secrets**](12-secrets/README.md)
-* [**service accounts**](13-service-accounts/README.md)
-* [**resource requirements**](14-resource-requirements/README.md)
-* [**taints and tolerations**](15-taints-and-tolerants/README.md)
-* [**node selectors and affinity**](16-node-selectors-and-affinity/README.md)
+* [**container arguments**](10-commands-and-arguments/)
+* [**configmaps**](11-config-maps/)
+* [**secrets**](12-secrets/)
+* [**service accounts**](13-service-accounts/)
+* [**resource requirements**](14-resource-requirements/)
+* [**taints and tolerations**](15-taints-and-tolerants/)
+* [**node selectors and affinity**](16-node-selectors-and-affinity/)
