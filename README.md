@@ -2,7 +2,6 @@
 
 <img src="00-resources/img/k8-header.png" width="100%" height="330px">
 
-
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🗃️ [***resources***](00-resources/)
@@ -21,7 +20,6 @@
 <br>
 
 <img src="00-resources/img/clusterdiagram2.PNG" width="615px"> <img src="00-resources/img/clusterdiagram-legend.PNG" width="150px">
-
 
 * The **`Control Plane`** is responsible for *managing the cluster*.
 
