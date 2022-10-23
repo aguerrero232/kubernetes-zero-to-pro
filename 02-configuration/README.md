@@ -4,14 +4,15 @@
 
 <br />
 
-[**Home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)    
+    
 
 ## ***Table of Contents*** 📜
 
-* [**container arguments**](10-commands-and-arguments/)
-* [**configmaps**](11-config-maps/)
-* [**secrets**](12-secrets/)
-* [**service accounts**](13-service-accounts/)
-* [**resource requirements**](14-resource-requirements/)
-* [**taints** *and* **tolerations**](15-taints-and-tolerants/)
-* [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/)
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro) 
+* 🔣 [**container arguments**](10-commands-and-arguments/)
+* 🗺️ [**configmaps**](11-config-maps/)
+* 🕵️ [**secrets**](12-secrets/)
+* 💁 [**service accounts**](13-service-accounts/)
+* 💾 [**resource requirements**](14-resource-requirements/)
+* ☢️ [**taints** *and* **tolerations**](15-taints-and-tolerants/)
+* 🔘 [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/)

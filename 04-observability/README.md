@@ -18,6 +18,8 @@
 
 <br />
 
-[**Home**](https://github.com/aguerrero232/kubernetes-zero-to-pro)    
+    
 
 ## ***Table of Contents*** 📜
+
+* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro) 
