@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Secrets***
+# **Kubernetes** - ***Secrets*** 🕵️
 
 `Secrets` are used to store *sensitive information* such as `passwords`, `API keys`, and `ssh keys`. Secrets are stored in the cluster as *base64 encoded strings*. Secrets can be create using the `kubectl` command or using a `Secret` manifest file.
 
