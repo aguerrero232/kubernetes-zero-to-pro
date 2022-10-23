@@ -65,7 +65,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
                 containerPort: 443
     ```
 
-    * sample `ConfigMap`, needed for the `ingress` ***controllers*** `container` args
+    * sample `ConfigMap`, needed for the `ingress` controller `container` args
 
       ```yaml
       apiVersion: v1
