@@ -2,12 +2,12 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* [***resources***](00-resources/README.md) 🗃️
-* [***core concepts***](01-core-concepts/README.md) 🧠
-* [***configuration***](02-configuration/README.md) ⚙️
-* [***multi-container pods***](03-multi-container-pods/README.md) 🐳<sup>🐳<sup>🐳</sup></sup>
-* [***observability***](04-observability/README.md) 🔬
-* [***pod design***](05-pod-design/README.md) 💠
+* 🗃️ [***resources***](00-resources/README.md)
+* 🧠 [***core concepts***](01-core-concepts/README.md)
+* ⚙️ [***configuration***](02-configuration/README.md)
+* 🐳<sup>🐳</sup> [***multi-container pods***](03-multi-container-pods/README.md) 
+* 🔬 [***observability***](04-observability/README.md)
+* 💠 [***pod design***](05-pod-design/README.md)
 
 <br>
 
@@ -67,57 +67,52 @@
 
 ## ***Basic*** `Commands` 📝
 
-<br>
 
-## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
+* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
 
-* Check the status of minikube
+  * Check the status of minikube
 
-  ```bash
-  minikube status
-  ```
+    ```bash
+    minikube status
+    ```
 
-* *start* `minikube`
+  * *start* `minikube`
 
-  ```bash
-  minikube start
-  ```
+    ```bash
+    minikube start
+    ```
 
-* **stop** `minikube`
+  * **stop** `minikube`
 
-  ```bash
-  minikube stop
-  ```
-
-<br>
-
-## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
+    ```bash
+    minikube stop
+    ```
 
 <br>
 
-* **check** version of `kubernetes` being used
+* ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
 
-  ```bash
-  kubectl version
-  ```
+  * **check** version of `kubernetes` being used
 
-* **get** *everything*
+    ```bash
+    kubectl version
+    ```
 
-  ```bash
-  kubectl get all
-  ```
+  * **get** *everything*
 
-<br>
-
-## `usefull` **commands** ⚡
+    ```bash
+    kubectl get all
+    ```
 
 <br>
 
-* **view** the flavor and **version** of `OS`
+* ## `usefull` **commands** ⚡
 
-  ```bash
-  cat /etc/os-release
-  ```
+  * **view** the flavor and **version** of `OS`
+
+    ```bash
+    cat /etc/os-release
+    ```
 
 <br>
 
