@@ -86,14 +86,6 @@
     kubectl get all
     ```
 
-* ## `usefull` **commands** ⚡
-
-  * **view** the flavor and **version** of `OS`
-
-    ```bash
-    cat /etc/os-release
-    ```
-
 <br>
 
 # ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
