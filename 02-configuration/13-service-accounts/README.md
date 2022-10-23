@@ -35,3 +35,7 @@ When a `pod` is **created** it automatically links it to a `service account`.
     name: pod-reader # this must match the name of the Role or ClusterRole you wish to bind to
     apiGroup: rbac.authorization.k8s.io
   ```
+
+<br>
+
+↩️ [**back**](../)

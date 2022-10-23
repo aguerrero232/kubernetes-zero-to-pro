@@ -54,3 +54,8 @@ kubectl get all --namespace <namespace-name>
             limits.cpu: "10"
             limits.memory: 10Gi
     ```
+
+<br>
+
+↩️ [**back**](../)
+

@@ -137,3 +137,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
               - secretRef:
                 name: sample-secret
     ```
+
+<br>
+
+↩️ [**back**](../)

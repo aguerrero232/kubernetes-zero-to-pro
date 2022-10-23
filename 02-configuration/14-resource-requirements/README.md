@@ -31,3 +31,7 @@ Limits and Requests for `resources` are specified in the `resources` section of 
                     memory: "128Mi"
                     cpu: "500m"
     ```
+
+<br>
+
+↩️ [**back**](../)

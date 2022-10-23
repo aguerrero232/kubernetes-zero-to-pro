@@ -18,3 +18,7 @@
   ```bash
   kubectl logs -f <pod-name> -c <container-name>
   ```
+
+<br>
+
+↩️ [**back**](../)

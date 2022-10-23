@@ -117,3 +117,7 @@ kubectl delete replicaset <replica-set-name>
             matchLabels:
             type: front-end
     ```
+
+<br>
+
+↩️ [**back**](../)

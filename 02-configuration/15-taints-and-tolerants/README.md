@@ -138,3 +138,7 @@ spec:
 
 * **remove** the taint on `controlplane`
   * *mosquito* will be *scheduled* on `controlplane`
+
+<br>
+
+↩️ [**back**](../)

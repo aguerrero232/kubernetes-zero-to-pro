@@ -196,3 +196,7 @@ By ***default*** Kubernetes will **restart** a `pod` if it fails.  This is **not
     throw-dice-job-vjcjw   0/1     Error       0          59s
     throw-dice-job-zfhq6   0/1     Error       0          55s
     ```
+
+<br>
+
+↩️ [**back**](../)

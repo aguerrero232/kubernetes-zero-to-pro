@@ -101,3 +101,7 @@ Use *in combination* to ***generate a resource definition file quickly***, that 
     ```bash
     kubectl -n dev-ns create deployment redis-deploy --image=redis --replicas=2 --dry-run=client -o yaml > rd-dev.yaml
     ```
+
+<br>
+
+↩️ [**back**](../)

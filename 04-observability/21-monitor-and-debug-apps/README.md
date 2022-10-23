@@ -99,3 +99,7 @@ The `metrics server` is a *cluster-wide aggregator* of resource usage **data**. 
     ```bash
     kubectl top pod --sort-by='cpu' --no-headers | tail -1 
     ```
+
+<br>
+
+↩️ [**back**](../)

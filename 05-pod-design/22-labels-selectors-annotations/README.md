@@ -25,3 +25,7 @@
     ```bash
     kubectl get all --selector <label-name>=<label-value>,<label-name>=<label-value>
     ```
+
+<br>
+
+↩️ [**back**](../)
