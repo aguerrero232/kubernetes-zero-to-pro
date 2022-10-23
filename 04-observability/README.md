@@ -1,4 +1,4 @@
-# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 4:*** `Observability` 🔬
+# <img src="../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 4:*** `Observability` 🔬
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
