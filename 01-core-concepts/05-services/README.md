@@ -124,4 +124,4 @@ minikube service <service-name> --url
 
 <br>
 
-[↩️](../)
+[↩️](../README.md)

@@ -40,4 +40,4 @@ When a `pod` is **created** it automatically links it to a `service account`.
 
 <br>
 
-[↩️](../)
+[↩️](../README.md)

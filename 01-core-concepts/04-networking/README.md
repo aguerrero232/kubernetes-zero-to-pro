@@ -135,7 +135,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
   * sample `ingress` **resource**  definition
 
     ```yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ingress-wear
@@ -148,7 +148,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
   * how to configure `ingress` resources
 
     ```yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ingress-wear-watch
@@ -170,7 +170,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
   * to route **domain names** users must define a `host` in the `ingress` resource `spec.rules` section
 
     ```yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ingress-wear-watch
@@ -190,12 +190,63 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
                   servicePort: 80
     ```
 
+  * sample `ingress` 
+
+    ```yaml
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: ingress-wear-watch
+      namespace: app-space
+    spec:
+      rules:
+      - http:
+          paths:
+          - backend:
+              service:
+                name: wear-service
+                port:
+                  number: 8080
+            path: /wear
+            pathType: Prefix
+          - backend:
+              service:
+                name: video-service
+                port:
+                  number: 8080
+            path: /watch
+            pathType: Prefix
+    ```
+
   * **create** `ingress` resource imperatively
 
     ``` bash
     kubectl create ingress ingress-test --rule="wear.my-online-store.com/wear*=wear-service:80"
     ```
 
+  * define a default `backend` for the `ingress` resource
+
+    ```yaml
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: default-backend-service
+      namespace: app-space
+    spec:
+      type: ClusterIP
+      clusterIP: 10.104.209.223
+      clusterIPs:
+        - 10.104.209.223
+      ports:
+      - port: 80
+        protocol: TCP
+        targetPort: 8080
+      selector:
+        app: default-backend
+    ```
+
+
 <br>
 
-[↩️](../)
+
+[↩️](../README.md)
