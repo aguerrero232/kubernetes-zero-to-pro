@@ -1,7 +1,5 @@
 # **Kubernetes** - ***Pods*** 🐋🐳🐋🐳
 
-[**Section 1 - Home Page**](../)
-
 A `pod` is a **single instance** of an application and is the **simplest object** you can create in `kubernetes`, usually have a 1:1 relationship with `containers`. `Pods` can have multiple `containers`, but they are usually `containers` of different types that are ***tightly*** coupled.
 
 <br>
@@ -124,3 +122,7 @@ A `pod` is a **single instance** of an application and is the **simplest object*
 
   - `capabilties` are a *set of linux kernel capabilities* that can be **added** to or **removed** from a `container`
   - `capabilities` are only available at the `container` level, **not at** the `pod` level
+
+<br>
+
+↩️ [**back**](../)
