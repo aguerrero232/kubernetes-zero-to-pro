@@ -140,4 +140,4 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 <br>
 
-[↩️ **back**](../)
+[↩️](../)

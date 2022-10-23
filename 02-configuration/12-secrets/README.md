@@ -135,4 +135,4 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-[↩️ **back**](../)
+[↩️](../)

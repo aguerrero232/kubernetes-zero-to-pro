@@ -110,4 +110,4 @@ At times you may want to **check** if a `container` is **ready** to **serve** re
 
 <br>
 
-[↩️ **back**](../)
+[↩️](../)

@@ -99,4 +99,4 @@ Use *in combination* to ***generate a resource definition file quickly***, that 
 
 <br>
 
-[↩️ **back**](../)
+[↩️](../)
