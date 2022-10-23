@@ -10,4 +10,4 @@
 
 <br />
 
-In general, design patterns are implemented to *solve and reuse common well thought out architectures*. Design patterns also introduce **efficiency** into applications, reducing overhead and provides a way to reuse `containers` across applications. There are several ways to group or to enhance containers inside of ***Kubernetes*** `Pods`. These patterns can be categorized as single `node`, `multi-container` patterns or you can use the more advanced multi-node applications patterns.
+In general, **design patterns** are implemented to *solve and reuse common well thought out architectures*. **Design patterns** also introduce **efficiency** into applications, reducing overhead and provides a way to reuse `containers` across applications. There are several ways to group or to enhance containers inside of ***Kubernetes*** `Pods`. These patterns can be categorized as single `node`, `multi-container` patterns or you can use the more advanced `multi-node` applications patterns.
