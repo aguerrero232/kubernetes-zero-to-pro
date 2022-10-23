@@ -41,7 +41,29 @@ spec:
 
 <br />
 
-## ***Bee*** *and* ***Mosquito*** **Example**
+## **Examples** 📚
+
+<br>
+
+* sample `pod` with `tolerations` manifest file
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: my-app
+  spec:
+    containers:
+      - name: nginx
+        image: nginx
+        tolerations:
+          - key: app
+            operator: "Equal"
+            value: blue
+            effect: NoSchedule
+  ```
+
+
+## ***Bee*** *and* ***Mosquito*** **`Example`** 🐝🦟
 
 <br />
 
@@ -70,6 +92,7 @@ spec:
 
 
 * apply taint
+
   ```bash
   kubectl taint nodes node01 spray=mortein:NoSchedule
   ```

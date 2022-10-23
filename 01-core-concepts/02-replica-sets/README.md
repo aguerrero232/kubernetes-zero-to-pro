@@ -12,7 +12,7 @@ A `Replica Set` is a *set of* `pods` that are **managed** by a `controller`. It 
 
 <br />
 
-## **Why** use `Replica Sets`? 💭
+## **Why** use `Replica Sets` 💭
 
 They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `replica set` to know which `pods` to monitor and provides a method to **filter** out `pods` thats are not part of the `replica set`.
 

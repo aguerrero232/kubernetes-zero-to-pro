@@ -48,13 +48,13 @@ kubectl get all --namespace <namespace-name>
     apiVersion: v1
     kind: Namespace
     metadata:
-    name: dev
+        name: dev
     # defined a rescource quota for the namespace
     spec:
-    hard:
-        pods: "10"
-        requests.cpu: "4"
-        requests.memory: 5GI
-        limits.cpu: "10"
-        limits.memory: 10Gi
+        hard:
+            pods: "10"
+            requests.cpu: "4"
+            requests.memory: 5GI
+            limits.cpu: "10"
+            limits.memory: 10Gi
     ```

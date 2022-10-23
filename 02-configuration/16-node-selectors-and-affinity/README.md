@@ -25,6 +25,117 @@ Instead you can use `Node Affinity` to perform the same task. `Node Affinity` is
 
 * to label a `node`
 
-```bash
-kubectl label nodes <node-name> <label-key>=<label-value>
-```
+    ```bash
+    kubectl label nodes <node-name> <label-key>=<label-value>
+    ```
+
+<br />
+
+## **Examples** 📚
+
+<br />
+
+* sample `pod` manifest file with `node` `selector`
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: my-app
+    spec:
+        containers:
+          - name: nginx
+            image: nginx
+        nodeSelector:
+            size: Large
+    ```
+
+* sample `pod` manifest file with `node` `affinity`
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: my-app
+    spec:
+        containers:
+          - name: nginx
+            image: nginx
+        affinity:
+            nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                      - matchExpressions:
+                          - key: size
+                            operator: In
+                            values:
+                              - Large
+    ```
+
+## ***Red*** *and* ***Blue*** **`Example`** 🔴🟦
+
+* red `deployment` manifest file
+
+    ```yaml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+        name: red
+    spec:
+        replicas: 2
+        selector:
+            matchLabels:
+            app: red
+        template:
+            metadata:
+                name: red
+                labels:
+                    app: red
+            spec:
+                containers:
+                  - image: nginx
+                    name: nginx
+                affinity:
+                    nodeAffinity:
+                        requiredDuringSchedulingIgnoredDuringExecution:
+                            nodeSelectorTerms:
+                              - matchExpressions:
+                                  - key: color
+                                    operator: In
+                                    values:
+                                      - red
+    ```
+
+* blue `deployment` manifest file
+
+    ```yaml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+        name: blue
+    spec:
+        replicas: 3
+        selector: 
+            matchLabels:
+                app: nginx
+        template:
+            metadata:
+                name: blue
+                labels:
+                    type: pod
+                    app: nginx
+            spec:
+                containers:
+                  - name: nginx
+                    image: nginx
+                affinity:
+                    nodeAffinity:
+                        requiredDuringSchedulingIgnoredDuringExecution:
+                            nodeSelectorTerms:
+                              - matchExpressions:
+                                  - key: color
+                                    operator: In
+                                    values:
+                                      - blue
+    ```
+

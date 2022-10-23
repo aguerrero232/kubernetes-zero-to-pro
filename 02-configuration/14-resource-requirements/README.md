@@ -4,4 +4,32 @@
 
 Limits and Requests for `resources` are specified in the `resources` section of a container's `spec`. The `resources` section has two sub-sections: `requests` and `limits`. The `requests` section specifies the minimum `resources` that a container needs to run. The `limits` section specifies the maximum `resources` that a container can use.
 
-`Kubernetes` allows `Pods` to specify default resources for a container. These default resources are used when a container does not specify its own resource requirements. The default resources are specified in the `spec` section of a Pod's `spec`. 
+`Kubernetes` allows `Pods` to specify default resources for a container. These default resources are used when a container does not specify its own resource requirements. The default resources are specified in the `spec` section of a Pod's `spec`.
+
+<br />
+
+## **Examples** 📚
+
+<br>
+
+* sample `pod` with `resource requirements` manifest file
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: myapp
+        labels:
+            name: myapp
+    spec:
+        containers:
+          - name: myapp
+            image: nginx
+            resources:
+                requests:
+                    memory: "64Mi"
+                    cpu: "250m"
+                limits:
+                    memory: "128Mi"
+                    cpu: "500m"
+    ```

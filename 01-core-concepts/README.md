@@ -2,7 +2,12 @@
 
 `Core concepts` are the ***fundamental building blocks*** of `Kubernetes`. These concepts are used to *create and manage* `Kubernetes` clusters. These concepts include:
 
-* **nodes**
+<br />
+
+## ***Table of Contents*** 📜
+
+
+* **`nodes`**
 * [**pods**](01-pods/README.md)
 * [**replica sets** *and* **replication controllers**](02-replica-sets/README.md)
 * [**deployments**](03-deployments/README.md)

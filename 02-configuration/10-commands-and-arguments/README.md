@@ -1,4 +1,4 @@
-# **Kubernetes** - ***Commands and Arguments***
+# **Kubernetes** - ***Commands and Arguments*** 🔣
 
 <br>
 
@@ -19,4 +19,36 @@ To pass arguments to a `container`, you can use the `args` field of the `contain
 
     ```bash
         docker build  -t <container-name>  .
+    ```
+
+
+<br />
+
+## **Examples** 📚
+
+<br>
+
+* sample `Dockerfile`
+
+    ```Dockerfile
+    FROM ubuntu
+    ENTRYPOINT [ "sleep" ]
+    CMD [ "5" ]
+    ```
+
+* sample `pod` definition
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: ubuntu-sleeper-pod
+    spec:
+        containers:
+          - image: ubuntu-sleeper
+            name: ubuntu-sleeper
+            # overrides the entrypoint instruction 
+            command: ["echo"]  
+            # overrieds the commad instruction  
+            args: ["10"]
     ```

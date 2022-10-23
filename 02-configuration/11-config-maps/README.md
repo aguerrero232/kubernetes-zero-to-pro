@@ -1,4 +1,4 @@
-# **Kubernetes** - ***ConfigMaps***
+# **Kubernetes** - ***ConfigMaps*** 🗺️
 
 <br>
 
@@ -44,4 +44,47 @@ To tie a `ConfigMap` to a **Pod** you can use the `envFrom` or `env` section of 
 
     ```bash
     kubectl delete configmap <configmap-name>
+    ```
+
+<br>
+
+## **Examples** 📚
+
+<br>
+
+* sample `ConfigMap`
+
+    ```yaml
+    APP_COLOR: blue
+    APP_MODE: production
+    ```
+
+* sample `ConfigMap` manifest file
+
+    ```yaml
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+        name: sample-config
+    data:
+        APP_COLOR: blue
+        APP_MODE: production
+    ```
+
+* sample `Pod` manifest file
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: configmap-pod
+    spec:
+        containers:
+          - name: configmap-container
+            image: nginx
+            ports:
+              - containerPort: 80
+            envFrom:
+              - configMapRef:
+                    name: sample-config
     ```

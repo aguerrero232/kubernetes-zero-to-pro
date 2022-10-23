@@ -1,6 +1,10 @@
 # **Kubernetes** - ***Section 0:*** `Resources` 🗃️
 
-## **Table of Contents** 📝
+<br />
+
+## ***Table of Contents*** 📜
+
+<br />
 
 * 🖼️ **img**: *static images used in documentation*
 

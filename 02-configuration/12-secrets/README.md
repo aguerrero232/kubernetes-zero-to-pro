@@ -16,10 +16,9 @@
 
 * Not checking-in secret object definition files to source code repositories.
 
-* **[Enabling Encryption at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for Secrets so they are stored encrypted in `ETCD`. 
+* **[Enabling Encryption at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)** for Secrets so they are stored encrypted in `ETCD`.
 
 <br>
-
 
 Read about the protections and risks of using secrets **[here](https://kubernetes.io/docs/concepts/configuration/secret/#protections)**.
 
@@ -59,7 +58,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
     kubectl describe secret <secret name>
     ```
 
-    * note that this method ***does not show the secret value***
+  * note that this method ***does not show the secret value***
 
 <br>
 
@@ -77,7 +76,7 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
 <br>
 
-## **Examples**
+## **Examples** 📚
 
 <br>
 
@@ -91,4 +90,55 @@ Read about the protections and risks of using secrets **[here](https://kubernete
 
     ```bash
     kubectl create secret generic sample-secret2 --from-literal=DB_Host=postgres --from-literal=DB_User=guerrero --from-literal=DB_Password=pokemon
+    ```
+
+* sample `secrets`
+
+    **`DB_Host`**
+
+    ```bash
+    postgres
+    ```
+
+    **`DB_User`**
+    ```bash
+    guerrero
+    ```
+
+    **`DB_Password`**
+
+    ```bash
+    pokemon
+    ```
+
+* sample `secret` manifest file
+
+    ```yaml
+    apiVersion: v1
+    kind: Secret
+    metadata:
+        creationTimestamp: null
+        name: sample-secret
+    data:
+        DB_Host: cG9zdGdyZXM=
+        DB_Password: cG9rZW1vbg==
+        DB_User: Z3VlcnJlcm8=
+    ```
+
+* sample `pod` with `secret` manifest file
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: secret-pod
+    spec:
+        containers:
+          - name: secret-container
+            image: nginx
+            ports:
+              - containerPort: 80
+            envFrom:
+              - secretRef:
+                name: sample-secret
     ```
