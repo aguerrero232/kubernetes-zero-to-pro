@@ -10,6 +10,7 @@
 * 🐳<sup>🐳</sup> [***multi-container pods***](03-multi-container-pods/README.md)
 * 🔬 [***observability***](04-observability/README.md)
 * 💠 [***pod design***](05-pod-design/README.md)
+* 🤯 [***advanced services*** *and* ***networking***](06-adv-services-and-networking/README.md)
 
 <br />
 
@@ -47,79 +48,6 @@
     * `kubelet` - An agent that runs on each node in the cluster. It makes sure that `containers` are running in a `Pod`.
       * `kube-proxy` - Network proxy that runs on each `node` in your cluster, implementing part of the *`Kubernetes` Service concept*.
     * `Container runtime` - **Software** that is *responsible for running* `containers`.
-
-<br>
-
-# ***YAML***  <img src="00-resources/img/yaml.png" width="29px">
-
-`YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
-
-## `YAML` **Syntax**
-
-* `YAML` is case sensitive
-* Comments are created using the # symbol
-
-<br>
-
-## **Examples** 🧩
-
-* key value pairs
-
-  ```yaml
-  Fruit: Apple
-  Vegetable: Carrot
-  Liquid: Water
-  Meat: Chicken
-  ```
-
-* arrays / lists
-
-  ```yaml
-  Fruits:
-    - Orange
-    - Apple
-    - Banana
-
-  Vegetables:
-    - Carrot 
-    - Cauliflower
-    - Tomato
-  ```
-
-* dictionary / map
-
-  ```yaml
-  Banana:
-      Calories: 105
-      Fat: 0.4g
-      Carbs: 27g
-
-  Grapes:
-      Calories: 62
-      Fat: 0.3g
-      Carbs: 16g
-  ```
-
-* key value / dictonary / lists
-
-  ```yaml
-  Fruits:
-    - Banana:
-        Calories: 105
-        Fat: 0.4g
-        Carbs: 27g
-
-    - Grapes:
-        Calories: 62
-        Fat: 0.3g
-        Carbs: 16g
-  ```
-
-***Notice the alignment, this is important in yaml.***
-
-* You can *either* set a value or a list/dictonary/map but *not both*
-
-* `Dictionaries` are an *unordered collection* while `lists` are *ordered*
 
 <br>
 
