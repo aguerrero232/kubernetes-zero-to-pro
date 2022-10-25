@@ -4,9 +4,7 @@
 
 <br/>
 
-
 ### ⛏️ ***"A stone is broken by the last stroke of the hammer. This does not mean that the first stroke was useless. Success is the result of continuous effort."*** ⛏️
-
 
 <br>
 
@@ -19,6 +17,7 @@
 * 🔬 [***observability***](04-observability/README.md)
 * 💠 [***pod design***](05-pod-design/README.md)
 * 🤯 [***advanced services*** *and* ***networking***](06-adv-services-and-networking/README.md)
+* 🗄️ [***state persistence***](07-state-persistence/README.md)
 
 <br />
 
