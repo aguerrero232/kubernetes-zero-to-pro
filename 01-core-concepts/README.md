@@ -18,10 +18,8 @@
   * 🚀 [**k8s deployments documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
   * 🖧 [**k8s networking documentation**](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
   * 🛎️ [**k8s services documentation**](https://kubernetes.io/docs/concepts/services-networking/service/)
-  * 🏗️ [**k8s microservice architecture documentation**](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-you-need-kubernetes-and-what-can-it-do)
-  * ☁️ [**k8s cloud documentation**](https://kubernetes.io/docs/concepts/cluster-administration/cloud-providers/)
   * 📛 [**k8s namespaces documentation**](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
-  * 🧙 [**k8s imperative commands documentation**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
 
 
 <br />

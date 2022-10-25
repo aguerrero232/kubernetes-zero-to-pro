@@ -6,6 +6,21 @@ By default `Kubernetes` *allows all traffic to and from `pods`*. This is a **sec
 
 <br>
 
+## **Basic** `Commands` 📝
+
+* view network policies
+
+  ```shell
+  kubectl get networkpolicy
+  ```
+  
+  ```shell
+  kubectl get netpol
+  ```
+ 
+  * both commands works the same, last one is just shorthand
+
+
 ## **Examples** 🧩
 
 * `network policy` definition
