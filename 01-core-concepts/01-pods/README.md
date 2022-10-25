@@ -3,7 +3,7 @@
 
 ## **Description** 👀
 
-A `pod` is a **single instance** of an application and is the **simplest object** you can create in `kubernetes`, usually have a 1:1 relationship with `containers`. `Pods` can have multiple `containers`, but they are usually `containers` of different types that are ***tightly*** coupled.
+A `pod` is a **single instance** of an application and is the **simplest object** you can create in `Kubernetes`, usually have a 1:1 relationship with `containers`. `Pods` can have multiple `containers`, but they are usually `containers` of different types that are ***tightly*** coupled.
 
 <br>
 
@@ -86,7 +86,7 @@ A `pod` is a **single instance** of an application and is the **simplest object*
     labels:
       app: myapp
       type: testing
-  # specification section, providing additional information to kubernetes about the object
+  # specification section, providing additional information to Kubernetes about the object
   spec:
     containers:
       - name: nginx-container

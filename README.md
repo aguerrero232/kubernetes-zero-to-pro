@@ -83,7 +83,7 @@
 
 * ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
 
-  * **check** version of `kubernetes` being used
+  * **check** version of `Kubernetes` being used
 
     ```bash
     kubectl version

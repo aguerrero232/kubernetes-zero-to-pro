@@ -12,7 +12,7 @@
 * **Hosted**
   * Kuberentes-As-A-Service
   * Provider **provisions** `VMs`
-  * Provider **manages installation** of `kubernetes`
+  * Provider **manages installation** of `Kubernetes`
   * provider **maintains** `VMs`
     * `example`: Google Container Engine (`GKE`)
 

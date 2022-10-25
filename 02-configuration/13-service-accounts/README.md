@@ -2,8 +2,6 @@
 
 ## **Description** 👀
 
-**`Kubernetes` documents reference** - ***[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)***
-
 <br>
 
 When a `pod` is **created** it automatically links it to a `service account`.

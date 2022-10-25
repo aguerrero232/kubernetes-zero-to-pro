@@ -2,7 +2,7 @@
 
 ## **Description** 👀
 
-Just like everything else in kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
+Just like everything else in Kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
 
 * example at `yaml-examples/configmap-description.yaml`
 
