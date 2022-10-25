@@ -7,6 +7,10 @@
   * 🏷️ [**labels selectors** *and* **annotations**](22-labels-selectors-annotations/README.md)
   * 👔 [**jobs**](23-jobs/README.md)
   * ⏳ [**cron jobs**](24-cron-jobs/README.md)
+* 🔗 **links**
+  * 🏷️ [**k8s labels selectors** *and* **annotations documentation**](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+  * 👔 [**k8s jobs documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
+  * ⏳ [**k8s cron jobs documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
 
 <br />
 

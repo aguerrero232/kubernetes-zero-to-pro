@@ -6,8 +6,14 @@
 * 🤯 **advanced services** *and* **networking**
   * ⚖️ [**ingress networking**](25-ingress-networking/README.md)
   * 🤝 [**network policies**](26-network-policies/README.md)
-  
+* 🔗 **links**
+  * 🛎️ [**k8s services documentation**](https://kubernetes.io/docs/concepts/services-networking/service/)
+  * ➡️ [**k8s ingress documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+  * 🎮 [**k8s ingress controllers documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+  * 🤝 [**k8s network policies documentation**](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+
 <br />
 
-
 ## **Description** 👀
+
+This section will cover ***advanced*** `services` and `networking` concepts in `Kubernetes`. Add 

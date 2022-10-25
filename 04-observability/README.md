@@ -7,7 +7,10 @@
   * 🛸 [**readiness** *and* **liveness probes**](19-readiness-and-liveness-probes/README.md)
   * 📄 [**container logging**](20-container-logging/README.md)
   * 🕸️ [**monitor** *and* **debug apps**](21-monitor-and-debug-apps/README.md)
-
+* 🔗 **links**
+  * 🛸 [**k8s readiness** *and* **liveness probes documentation**](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+  * 📄 [**k8s container logging documentation**](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+  * 🕸️ [**k8s debugging documentation**](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/)
 <br />
 
 ## **Description** 👀
