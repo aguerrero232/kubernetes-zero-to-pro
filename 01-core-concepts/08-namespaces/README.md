@@ -1,5 +1,7 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Namespaces*** 📛
 
+## **Description** 👀
+
 `Namespaces` provides a mechanism for isolating groups of resources within a single cluster.
 
 * Names of resources need to be **unique within a namespace**, but **not across namespaces**.
@@ -58,4 +60,3 @@ kubectl get all --namespace <namespace-name>
 <br>
 
 [↩️](../README.md)
-

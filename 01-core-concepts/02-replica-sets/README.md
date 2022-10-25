@@ -1,8 +1,9 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
 
+
 `Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage **Pods** 😤
 
-<br />
+## **Description** 👀
 
 A `Replica Set` is a *set of* `pods` that are **managed** by a `controller`. It **ensures** that the *specified number of pods* are running at any given time. If a pod fails, the `Replica Set` will **create** a new one to *replace it*.
 

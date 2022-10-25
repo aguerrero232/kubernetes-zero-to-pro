@@ -15,4 +15,6 @@
 
 <br />
 
+## **Description** 👀
+
 `Core concepts` are the ***fundamental building blocks*** of `Kubernetes`. These concepts are used to *create and manage* `Kubernetes` clusters.

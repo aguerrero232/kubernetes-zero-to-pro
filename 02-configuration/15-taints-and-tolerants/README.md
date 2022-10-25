@@ -1,5 +1,7 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Taints*** *and* ***Tolerations*** ☢️
 
+## **Description** 👀
+
 `Taints` and `Tolerations` are features that allow you to control the placement of pods on nodes. Taints are applied to nodes, and tolerations are applied to pods.A `taint` on a `node` ***instructs*** the `node` to ***repel all*** `pods` that do not `tolerate` the `taint`.
 
 <br >

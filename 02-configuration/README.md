@@ -14,4 +14,6 @@
 
 <br />
 
+## **Description** 👀
+
 ***Configuration*** is the process of **setting up your application so that it can run** in a `Kubernetes` cluster.

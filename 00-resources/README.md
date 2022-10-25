@@ -5,6 +5,7 @@
 * 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/blob/main/README.md)
 * 🗃️ **resources**
   * 🖼️ [**images**](img/)
+  * 📝 [**markdown blueprints**](md-samples/)
   * 📁 [**pdfs**](pdfs/)
     * 👩🏽‍🏫 [**udemy course pdfs**](pdfs/udemy-course/)
     * 📖 [**kubernetes up and running book**](pdfs/kubernetes-up-and-running.pdf)
@@ -17,13 +18,20 @@
     * 💡 [***exam tips***](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 
 
-<br>
+<br />
+
+
+## **Description** 👀
+
+Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and links to other resources.
+ 
+<br />
 
 ## **Helpful** `Content` 📌
 
 <br>
 
-# ***Nano*** 📝
+## ***Nano*** 📝
 
 `Nano` is a *text editor* that is installed by default on most Linux distributions. It is a simple text editor that is easy to use and has a lot of features. During the `CKAD` exam, you will be **asked to edit a file using Nano or Vim**.
 * 🗎 [***nano documentation***](https://www.nano-editor.org/)
@@ -97,18 +105,18 @@
 
 <br>
 
-# ***YAML***  <img src="img/yaml.png" width="29px">
+## ***YAML***  <img src="img/yaml.png" width="29px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
 
-## `YAML` **Syntax**
+### `YAML` **Syntax**
 
 * `YAML` is case sensitive
 * Comments are created using the # symbol
 
 <br>
 
-## **Examples** 🧩
+### **Examples** 🧩
 
 * key value pairs
 

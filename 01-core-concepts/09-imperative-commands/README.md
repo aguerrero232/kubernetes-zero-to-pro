@@ -1,8 +1,11 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Imperative Commands*** 🧙
 
+## **Description** 👀
+
 `Imperative commands` can help in getting one time tasks done quickly, as well as ***generate a definition template easily***.
 
 **Familiarize yourself with the following commands**
+
 * `--dry-run`
   * will execute, and the resource **will be created**.
 * `--dry-run=client`
@@ -15,7 +18,6 @@
 ## **Basic** `Commands` 📝
 
 Use *in combination* to ***generate a resource definition file quickly***, that you can *then modify and create resources as required*, **instead of creating the files from scratch**.
-
 
 * **create** a `pod` definition
 

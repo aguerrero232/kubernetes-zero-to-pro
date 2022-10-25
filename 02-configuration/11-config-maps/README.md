@@ -1,5 +1,7 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***ConfigMaps*** 🗺️
 
+## **Description** 👀
+
 Just like everything else in kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
 
 * example at `yaml-examples/configmap-description.yaml`

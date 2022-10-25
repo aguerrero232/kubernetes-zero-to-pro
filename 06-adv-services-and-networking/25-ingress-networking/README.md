@@ -1,6 +1,8 @@
 
 # **Kubernetes** - ***`Ingress` Networking*** ⚖️
 
+## **Description** 👀
+
 `Ingress` is a collection of rules that allow external traffic to reach services running in a `Kubernetes` cluster. `Ingress` can provide load balancing, SSL termination and name-based virtual hosting. Think of `Ingress` as a layer seven (*application layer*) `load balancer`. It sits in front of your `services` and routes traffic to the `service` that matches the `Ingress` rule. `Ingress` can be configured to give services externally-reachable URLs, load balance traffic, terminate SSL, offer name based virtual hosting, and more.The solution you deploy is called the `Ingress controller`. The set of rules you use to configure `Ingress` are called `Ingress resources`.
 
 A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default.

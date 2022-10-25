@@ -1,5 +1,7 @@
 # **Kubernetes** - ***Network Policies*** 🤝
 
+## **Description** 👀
+
 By default `kubernetes` *allows all traffic to and from `pods`*. This is a **security risk** as it *allows `pods` to communicate with each other without any restrictions*. Network policies allow you to restrict traffic to and from `pods`. This is done by creating a network policy object that specifies which `pods` can communicate with each other.
 
 <br>

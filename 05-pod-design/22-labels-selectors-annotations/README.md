@@ -1,5 +1,7 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Labels***, ***Selectors***, *and* ***Annotations*** 🏷️
 
+## **Description** 👀
+
 **Filter** and *group* `pods` using `labels` and `selectors`. `Annotations` are used to add *metadata* to `pods`.
 
 <br />

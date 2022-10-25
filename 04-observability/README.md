@@ -10,6 +10,8 @@
 
 <br />
 
+## **Description** 👀
+
 `Observability` is the ability to *understand the current **state of a system***, and how that **state** came to be. `Observability` is achieved by *collecting and analyzing **data from the system***. This data is then *used to make informed **decisions about the system***.
 
 <br />
