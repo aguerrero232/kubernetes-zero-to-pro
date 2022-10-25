@@ -17,41 +17,38 @@
     * 📓 [***candidate handbook***](https://www.cncf.io/certification/candidate-handbook)
     * 💡 [***exam tips***](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 
-
 <br />
-
 
 ## **Description** 👀
 
 Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and links to other resources.
- 
+
 <br />
 
 ## **Helpful** `Content` 📌
 
-<br>
-
 ## ***Nano*** 📝
 
 `Nano` is a *text editor* that is installed by default on most Linux distributions. It is a simple text editor that is easy to use and has a lot of features. During the `CKAD` exam, you will be **asked to edit a file using Nano or Vim**.
+
 * 🗎 [***nano documentation***](https://www.nano-editor.org/)
 
 ### ***Initial `Setup`*** 🛠️
 
-  * `nano` config file, ***~/.nanorc***
+* `nano` config file, ***~/.nanorc***
 
     ```bash
     set tabsize 4
     set tabstospaces
     ```
 
-    * `tabsize` - sets the number of spaces that a tab will be replaced with
+  * `tabsize` - sets the number of spaces that a tab will be replaced with
 
-    * `tabstospaces` - replaces tabs with spaces
+  * `tabstospaces` - replaces tabs with spaces
 
-    * if ***~/.nanorc*** *does not exist*, **create** it
+  * if ***~/.nanorc*** *does not exist*, **create** it
 
-      ```shell    
+      ```shell
       touch ~/.nanorc
       ```
 
@@ -63,45 +60,44 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 <!-- Alt\+[A-z0-9]{1,} -->
 
 * **editing**
-  * `Ctrl+K`   	Cut current line into cutbuffer
-  * `Alt+6`	Copy current line into cutbuffer
-  * `Ctrl+U`	Paste contents of cutbuffer
-  * `Alt+T`	Cut until end of buffer
-  * `Ctrl+]`	Complete current word
-  * `Alt+3`	Comment/uncomment line/region
-  * `Alt+U`	Undo last action
-  * `Alt+E`	Redo last undone action
+  * `Ctrl+K`    Cut current line into cutbuffer
+  * `Alt+6` Copy current line into cutbuffer
+  * `Ctrl+U` Paste contents of cutbuffer
+  * `Alt+T` Cut until end of buffer
+  * `Ctrl+]` Complete current word
+  * `Alt+3` Comment/uncomment line/region
+  * `Alt+U` Undo last action
+  * `Alt+E` Redo last undone action
 
 * **search** *and* **replace**
-  * `Ctrl+Q`   	Start backward search
-  * `Ctrl+W`	Start forward search
-  * `Alt+Q`	Find next occurrence backward
-  * `Alt+W`	Find next occurrence forward
-  * `Alt+R`	Start a replacing session
+  * `Ctrl+Q`    Start backward search
+  * `Ctrl+W` Start forward search
+  * `Alt+Q` Find next occurrence backward
+  * `Alt+W` Find next occurrence forward
+  * `Alt+R` Start a replacing session
 
 * **deletion**
-  * `Ctrl+H`	Delete character before cursor
-  * `Ctrl+D`	Delete character under cursor
-  * `Alt+Bsp`	Delete word to the left
-  * `Ctrl+Del`   	Delete word to the right
-  * `Alt+Del`	Delete current line
+  * `Ctrl+H` Delete character before cursor
+  * `Ctrl+D` Delete character under cursor
+  * `Alt+Bsp` Delete word to the left
+  * `Ctrl+Del`    Delete word to the right
+  * `Alt+Del` Delete current line
 
 * **moving around**
-  * `Ctrl+B`   	One character backward
-  * `Ctrl+F`	One character forward
-  * `Ctrl+←	`One word backward
-  * `Ctrl+→	`One word forward
-  * `Ctrl+A`	To start of line
-  * `Ctrl+E`	To end of line
-  * `Ctrl+P`	One line up
-  * `Ctrl+N`	One line down
-  * `Ctrl+↑	`To previous block
-  * `Ctrl+↓	`To next block
-  * `Ctrl+Y`	One page up
-  * `Ctrl+V`	One page down
-  * `Alt+\`	To top of buffer
-  * `Alt+/	`To end of buffer
-
+  * `Ctrl+B`    One character backward
+  * `Ctrl+F` One character forward
+  * `Ctrl+← `One word backward
+  * `Ctrl+→ `One word forward
+  * `Ctrl+A` To start of line
+  * `Ctrl+E` To end of line
+  * `Ctrl+P` One line up
+  * `Ctrl+N` One line down
+  * `Ctrl+↑ `To previous block
+  * `Ctrl+↓ `To next block
+  * `Ctrl+Y` One page up
+  * `Ctrl+V` One page down
+  * `Alt+\` To top of buffer
+  * `Alt+/ `To end of buffer
 
 <br>
 
