@@ -47,6 +47,29 @@
 
   * similar to persistent volumes, **accessMode** can be `ReadWriteOnce`, `ReadOnlyMany`, or `ReadWriteMany`
 
+* use `persistent volume claim` in a `pod` definition
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: mypod
+    spec:
+        containers:
+          - name: myfrontend
+            image: nginx
+            volumeMounts:
+              - mountPath: "/var/www/html"
+                name: mypd
+        volumes:
+          - name: mypd
+            persistentVolumeClaim:
+                claimName: myclaim
+    ```
+
+  * `persistent volume claim` is defined in the `volumes` section of the `pod` definition
+  * `persistent volume claim` is mounted to the `pod` in the `volumeMounts` section of the `pod` definition
+
 <br />
 
 [↩️](../README.md)

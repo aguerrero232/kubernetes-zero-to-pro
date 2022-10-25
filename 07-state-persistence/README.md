@@ -8,7 +8,7 @@
   * 🏰 [**persistent volumes**](28-persistent-volumes/README.md)
   * 🚩 [**persistent volume claims**](29-persistent-volume-claims/README.md)
 * 🔗 **links**
-
+  * 🚩 [***k8s claims as volumes documentation***](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#claims-as-volumes)
 
 <br />
 
