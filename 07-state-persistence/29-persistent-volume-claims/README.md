@@ -70,6 +70,44 @@
   * `persistent volume claim` is defined in the `volumes` section of the `pod` definition
   * `persistent volume claim` is mounted to the `pod` in the `volumeMounts` section of the `pod` definition
 
+* `pvc` for example in pv and volumes section
+
+    ```yaml
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+        name: claim-log-1
+    spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+            requests:
+            storage: 50Mi
+    ```
+
+  * update pod to use `pvc`
+
+    ```yaml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: webapp
+    spec:
+        containers:
+            - name: event-simulator
+            image: kodekloud/event-simulator
+            env:
+              - name: LOG_HANDLERS
+                value: file
+            volumeMounts:
+              - mountPath: /log
+                name: log-volume
+        volumes:
+          - name: log-volume
+            persistentVolumeClaim:
+                claimName: claim-log-1
+    ```
+
 <br />
 
 [↩️](../README.md)

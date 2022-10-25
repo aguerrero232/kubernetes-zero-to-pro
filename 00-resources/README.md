@@ -38,7 +38,7 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 * `nano` config file, ***~/.nanorc***
 
     ```bash
-    set tabsize 4
+    set tabsize 2
     set tabstospaces
     ```
 

@@ -30,6 +30,22 @@
             path: /tmp/dat
     ```
 
+* `pv` to be added on in *later section*
+
+  ```yaml
+  apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    name: pv-log
+  spec:
+    accessModes:
+      - ReadWriteOnce
+    capacity:
+      storage: 100Mi
+    hostPath:
+      path: /pv/log
+  ```
+
   * supported access modes are
     * **ReadOnlyMany**
     * **ReadWriteMany**

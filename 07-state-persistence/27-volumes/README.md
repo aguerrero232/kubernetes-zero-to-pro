@@ -16,26 +16,51 @@
 
 * `pod` definition with a `volume`
 
-    ```yaml
-    apiVersion: v1
-    kind: Pod
-    metadata:
-        name: my-pod
-    spec: 
-        containers:
-          - name: alpine
-            image: alpine
-            command: ["/bin/sh", "-c"]
-            args: ["shuf -i 0-100 -n >> /opt/number.out"]
-            volumeMounts:
-              - mountPath: /opt
-                name: data-volume
-        volumes:
-          - name: data-volume
-            hostPath:
-                path: /data
-                type: Directory
-    ```
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+      name: my-pod
+  spec: 
+      containers:
+        - name: alpine
+          image: alpine
+          command: ["/bin/sh", "-c"]
+          args: ["shuf -i 0-100 -n >> /opt/number.out"]
+          volumeMounts:
+            - mountPath: /opt
+              name: data-volume
+      volumes:
+        - name: data-volume
+          hostPath:
+            path: /data
+            type: Directory
+  ```
+
+* `pod` definition with a `volume` to be used in *later section*
+
+  ```yaml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: webapp
+    namespace: default
+  spec:
+    containers:
+      - name: event-simulator 
+        image: kodekloud/event-simulator
+        env:            
+          - name: LOG_HANDLERS
+            value: file
+        volumeMounts:
+          - mountPath: /log
+            name: log-volume        
+    volumes:
+      - name: log-volume
+        hostPath:
+          path: /var/log/webapp
+          type: Directory
+  ```
 
 <br />
 
