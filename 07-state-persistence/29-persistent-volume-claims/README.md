@@ -26,6 +26,12 @@
   * but what happens to the underlying `persistent volume` 🤔
     * by default the `persistent volume` reclaim policy is set to `retain`, but can be changed to `delete` or `recycle`.
 
+        ```yaml
+            # persistent volume reclaim policy can be set to delete, retain, or recycle
+            # this is placed in the pv spec section
+            persistentVolumeReclaimPolicy: Retain
+        ```
+
 <br />
 
 ## **Examples** 🧩
@@ -70,7 +76,7 @@
   * `persistent volume claim` is defined in the `volumes` section of the `pod` definition
   * `persistent volume claim` is mounted to the `pod` in the `volumeMounts` section of the `pod` definition
 
-* `pvc` for example in pv and volumes section
+* `pvc` for use with examples in ***pv*** and ***volumes*** section
 
     ```yaml
     apiVersion: v1

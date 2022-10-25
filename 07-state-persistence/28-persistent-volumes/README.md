@@ -30,7 +30,7 @@
             path: /tmp/dat
     ```
 
-* `pv` to be added on in *later section*
+* `pv` to be added on in ***pvc** section*
 
   ```yaml
   apiVersion: v1
@@ -40,6 +40,7 @@
   spec:
     accessModes:
       - ReadWriteOnce
+    persistentVolumeReclaimPolicy: Retain
     capacity:
       storage: 100Mi
     hostPath:

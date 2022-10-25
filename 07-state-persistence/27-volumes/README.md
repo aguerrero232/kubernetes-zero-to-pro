@@ -37,7 +37,7 @@
             type: Directory
   ```
 
-* `pod` definition with a `volume` to be used in *later section*
+* `pod` definition with a `volume` to be used in ***pvc** section*
 
   ```yaml
   apiVersion: v1
