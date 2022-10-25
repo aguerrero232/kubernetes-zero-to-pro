@@ -16,4 +16,5 @@
 
 ## **Description** 👀
 
-This section will cover ***advanced*** `services` and `networking` concepts in `Kubernetes`. Add 
+This section will cover ***advanced*** `services` and `networking` concepts in `Kubernetes`.
+
