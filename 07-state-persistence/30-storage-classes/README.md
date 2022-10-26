@@ -34,6 +34,16 @@ With `Storage Classes` you can define a provisioner that can automatically provi
     provisioner: kubernetes.io/aws-ebs
     ```
 
+    ```yaml
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata: 
+    name: delayed-volume-sc
+    provisioner: kubernetes.io/no-provisioner
+    volumeBindingMode: WaitForFirstConsumer
+    ```
+
+
   * `provisioner` is the name of the `storage provisioner` that will be used to provision the `persistent volume`
   * `parameters` are the parameters that will be passed to the `storage provisioner`
 
