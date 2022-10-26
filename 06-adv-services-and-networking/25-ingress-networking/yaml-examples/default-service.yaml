@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: default-backend-service
+  namespace: app-space
+spec:
+  type: ClusterIP
+  clusterIP: 10.104.209.223
+  clusterIPs:
+    - 10.104.209.223
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: default-backend

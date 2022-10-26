@@ -1,0 +1,17 @@
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: video-service
+      namespace: app-space
+    spec:
+      clusterIP: 10.96.151.193
+      clusterIPs:
+      - 10.96.151.193
+      ports:
+      - port: 8080
+        protocol: TCP
+        targetPort: 8080
+      selector:
+        app: webapp-video
+      sessionAffinity: None
+      type: ClusterIP
