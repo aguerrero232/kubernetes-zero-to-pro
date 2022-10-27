@@ -27,7 +27,6 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 ## **Helpful** `Content` 📌
 
-
 ## ***YAML***  <img src="img/yaml.png" width="29px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
@@ -36,8 +35,6 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 * `YAML` is case sensitive
 * Comments are created using the # symbol
-
-<br>
 
 ### **Examples** 🧩
 
@@ -105,9 +102,7 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 `Docker` is a ***containerization platform*** that allows you to *package* and *run* an application in a loosely isolated environment called a *container*. `Docker` is a ***client-server*** application with the `Docker` daemon running on the host and the `Docker` client from the command line or from a program.
 
-<br>
-
-### How To Create My Own Image?
+### How To Create Your Own Image?
 
 * `Dockerfile` - a text document that contains all the commands a user could call on the command line to assemble an image
 
@@ -160,8 +155,6 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 * 🗎 [***nano documentation***](https://www.nano-editor.org/)
 
-<br>
-
 ### ***Initial `Setup`*** 🛠️
 
 * `nano` config file, ***~/.nanorc***
@@ -180,8 +173,6 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
       ```shell
       touch ~/.nanorc
       ```
-
-<br>
 
 ### ***Keyboard `Shortcuts`*** ⌨️
 
@@ -215,15 +206,15 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 * **moving around**
   * `Ctrl+B`    One character backward
   * `Ctrl+F` One character forward
-  * `Ctrl+← `One word backward
-  * `Ctrl+→ `One word forward
+  * `Ctrl+←`One word backward
+  * `Ctrl+→`One word forward
   * `Ctrl+A` To start of line
   * `Ctrl+E` To end of line
   * `Ctrl+P` One line up
   * `Ctrl+N` One line down
-  * `Ctrl+↑ `To previous block
-  * `Ctrl+↓ `To next block
+  * `Ctrl+↑`To previous block
+  * `Ctrl+↓`To next block
   * `Ctrl+Y` One page up
   * `Ctrl+V` One page down
   * `Alt+\` To top of buffer
-  * `Alt+/ `To end of buffer
+  * `Alt+/`To end of buffer
