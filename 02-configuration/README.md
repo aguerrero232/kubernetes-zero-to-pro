@@ -25,3 +25,31 @@
 ## **Description** 👀
 
 ***Configuration*** is the process of **setting up your application so that it can run** in a `Kubernetes` cluster.
+
+<!-- <br /> -->
+
+* **Authentication**
+  * Who can access?
+
+    * Files - Username and Password
+
+    * Files - Username and Tokens
+
+    * Certificates
+
+    * External Authentication Providers (LDAP, OAuth, etc.)
+
+<!-- <br /> -->
+
+* **Authorization**
+
+  * What can they do?
+
+    * RBAC Authorization (Role-Based Access Control)
+
+    * ABAC Authorization (Attribute-Based Access Control)
+
+    * Node Authorization
+
+    * Webhook Authorization
+

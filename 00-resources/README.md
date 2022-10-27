@@ -178,6 +178,7 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
 
 ### ***Keyboard `Shortcuts`*** ⌨️
 
+<!-- regex for matching the commands for formatting -->
 <!-- Ctrl\+[A-z0-9]{1,} -->
 <!-- Alt\+[A-z0-9]{1,} -->
 
