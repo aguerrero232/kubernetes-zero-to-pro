@@ -27,6 +27,8 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 ## **Helpful** `Content` 📌
 
+This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guide***. It is not a part of `Kubernetes`, but it is helpful for learning `Kubernetes`.
+
 ## ***YAML***  <img src="img/yaml.png" width="29px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
