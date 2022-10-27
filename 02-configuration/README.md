@@ -26,6 +26,8 @@
 
 ***Configuration*** is the process of **setting up your application so that it can run** in a `Kubernetes` cluster.
 
+* Kubernetes does not manage users natively, it relies on external authentication providers.
+
 * **Authentication**
   * Who can access?
     * Files - Username and Password
@@ -39,3 +41,80 @@
     * ABAC Authorization (Attribute-Based Access Control)
     * Node Authorization
     * Webhook Authorization
+
+<!-- ### **Basic Authentication**
+
+* `kube-apiserver` has a built-in basic authentication module. It reads a file from disk to check the username/password against a list of allowed credentials.
+
+  * basic auth files can use either tokens or passwords
+
+    ```csv
+    token,user-name,user-id[,optional groups]
+    ```
+
+    ```csv
+    password,user-name,user-id[,optional groups]
+    ```
+
+    | password    | user-name | user-id |
+    |-------------|-----------|---------|
+    | password123 | user1     | u0001   |
+    | password123 | user2     | u0002   |
+    | password123 | user3     | u0003   |
+    | password123 | user4     | u0004   |
+    | password123 | user5     | u0005   |
+
+* authenticate the user
+
+  ```bash
+  curl -v -k https://<master-node-ip>:6443/api/v1/pods -u <username>:<password>
+  ``` -->
+
+### **Kubeconfig**
+
+`Kubeconfig` is a file that contains the configuration information for `kubectl` to connect to a `Kubernetes` cluster.
+
+* the `Kubeconfig` file has 3 main sections:
+
+  * `clusters` - a list of clusters
+    * info about the different clusters that you can connect to
+  * `users` - a list of users
+    * info about the different users that you can authenticate as
+  * `contexts` - a list of contexts
+    * info about the different combinations of clusters and users
+
+* `Kubeconfig` definition
+
+    ```yaml
+    apiVersion: v1
+    kind: Config
+    clusters:
+      - name: dev
+        cluster:
+          certificate-authority: /path/to/ca
+          server: https://<dev-ip>:6443
+    contexts:
+      - name: dev@dev
+        context:
+          cluster: dev
+          user: dev
+      - name: my-kube-admin@dev
+        context:
+          cluster: dev
+          user: my-kube-admin
+    users:
+      - name: my-kube-admin
+        user:
+          client-certificate: /path/to/admin.crt
+          client-key: /path/to/admin-key.key
+      - name: dev
+        user:
+          client-certificate: /path/to/dev.crt
+          client-key: /path/to/dev-key.key
+    ```
+
+  * to change context
+
+    ```bash
+    kubectl config use-context <context-name> 
+    ```
