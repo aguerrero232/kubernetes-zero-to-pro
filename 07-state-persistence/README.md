@@ -17,4 +17,4 @@
 
 ## **Description** 👀
 
-`Pods` in Kubernetes are **ephemeral** in nature. They can be easily created and destroyed. This is a problem for stateful applications. Stateful applications require some form of stable storage. Kubernetes provides multiple ways to persist data, that will be covered in this section.
+`Pods` in Kubernetes are **ephemeral** in nature. They can be easily be created and destroyed. This is a problem for stateful applications. Stateful applications require some form of stable storage. Kubernetes provides multiple ways to persist data, that will be covered in this section.
