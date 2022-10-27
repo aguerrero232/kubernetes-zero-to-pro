@@ -1,10 +1,8 @@
 # <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Storage Classes*** 📦
 
-
 ## **Description** 👀
 
-With `Storage Classes` you can define a provisioner that can automatically provision storage and attach that to `pods`. 
-
+With `Storage Classes` you can define a provisioner that can automatically provision storage and attach that to `pods`.
 
 <br />
 
@@ -12,9 +10,7 @@ With `Storage Classes` you can define a provisioner that can automatically provi
 
 <br />
 
-
 ## **Examples** 🧩
-
 
 * `storage class` definitions
 
@@ -43,11 +39,10 @@ With `Storage Classes` you can define a provisioner that can automatically provi
     volumeBindingMode: WaitForFirstConsumer
     ```
 
-
   * `provisioner` is the name of the `storage provisioner` that will be used to provision the `persistent volume`
   * `parameters` are the parameters that will be passed to the `storage provisioner`
 
-  * for `pvc` to use the `storage class`, specify the `storage class` name in pvc `spec.storageClassName` field
+* for `pvc` to use the `storage class`, specify the `storage class` name in pvc `spec.storageClassName` field
 
     ```yaml
     apiVersion: v1

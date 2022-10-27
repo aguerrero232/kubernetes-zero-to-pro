@@ -28,18 +28,13 @@
         labels:
             app: mysql
     spec:
-
         replicas: 3
-
         selector:
             matchLabels:
                 app: mysql
-
         serviceName: mysql-h
-
         # causes the pods to be created in parallel, rather than sequentially. will maintain all of its other properties.
         podManagementPolicy: Parallel
-
         template:
             metadata:
                 labels:
