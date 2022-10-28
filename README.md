@@ -109,3 +109,10 @@
 
       * `API resources` are the *objects* that can be have **verbs** act on them from the `Kubernetes API`
         * ***verbs***: `create`, `get`, `describe`, `delete`, `update`, `watch`, `list`
+
+  * identify `kube-apiserver` settings
+
+    ```bash
+    kubectl describe pod kube-apiserver-controlplane -n kube-system
+    ```
+

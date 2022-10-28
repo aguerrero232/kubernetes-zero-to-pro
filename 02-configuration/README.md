@@ -42,34 +42,6 @@
     * Node Authorization
     * Webhook Authorization
 
-<!-- ### **Basic Authentication**
-
-* `kube-apiserver` has a built-in basic authentication module. It reads a file from disk to check the username/password against a list of allowed credentials.
-
-  * basic auth files can use either tokens or passwords
-
-    ```csv
-    token,user-name,user-id[,optional groups]
-    ```
-
-    ```csv
-    password,user-name,user-id[,optional groups]
-    ```
-
-    | password    | user-name | user-id |
-    |-------------|-----------|---------|
-    | password123 | user1     | u0001   |
-    | password123 | user2     | u0002   |
-    | password123 | user3     | u0003   |
-    | password123 | user4     | u0004   |
-    | password123 | user5     | u0005   |
-
-* authenticate the user
-
-  ```bash
-  curl -v -k https://<master-node-ip>:6443/api/v1/pods -u <username>:<password>
-  ``` -->
-
 ### **Kubeconfig**
 
 `Kubeconfig` is a file that contains the configuration information for `kubectl` to connect to a `Kubernetes` cluster.
@@ -118,3 +90,85 @@
     ```bash
     kubectl config use-context <context-name> 
     ```
+
+  * view role bindings
+
+    ```bash
+    kubectl get rolebindings --all-namespaces
+    ```
+  
+  * describe role bindings for a specific role
+  
+    ```bash
+    kubectl describe rolebindings <role-name> -n <namespace>
+    ```
+
+  * check to see if a user has permissions to a specific resource
+
+    ```bash
+    kubectl auth can-i <verb> <resource> -n <namespace>
+    ```
+
+  * sample `role`
+  
+    ```yaml
+    apiVersion: rbac.authorization.k8s.io/v1
+    kind: Role
+    metadata:
+      name: <role-name>
+      namespace: <namespace>
+    rules:
+      - apiGroups: [""] # "" indicates the core API group
+        resources: ["pods"]
+        verbs: ["get", "watch", "list"]
+    ```
+
+  * sample `rolebinding`
+  
+    ```yaml
+    apiVersion: rbac.authorization.k8s.io/v1
+    kind: RoleBinding
+    metadata:
+      name: <rolebinding-name>
+      namespace: <namespace>
+    subjects:
+    - kind: User
+      name: <user-name>
+      apiGroup: rbac.authorization.k8s.io
+    roleRef:
+      kind: Role
+      name: <role-name>
+      apiGroup: rbac.authorization.k8s.io
+    ```
+
+  * `clusterroles` are used to define permissions at the cluster level. (nodes, pvs, etc.)
+
+    * sample `clusterrole`
+
+      ```yaml
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRole
+      metadata:
+        name: <clusterrole-name>
+      rules:
+        - apiGroups: [""] # "" indicates the core API group
+          resources: ["nodes"]
+          verbs: ["get", "create", "delete", "list"]
+      ```
+
+    * sample `clusterrolebinding`
+
+      ```yaml
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRoleBinding
+      metadata:
+        name: <clusterrolebinding-name>
+      subjects:
+      - kind: User
+        name: <user-name>
+        apiGroup: rbac.authorization.k8s.io
+      roleRef:
+        kind: ClusterRole
+        name: <clusterrole-name>
+        apiGroup: rbac.authorization.k8s.io
+      ```
