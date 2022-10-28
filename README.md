@@ -93,3 +93,19 @@
     ```bash
     kubectl get all
     ```
+
+  * **get** kube-api `version`
+
+    ```bash
+    kubectl api-versions
+    ```
+
+  * all resources in kubernetes are grouped into `API groups`
+    * under each `API group` are `API resources`
+
+      ```bash
+      kubectl api-resources
+      ```
+
+      * `API resources` are the *objects* that can be have **verbs** act on them from the `Kubernetes API`
+        * ***verbs***: `create`, `get`, `describe`, `delete`, `update`, `watch`, `list`
