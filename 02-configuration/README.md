@@ -12,13 +12,13 @@
   * ☢️ [**taints** *and* **tolerations**](15-taints-and-tolerants/README.md)
   * 🔘 [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/README.md)
 * 🔗 **links**
-  * 🔣 [**k8s container arguments documentation**](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/)
-  * 🗺️ [**k8s configmaps documentation**](https://kubernetes.io/docs/concepts/configuration/configmap/)
-  * 🕵️ [**k8s secrets documentation**](https://kubernetes.io/docs/concepts/configuration/secret/)
-  * 💁 [**k8s service accounts documentation**](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
-  * 💾 [**k8s resource requirements documentation**](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
-  * ☢️ [**k8s taints** *and* **tolerations documentation**](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
-  * 🔘 [**k8s node selectors** *and* **affinity documentation**](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)
+  * 🔣 <a href="https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/" target="_blank">***k8s container arguments documentation***</a>
+  * 🗺️ <a href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank">***k8s configmaps documentation***</a>
+  * 🕵️ <a href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank">***k8s secrets documentation***</a>
+  * 💁 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/" target="_blank">***k8s service accounts documentation***</a>
+  * 💾 <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">***k8s resource requirements documentation***</a>
+  * ☢️ <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank">***k8s taints** *and* **tolerations documentation***</a>
+  * 🔘 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/" target="_blank">***k8s node selectors** *and* **affinity documentation***</a>
 
 <br />
 

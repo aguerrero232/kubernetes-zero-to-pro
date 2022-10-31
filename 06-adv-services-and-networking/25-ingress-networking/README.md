@@ -7,7 +7,7 @@
 
 A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default.
 
-* 🗎 [**k8 ingress documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+* 🗎 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">***k8 ingress documentation***</a>
 
 <br />
 
@@ -117,7 +117,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
       ```
 
   `Nginx Ingress Controllers` have *additional intelligence* built into them to monitor the `Kubernetes` cluster for `ingress` **resources**.
-  * 🗎 [**nginx ingress controller documentation**](https://kubernetes.github.io/ingress-nginx/examples/)
+  * 🗎 <a href="https://kubernetes.github.io/ingress-nginx/examples/" target="_blank">***nginx ingress controller documentation***</a>
 
 <br>
 
@@ -281,7 +281,7 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
             nginx.ingress.kubernetes.io/rewrite-target: /
         ```
 
-        * 🗎 [**example from the k8 nginx ingress documentation**](https://kubernetes.github.io/ingress-nginx/examples/rewrite/)
+        * 🗎 <a href="https://kubernetes.github.io/ingress-nginx/examples/rewrite/" target="_blank">***example from the k8 nginx ingress documentation***</a>
 
 <br>
 

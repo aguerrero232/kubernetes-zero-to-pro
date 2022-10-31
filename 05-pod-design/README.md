@@ -8,9 +8,9 @@
   * 👔 [**jobs**](23-jobs/README.md)
   * ⏳ [**cron jobs**](24-cron-jobs/README.md)
 * 🔗 **links**
-  * 🏷️ [**k8s labels selectors** *and* **annotations documentation**](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
-  * 👔 [**k8s jobs documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
-  * ⏳ [**k8s cron jobs documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
+  * 🏷️ <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/" target="_blank">***k8s labels selectors** *and* **annotations documentation***</a>
+  * 👔 <a href="https://kubernetes.io/docs/concepts/workloads/controllers/job/" target="_blank">***k8s jobs documentation***</a>
+  * ⏳ <a href="https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/" target="_blank">***k8s cron jobs documentation***</a>
 
 <br />
 

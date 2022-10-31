@@ -13,13 +13,12 @@
   * 📛 [**namespaces**](08-namespaces/README.md)
   * 🧙 [**imperative commands**](09-imperative-commands/README.md)
 * 🔗 **links**
-  * 🐋 [**k8s pods documentation**](https://kubernetes.io/docs/concepts/workloads/pods/)
-  * 👯 [**k8s replica sets documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
-  * 🚀 [**k8s deployments documentation**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-  * 🖧 [**k8s networking documentation**](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
-  * 🛎️ [**k8s services documentation**](https://kubernetes.io/docs/concepts/services-networking/service/)
-  * 📛 [**k8s namespaces documentation**](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
-
+  * 🐋 <a href="https://kubernetes.io/docs/concepts/workloads/pods/" target="_blank">***k8s pods documentation***</a>
+  * 👯 <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/" target="_blank">***k8s replica sets documentation***</a>
+  * 🚀 <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank">***k8s deployments documentation***</a>
+  * 🖧 <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/" target="_blank">***k8s networking documentation***</a>
+  * 🛎️ <a href="https://kubernetes.io/docs/concepts/services-networking/service/" target="_blank">***k8s services documentation***</a>
+  * 📛 <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/" target="_blank">***k8s namespaces documentation***</a>
 
 
 <br />

@@ -7,9 +7,9 @@
   * ⚖️ [**ingress networking**](25-ingress-networking/README.md)
   * 🤝 [**network policies**](26-network-policies/README.md)
 * 🔗 **links**
-  * ➡️ [**k8s ingress documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-  * 🎮 [**k8s ingress controllers documentation**](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
-  * 🤝 [**k8s network policies documentation**](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+  * ➡️ <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">***k8s ingress documentation***</a>
+  * 🎮 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank">***k8s ingress controllers documentation***</a>
+  * 🤝 <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/" target="_blank">***k8s network policies documentation***</a>
 
 <br />
 

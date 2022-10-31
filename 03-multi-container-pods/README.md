@@ -7,7 +7,7 @@
   * 🐳<sup>🐳</sup> [**multi-container-pods**](17-multi-container-pods/README.md)
   * 💥 [**init containers**](18-init-containers/README.md)
 * 🔗 **links**
-  * 💥 [**k8s init containers documentation**](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)
+  * 💥 <a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/" target="_blank">***k8s init containers documentation***</a>
 
 <br />
 
