@@ -12,7 +12,7 @@ body {
     color: #fff;
     text-align: center;
     background-color: #3970e4;
-    background-image: linear-gradient(120deg, #155799, #291599);
+    background-image: linear-gradient(120deg, #155799, #2813b1);
 }
 
 .main-content code {
@@ -44,6 +44,20 @@ body {
 
 .highlight .o {
     color: #33deff;
+}
+
+.highlight .na {
+    color: #2813b1;
+}
+
+.highlight .s {
+    color: #155799;
+}
+
+.highlight .k,
+.highlight .kv {
+    color: #33ffba;
+    font-weight: bold;
 }
 
 .main-content h1,
