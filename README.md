@@ -60,26 +60,6 @@
 
 ## **Basic** `Commands` 📝
 
-* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
-
-  * Check the status of `minikube`
-
-    ```bash
-    minikube status
-    ```
-
-  * *start* `minikube`
-
-    ```bash
-    minikube start
-    ```
-
-  * **stop** `minikube`
-
-    ```bash
-    minikube stop
-    ```
-
 * ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
 
   * **check** version of `Kubernetes` being used
@@ -92,6 +72,12 @@
 
     ```bash
     kubectl get all
+    ```
+
+  * **get** api `resources` includes *name*, *shortnames*, *api version*, if *namespaced*, and *kind*
+
+    ```bash
+    kubectl api-resources
     ```
 
   * **get** kube-api `version`
@@ -116,3 +102,22 @@
     kubectl describe pod kube-apiserver-controlplane -n kube-system
     ```
 
+* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
+
+  * Check the status of `minikube`
+
+    ```bash
+    minikube status
+    ```
+
+  * *start* `minikube`
+
+    ```bash
+    minikube start
+    ```
+
+  * **stop** `minikube`
+
+    ```bash
+    minikube stop
+    ```
