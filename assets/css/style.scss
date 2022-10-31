@@ -8,6 +8,10 @@ body {
     color: #fff;
 }
 
+* {
+    box-sizing: content-box;
+}
+
 .page-header {
     color: #fff;
     text-align: center;
