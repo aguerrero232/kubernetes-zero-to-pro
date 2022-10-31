@@ -19,8 +19,23 @@ body {
     border: #0c0c0c;
 }
 
+.main-content pre > code {
+    color: whitesmoke;
+    background-color: #1d2126;
+    border: #0c0c0c;
+}
 
 .main-content .highlight pre,
 .main-content pre {
     border-radius: 0;
 }
+
+
+.highlight .nt {
+    color: #33ffba;
+}
+
+.highlight .o {
+    color: #33deff;
+}
+
