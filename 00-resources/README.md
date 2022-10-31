@@ -4,8 +4,6 @@
 
 * 🏠 [**home**](../README.md)
 * 🗃️ **resources**
-  <!-- * 🖼️ [**images**](img/) -->
-  <!-- * 📝 [**markdown blueprints**](md-samples/) -->
   * 📁 **pdfs**
     * 📖 <a href="https://aguerrero232.github.io/kubernetes-zero-to-pro/00-resources/pdfs/kubernetes-up-and-running.pdf" target="_blank">***kubernetes up and running***</a>
   * 🔗 **links**

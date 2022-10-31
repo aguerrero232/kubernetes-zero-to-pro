@@ -517,11 +517,6 @@ A `Kubernetes` cluster **is not** set up with an `Ingress controller` by default
     ```
 
      * service definitions are found in the above examples
-     * deployment definitions can be found in the [**yaml-examples**](yaml-examples/) folder
-       * yaml-example/***deafult-backend.yaml***
-       * yaml-example/***webapp-video.yaml***
-       * yaml-example/***webapp-wear.yaml***
-
 
 <br>
 
