@@ -6,9 +6,8 @@
 * 🗃️ **resources**
   <!-- * 🖼️ [**images**](img/) -->
   <!-- * 📝 [**markdown blueprints**](md-samples/) -->
-  * 📁 [**pdfs**](pdfs/)
-    * 👩🏽‍🏫 [**udemy course pdfs**](pdfs/udemy-course/)
-    * 📖 [**kubernetes up and running book**](pdfs/kubernetes-up-and-running.pdf)
+  * 📁 **pdfs**
+    * 📖 <a href="https://aguerrero232.github.io/kubernetes-zero-to-pro/00-resources/pdfs/kubernetes-up-and-running.pdf" target="_blank">***kubernetes up and running***</a>
   * 🔗 **links**
     * 🎓 [***certified kubernetes application developer test***](https://www.cncf.io/certification/ckad/)
     * 💪 [**exercises for CKAD**](https://github.com/dgkanatsios/CKAD-exercises)
