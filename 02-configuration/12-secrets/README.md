@@ -135,6 +135,25 @@ Read about the protections and risks of using secrets **[here](https://kubernete
                 name: sample-secret
     ```
 
+* sample tls `secret` definition
+
+    ```yaml
+    apiVersion: v1
+    kind: Secret
+    metadata:
+        name: tls-secret
+    type: kubernetes.io/tls
+    data:
+        tls.crt: <base64 encoded cert>
+        tls.key: <base64 encoded key>
+    ```
+
+    * imperative command to create a tls `secret`
+
+        ```bash
+        kubectl create secret tls <secret-name> --cert=<path to cert> --key=<path to key>
+        ```
+
 <br>
 
 [↩️](../README.md)

@@ -84,7 +84,7 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
       Carbs: 16g
   ```
 
-* key value / dictonary / lists
+* key value / dictionary / lists
 
   ```yaml
   Fruits:

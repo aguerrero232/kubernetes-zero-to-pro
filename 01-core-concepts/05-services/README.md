@@ -124,6 +124,22 @@ minikube service <service-name> --url
       type: back-end
   ```
 
+* sample `service` for `deployment` with `web-hooks`
+
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: webhook-server
+    namespace: webhook-demo
+  spec:
+    selector:
+      app: webhook-server
+    ports:
+      - port: 443
+        targetPort: webhook-api
+  ```
+
 <br>
 
 [↩️](../README.md)
