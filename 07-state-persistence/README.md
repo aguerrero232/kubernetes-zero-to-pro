@@ -2,7 +2,7 @@
 
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/blob/main/README.md)
+* 🏠 [**home**](../README.md)
 * 🗄️ **state persistence**
   * 💾 [**volumes**](27-volumes/README.md)
   * 🏰 [**persistent volumes**](28-persistent-volumes/README.md)

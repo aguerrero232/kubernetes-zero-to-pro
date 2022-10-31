@@ -1,7 +1,7 @@
 # <img src="../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
 ## ***Table*** *of* ***`Contents`*** 📜
 
-* 🏠 [**home**](https://github.com/aguerrero232/kubernetes-zero-to-pro/blob/main/README.md)
+* 🏠 [**home**](../README.md)
 * 🧠 **core-concepts**:
   * 🐋 [**pods**](01-pods/README.md)
   * 👯 [**replica sets** *and* **replication controllers**](02-replica-sets/README.md)
