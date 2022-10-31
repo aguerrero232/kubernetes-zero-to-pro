@@ -115,6 +115,8 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
   5. copy source code into container directory `/app`, `/src`, `/opt` etc.
   6. run the web server, or application
 
+  <br />
+
     ```Dockerfile
     # sample Dockerfile for steps outlined above
     FROM Ubuntu
