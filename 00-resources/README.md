@@ -36,7 +36,7 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guide***. It is not a part of `Kubernetes`, but it is helpful for learning `Kubernetes`.
 
-## ***YAML***  <img src="img/yaml.png" width="29px">
+## ***YAML***  <img src="../assets/img/yaml.png" width="29px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
 
@@ -164,7 +164,7 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
 
 `Nano` is a *text editor* that is installed by default on most Linux distributions. It is a simple text editor that is easy to use and has a lot of features. During the `CKAD` exam, you will be **asked to edit a file using Nano or Vim**.
 
-* 🗎 <a href="https://www.nano-editor.org/" target="_blank">****nano documentation****</a>
+* 🗎 <a href="https://www.nano-editor.org/" target="_blank">***nano documentation***</a>
 
 ### ***Initial `Setup`*** 🛠️
 
