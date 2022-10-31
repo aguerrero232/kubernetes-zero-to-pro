@@ -41,8 +41,8 @@
                     app: mysql
             spec:
                 containers:
-                - name: mysql
-                image: mysql
+                  - name: mysql
+                    image: mysql
     ```
 
 <br />

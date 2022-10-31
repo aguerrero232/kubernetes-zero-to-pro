@@ -36,7 +36,7 @@ Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and li
 
 This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guide***. It is not a part of `Kubernetes`, but it is helpful for learning `Kubernetes`.
 
-## ***YAML***  <img src="../assets/img/yaml.png" width="29px">
+## ***YAML***  <img src="../assets/img/yaml.png" width="26px">
 
 `YAML` is a ***human-readable data serialization language***. It is commonly used for *configuration files* and in applications where data is being stored or transmitted. `YAML` is stored in **key value pairs** and can be used to serialize data structures such as *maps, sequences, and scalars*.
 
@@ -157,6 +157,54 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
   ``` shell
   docker run <image-name>  cat /etc/os-release
   ```
+
+<br>
+
+
+## ***Helm*** <img src="../assets/img/helm.svg" width="26px" />
+
+`Kubernetes` does not care about you application as a whole, it cares about the *individual* components. `Helm` is a ***package manager*** for `Kubernetes` that allows you to *package up your application as a whole* and *deploy* it to `Kubernetes`.
+
+<br>
+
+### **Basic** `Commands` 📝
+
+* install application using `helm install`
+
+  ```shell
+  helm install <application-name> <chart-name>
+  ```
+
+* uninstall application using `helm uninstall`
+
+  ```shell
+  helm uninstall <application-name>
+  ```
+
+* view application using `helm list`
+
+  ```shell
+  helm list
+  ```
+
+* view application details using `helm status`
+
+  ```shell
+  helm status <application-name>
+  ```
+
+* upgrade application using `helm upgrade`
+
+  ```shell
+  helm upgrade <application-name> <chart-name>
+  ```
+
+* rollback application using `helm rollback`
+
+  ```shell
+  helm rollback <application-name> <revision-number>
+  ```
+
 
 <br>
 
