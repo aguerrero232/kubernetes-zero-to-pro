@@ -42,17 +42,19 @@ body {
     color: #ffff00;
 }
 
+
+.highlight .na,
+.highlight .nb {
+    color: #6b5bd4;
+}
+
+.highlight .s,
+.highlight .m,
 .highlight .o {
     color: cyan;
 }
 
-.highlight .na {
-    color: #6b5bd4;
-}
 
-.highlight .s {
-    color: cyan;
-}
 
 .highlight .k,
 .highlight .kv {
