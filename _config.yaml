@@ -13,6 +13,6 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
