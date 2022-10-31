@@ -9,14 +9,18 @@ body {
 }
 
 .main-content code {
-    color: darkslategrey;
-    background-color: #1d2126;
+    color: #fff;
+    background-color: #5A5A5A;
 }
 
 .main-content pre {
     color: whitesmoke;
     background-color: #1d2126;
-    border: #10111f;
-    border-radius: 0;
+    border: #0c0c0c;
 }
 
+
+.main-content .highlight pre,
+.main-content pre {
+    border-radius: 0;
+}
