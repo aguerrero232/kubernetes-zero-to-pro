@@ -4,8 +4,8 @@
 
 * 🏠 [**home**](../README.md)
 * 🗃️ **resources**
-  * 🖼️ [**images**](img/)
-  * 📝 [**markdown blueprints**](md-samples/)
+  <!-- * 🖼️ [**images**](img/) -->
+  <!-- * 📝 [**markdown blueprints**](md-samples/) -->
   * 📁 [**pdfs**](pdfs/)
     * 👩🏽‍🏫 [**udemy course pdfs**](pdfs/udemy-course/)
     * 📖 [**kubernetes up and running book**](pdfs/kubernetes-up-and-running.pdf)
