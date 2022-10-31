@@ -1,4 +1,4 @@
-# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Readiness*** *And* ***Liveness Probes*** 🛸
+# <img src="../../assets/img/k8s.png" width="30px"> **Kubernetes** - ***Readiness*** *And* ***Liveness Probes*** 🛸
 
 ## **Description** 👀
 

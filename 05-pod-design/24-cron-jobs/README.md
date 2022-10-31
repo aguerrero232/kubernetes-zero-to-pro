@@ -1,4 +1,4 @@
-# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***CronJobs*** ⏳
+# <img src="../../assets/img/k8s.png" width="30px"> **Kubernetes** - ***CronJobs*** ⏳
 
 ## **Description** 👀
 

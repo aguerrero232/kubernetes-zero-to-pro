@@ -1,4 +1,4 @@
-# <img src="../00-resources/img/k8s.png" width="30px"> **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
+# <img src="../assets/img/k8s.png" width="30px"> **Kubernetes** - ***Section 1:*** `Core Concepts` 🧠
 ## ***Table*** *of* ***`Contents`*** 📜
 
 * 🏠 [**home**](../README.md)

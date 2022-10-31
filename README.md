@@ -1,6 +1,6 @@
 # Kubernetes Zero To Pro ✨
 
-<img src="00-resources/img/k8-header.png" width="100%" height="330px">
+<img src="assets/img/k8-header.png" width="100%" height="330px">
 
 <br/>
 
@@ -27,7 +27,7 @@
 
 <br>
 
-<img src="00-resources/img/clusterdiagram2.PNG" width="615px"> <img src="00-resources/img/clusterdiagram-legend.PNG" width="150px">
+<img src="assets/img/clusterdiagram2.PNG" width="615px"> <img src="assets/img/clusterdiagram-legend.PNG" width="150px">
 
 * The **`Control Plane`** is responsible for *managing the cluster*.
 
@@ -60,7 +60,7 @@
 
 ## **Basic** `Commands` 📝
 
-* ## `kubectl` **commands** <img src="00-resources/img/k8s.png" width="24px">
+* ## `kubectl` **commands** <img src="assets/img/k8s.png" width="24px">
 
   * **check** version of `Kubernetes` being used
 
@@ -102,7 +102,7 @@
     kubectl describe pod kube-apiserver-controlplane -n kube-system
     ```
 
-* ## `minikube` **commands** <img src="00-resources/img/minikube.png" width="24px">
+* ## `minikube` **commands** <img src="assets/img/minikube.png" width="24px">
 
   * Check the status of `minikube`
 

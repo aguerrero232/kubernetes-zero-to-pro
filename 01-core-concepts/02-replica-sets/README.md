@@ -1,4 +1,4 @@
-# <img src="../../00-resources/img/k8s.png" width="30px"> **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
+# <img src="../../assets/img/k8s.png" width="30px"> **Kubernetes** - **Replication Controllers** *and* ***Replica Sets*** 👯
 
 
 `Replica Sets` are **newer** than `Replication Controllers`, and are the ***preferred way*** to manage **Pods** 😤
