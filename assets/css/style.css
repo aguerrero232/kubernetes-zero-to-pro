@@ -1,6 +1,8 @@
-@import "{{ site.theme }}";
+---
+---
 
+@import "{{ site.theme }}";
 body {
-    background-color: #3e3e3e;
+    background-color: #0d1116;
     color: #fff;
 }
