@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 body {
     background-color: #0d1116;
     color: #fff;
