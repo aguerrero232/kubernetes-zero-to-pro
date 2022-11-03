@@ -17,12 +17,6 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
 
 ## **Basic** `Commands` 📝
 
-* **create** a `replica set`
-
-    ```bash
-    kubectl create -f <yaml-file>
-    ```
-
 * **get** list of `replica sets`
 
     ```bash
@@ -46,6 +40,8 @@ They *enable* users to **monitor** `pods`, by labeling `pods` it will allow `rep
     ```bash
     kubectl replace -f <edited-yaml-file>
     ```
+
+    or
 
     ```bash
     kubectl scale --replicas=<new-number-of-replicas> -f <yaml-file>

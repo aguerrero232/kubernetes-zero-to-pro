@@ -22,12 +22,6 @@
 
 ## **Basic** `Commands` 📝
 
-* **create** a new deployment
-
-  ```bash
-  kubectl create -f <yaml-file>
-  ```
-
 * **update** a `deployment` &nbsp; (`rolling update`)
 
   ```bash

@@ -61,12 +61,6 @@ A `service` is a way to expose an application running on a set of `pods` as a `n
 
 ## **Basic** `Commands` 📝
 
-* **create** a `service`
-
-```bash
-kubectl create -f  <yaml-file>
-```
-
 * **get** list of `services`
 
 ```bash
