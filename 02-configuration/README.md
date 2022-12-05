@@ -5,20 +5,19 @@
 * 🏠 [**home**](../README.md)
 * ⚙️ **configuration**
   * 🔣 [**container arguments**](10-commands-and-arguments/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/" target="_blank">***k8s container arguments documentation***</a>
   * 🗺️ [**configmaps**](11-config-maps/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank">***k8s configmaps documentation***</a>
   * 🕵️ [**secrets**](12-secrets/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank">***k8s secrets documentation***</a>
   * 💁 [**service accounts**](13-service-accounts/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/" target="_blank">***k8s service accounts documentation***</a>
   * 💾 [**resource requirements**](14-resource-requirements/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">***k8s resource requirements documentation***</a>
   * ☢️ [**taints** *and* **tolerations**](15-taints-and-tolerants/README.md)
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank">***k8s taints** *and* **tolerations documentation***</a>
   * 🔘 [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/README.md)
-* 🔗 **links**
-  * 🔣 <a href="https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/" target="_blank">***k8s container arguments documentation***</a>
-  * 🗺️ <a href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank">***k8s configmaps documentation***</a>
-  * 🕵️ <a href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank">***k8s secrets documentation***</a>
-  * 💁 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/" target="_blank">***k8s service accounts documentation***</a>
-  * 💾 <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">***k8s resource requirements documentation***</a>
-  * ☢️ <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank">***k8s taints** *and* **tolerations documentation***</a>
-  * 🔘 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/" target="_blank">***k8s node selectors** *and* **affinity documentation***</a>
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/" target="_blank">***k8s node selectors** *and* **affinity documentation***</a>
 
 <br />
 
