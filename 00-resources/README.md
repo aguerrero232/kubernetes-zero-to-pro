@@ -17,6 +17,7 @@ replace: <a href="$2" target="_blank">***$1***</a>
   * 📁 **pdfs**
     * 📖 <a href="https://aguerrero232.github.io/kubernetes-zero-to-pro/00-resources/pdfs/kubernetes-up-and-running.pdf" target="_blank">***kubernetes up and running***</a>
   * 🔗 **links**
+    * <img src="../assets/img/minikube.png" width="15px"> <a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">***minikube install***</a>
     * 🎓 <a href="https://www.cncf.io/certification/ckad/" target="_blank">***certified kubernetes application developer test***</a>
     * 💪 <a href="https://github.com/dgkanatsios/CKAD-exercises" target="_blank">***exercises for CKAD***</a>
     * 🙇🏻‍♀️ <a href="https://github.com/lucassha/CKAD-resources" target="_blank">***study materials for CKAD***</a>

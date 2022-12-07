@@ -5,10 +5,10 @@
 * 🏠 [**home**](../README.md)
 * 🤯 **advanced services** *and* **networking**
   * ⚖️ [**ingress networking**](25-ingress-networking/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">***k8s ingress documentation***</a>
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank">***k8s ingress controllers documentation***</a>
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">k8s ingress documentation</a>
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank">k8s ingress controllers documentation</a>
   * 🤝 [**network policies**](26-network-policies/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/" target="_blank">***k8s network policies documentation***</a>
+    * 🔗 <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/" target="_blank">k8s network policies documentation</a>
 
 <br />
 
