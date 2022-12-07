@@ -122,16 +122,11 @@ spec:
   apiVersion: v1
   kind: Pod
   metadata:
-    name: bee
+    name: mosquito
   spec:
     containers:
-      - name: nginx-bee
+      - name: nginx-mosquito
         image: nginx
-    tolerations:
-      - key: spray
-        operator: "Equal"
-        value: mortein
-        effect: NoSchedule
   ```
 
 * **create** the *bee* and *mosquito* `pods` and **watch what happens**
