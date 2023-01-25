@@ -1,35 +1,20 @@
 # <img src="../assets/img/k8s.png" width="30px"> **Kubernetes** - ***Section 0:*** `Resources` 🗃️
 
-<!-- 
-
-replacing md links with html links
-
-regex: \[\*\*([A-z0-9- *]{1,})\*\*\]\((https://[A-z0-9-./]{1,})\)
-replace: <a href="$2" target="_blank">***$1***</a> 
-
--->
-
-
-## ***Table*** *of* ***`Contents`*** 📜
-
-* 🏠 [**home**](../README.md)
-* 🗃️ **resources**
-  * 📁 **pdfs**
-    * 📖 <a href="https://aguerrero232.github.io/kubernetes-zero-to-pro/00-resources/pdfs/kubernetes-up-and-running.pdf" target="_blank">***kubernetes up and running***</a>
-  * 🔗 **links**
-    * <img src="../assets/img/minikube.png" width="15px"> <a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">***minikube install***</a>
-    * 🎓 <a href="https://www.cncf.io/certification/ckad/" target="_blank">***certified kubernetes application developer test***</a>
-    * 💪 <a href="https://github.com/dgkanatsios/CKAD-exercises" target="_blank">***exercises for CKAD***</a>
-    * 🙇🏻‍♀️ <a href="https://github.com/lucassha/CKAD-resources" target="_blank">***study materials for CKAD***</a>
-    * 🤔 <a href="https://kubernetes.io/docs/concepts/" target="_blank">***kubernetes concepts***</a>
-    * 📓 <a href="https://www.cncf.io/certification/candidate-handbook" target="_blank">***candidate handbook***</a>
-    * 💡 <a href="https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad" target="_blank">***exam tips***</a>
-
-<br />
-
 ## **Description** 👀
 
 Resources for the `Kubernetes` ***Zero to Pro Guide***. Has images, pdfs, and links to other resources.
+
+
+## 📁 **pdfs**
+  * 📖 <a href="https://aguerrero232.github.io/kubernetes-zero-to-pro/00-resources/pdfs/kubernetes-up-and-running.pdf" target="_blank">***kubernetes up and running***</a>
+## 🔗 **links**
+  * <img src="../assets/img/minikube.png" width="15px"> <a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">***minikube install***</a>
+  * 🎓 <a href="https://www.cncf.io/certification/ckad/" target="_blank">***certified kubernetes application developer test***</a>
+  * 💪 <a href="https://github.com/dgkanatsios/CKAD-exercises" target="_blank">***exercises for CKAD***</a>
+  * 🙇🏻‍♀️ <a href="https://github.com/lucassha/CKAD-resources" target="_blank">***study materials for CKAD***</a>
+  * 🤔 <a href="https://kubernetes.io/docs/concepts/" target="_blank">***kubernetes concepts***</a>
+  * 📓 <a href="https://www.cncf.io/certification/candidate-handbook" target="_blank">***candidate handbook***</a>
+  * 💡 <a href="https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad" target="_blank">***exam tips***</a>
 
 <br />
 
@@ -279,3 +264,6 @@ This is a collection of helpful content for the `Kubernetes` ***Zero to Pro Guid
   * `Ctrl+V` One page down
   * `Alt+\` To top of buffer
   * `Alt+/`To end of buffer
+
+
+[↩️🏠](../README.md)

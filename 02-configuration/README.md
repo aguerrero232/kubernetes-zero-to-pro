@@ -1,26 +1,5 @@
 # <img src="../assets/img/k8s.png" width="30px"> **Kubernetes** - ***Section 2:*** `Configuration` ⚙️
 
-## ***Table*** *of* ***`Contents`*** 📜
-
-* 🏠 [**home**](../README.md)
-* ⚙️ **configuration**
-  * 🔣 [**container arguments**](10-commands-and-arguments/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/" target="_blank">k8s container arguments documentation</a>
-  * 🗺️ [**configmaps**](11-config-maps/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank">k8s configmaps documentation</a>
-  * 🕵️ [**secrets**](12-secrets/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank">k8s secrets documentation</a>
-  * 💁 [**service accounts**](13-service-accounts/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/" target="_blank">k8s service accounts documentation</a>
-  * 💾 [**resource requirements**](14-resource-requirements/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">k8s resource requirements documentation</a>
-  * ☢️ [**taints** *and* **tolerations**](15-taints-and-tolerants/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank">k8s taints and tolerations documentation</a>
-  * 🔘 [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/README.md)
-    * 🔗 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/" target="_blank">k8s node selectors and affinity documentation</a>
-
-<br />
-
 ## **Description** 👀
 
 ***Configuration*** is the process of **setting up your application so that it can run** in a `Kubernetes` cluster.
@@ -41,7 +20,23 @@
     * Node Authorization
     * Webhook Authorization
 
-### **Kubeconfig**
+## ***Table*** *of* ***`Contents`*** 📜
+
+* 🔣 [**container arguments**](10-commands-and-arguments/README.md)
+* 🗺️ [**configmaps**](11-config-maps/README.md)
+* 🕵️ [**secrets**](12-secrets/README.md)
+* 💁 [**service accounts**](13-service-accounts/README.md)
+* 💾 [**resource requirements**](14-resource-requirements/README.md)
+* ☢️ [**taints** *and* **tolerations**](15-taints-and-tolerants/README.md)
+* 🔘 [**node selectors** *and* **affinity**](16-node-selectors-and-affinity/README.md)
+
+<br />
+
+[↩️🏠](../README.md)
+
+
+
+<!-- ### **Kubeconfig**
 
 `Kubeconfig` is a file that contains the configuration information for `kubectl` to connect to a `Kubernetes` cluster.
 
@@ -170,4 +165,4 @@
         kind: ClusterRole
         name: <clusterrole-name>
         apiGroup: rbac.authorization.k8s.io
-      ```
+      ``` -->
