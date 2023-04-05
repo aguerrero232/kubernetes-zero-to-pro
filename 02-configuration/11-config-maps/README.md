@@ -2,7 +2,7 @@
 
 ## **Description** 👀
 
-Just like everything else in Kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
+`ConfigMap` is a Kubernetes object that provides a way to store configuration data in key-value pairs. They allow you to decouple configuration artifacts from your container images, which enables you to modify the configuration data without rebuilding and repdeploying your containers. Just like everything else in Kubernetes there are two ways to create a `ConfigMap`. You can either use the `kubectl` command or you can use a `ConfigMap` definition.
 
 * example at `yaml-examples/configmap-description.yaml`
 
